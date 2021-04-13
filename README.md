@@ -5,7 +5,6 @@ These [Portainer App Templates](https://documentation.portainer.io/v2.0/settings
 The templates are based on data provided by the [LinuxServer.io GitHub repositories](https://github.com/linuxserver).
 
 Please keep the following in mind.
-* The templates only work on Portainer version 2
 * The templates are not supported by LinuxServer.io
 * The templates are being generated so I cannot accept requests to add templates
 
