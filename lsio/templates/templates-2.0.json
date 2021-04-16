@@ -280,16 +280,10 @@
 					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				},
 				{
-					"name": "GUAC_USER",
-					"label": "GUAC_USER",
-					"default": "abc",
-					"description": "Username for the BOINC desktop gui."
-				},
-				{
-					"name": "GUAC_PASS",
-					"label": "GUAC_PASS",
-					"default": "900150983cd24fb0d6963f7d28e17f72",
-					"description": "Password's md5 hash for the BOINC desktop gui."
+					"name": "PASSWORD",
+					"label": "PASSWORD",
+					"default": "",
+					"description": "Optionally set a password for the gui."
 				}
 			],
 			"ports": [
@@ -512,22 +506,10 @@
 					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				},
 				{
-					"name": "GUAC_USER",
-					"label": "GUAC_USER",
-					"default": "abc",
-					"description": "Username for the calibre desktop gui."
-				},
-				{
-					"name": "GUAC_PASS",
-					"label": "GUAC_PASS",
-					"default": "900150983cd24fb0d6963f7d28e17f72",
-					"description": "Password's md5 hash for the calibre desktop gui."
-				},
-				{
-					"name": "UMASK_SET",
-					"label": "UMASK_SET",
-					"default": "022",
-					"description": "for umask setting of Calibre, default if left unset is 022."
+					"name": "PASSWORD",
+					"label": "PASSWORD",
+					"default": "",
+					"description": "Optionally set a password for the gui."
 				},
 				{
 					"name": "CLI_ARGS",
@@ -6711,7 +6693,7 @@
 					"name": "TRANSMISSION_WEB_HOME",
 					"label": "TRANSMISSION_WEB_HOME",
 					"default": "/combustion-release/",
-					"description": "Specify an alternative UI options are `/combustion-release/`, `/transmission-web-control/`, and `/kettu/` ."
+					"description": "Specify an alternative UI options are [`/combustion-release/`](https://github.com/Secretmapper/combustion), [`/transmission-web-control/`](https://github.com/ronggang/transmission-web-control), [`/kettu/`](https://github.com/endor/kettu) and [`/flood-for-transmission/`](https://github.com/johman10/flood-for-transmission)."
 				},
 				{
 					"name": "USER",
