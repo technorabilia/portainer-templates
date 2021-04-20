@@ -155,6 +155,46 @@
     },
     {
         "type": 1,
+        "title": "Audacity",
+        "name": "Audacity",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/audacity/config</p>",
+        "description": "[Audacity]({{ project_url }}) is an easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png",
+        "image": "linuxserver/audacity:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            }
+        ],
+        "ports": [
+            "3000:3000/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/audacity/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
         "title": "Bazarr",
         "name": "Bazarr",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/bazarr/config<br>mkdir -p /volume1/docker/bazarr/movies<br>mkdir -p /volume1/docker/bazarr/tv</p>",
@@ -278,16 +318,10 @@
                 "description": "Specify a timezone to use for example Europe/Amsterdam"
             },
             {
-                "name": "GUAC_USER",
-                "label": "GUAC_USER",
-                "default": "abc",
-                "description": "Username for the BOINC desktop gui."
-            },
-            {
-                "name": "GUAC_PASS",
-                "label": "GUAC_PASS",
-                "default": "900150983cd24fb0d6963f7d28e17f72",
-                "description": "Password's md5 hash for the BOINC desktop gui."
+                "name": "PASSWORD",
+                "label": "PASSWORD",
+                "default": "",
+                "description": "Optionally set a password for the gui."
             }
         ],
         "ports": [
@@ -510,22 +544,10 @@
                 "description": "Specify a timezone to use for example Europe/Amsterdam"
             },
             {
-                "name": "GUAC_USER",
-                "label": "GUAC_USER",
-                "default": "abc",
-                "description": "Username for the calibre desktop gui."
-            },
-            {
-                "name": "GUAC_PASS",
-                "label": "GUAC_PASS",
-                "default": "900150983cd24fb0d6963f7d28e17f72",
-                "description": "Password's md5 hash for the calibre desktop gui."
-            },
-            {
-                "name": "UMASK_SET",
-                "label": "UMASK_SET",
-                "default": "022",
-                "description": "for umask setting of Calibre, default if left unset is 022."
+                "name": "PASSWORD",
+                "label": "PASSWORD",
+                "default": "",
+                "description": "Optionally set a password for the gui."
             },
             {
                 "name": "CLI_ARGS",
@@ -1904,6 +1926,70 @@
     },
     {
         "type": 1,
+        "title": "Endlessh",
+        "name": "Endlessh",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/endlessh/config</p>",
+        "description": "Endlessh Endlessh is an SSH tarpit that very slowly sends an endless, random SSH banner. It keeps SSH clients locked up for hours or even days at a time. The purpose is to put your real SSH server on another port and then let the script kiddies get stuck in this tarpit instead of bothering a real server.",
+        "platform": "linux",
+        "logo": "https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/openssh-server-logo.png",
+        "image": "linuxserver/endlessh:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "MSDELAY",
+                "label": "MSDELAY",
+                "default": "10000",
+                "description": "The endless banner is sent one line at a time. This is the delay in milliseconds between individual lines."
+            },
+            {
+                "name": "MAXLINES",
+                "label": "MAXLINES",
+                "default": "32",
+                "description": "The length of each line is randomized. This controls the maximum length of each line. Shorter lines may keep clients on for longer if they give up after a certain number of bytes."
+            },
+            {
+                "name": "MAXCLIENTS",
+                "label": "MAXCLIENTS",
+                "default": "4096",
+                "description": "Maximum number of connections to accept at a time. Connections beyond this are not immediately rejected, but will wait in the queue."
+            },
+            {
+                "name": "LOGFILE",
+                "label": "LOGFILE",
+                "default": "false",
+                "description": "By default, the app logs to container log. If this is set to `true`, the log will be output to file under `/config.logs/endlessh` (`/config` needs to be mapped)."
+            }
+        ],
+        "ports": [
+            "22:2222/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/endlessh/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
         "title": "Ffmpeg",
         "name": "Ffmpeg",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ffmpeg/config</p>",
@@ -1938,6 +2024,86 @@
             {
                 "container": "/config",
                 "bind": "/volume1/docker/ffmpeg/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
+        "title": "Filezilla",
+        "name": "Filezilla",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/filezilla/config</p>",
+        "description": "[FIleZilla]({{ project_url }}) Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/filezilla-logo.png",
+        "image": "linuxserver/filezilla:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            }
+        ],
+        "ports": [
+            "3000:3000/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/filezilla/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
+        "title": "Firefox",
+        "name": "Firefox",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/firefox/config</p>",
+        "description": "[Firefox]({{ project_url }}) Browser, also known as Mozilla Firefox or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png",
+        "image": "linuxserver/firefox:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            }
+        ],
+        "ports": [
+            "3000:3000/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/firefox/config"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -3376,7 +3542,7 @@
         "title": "Lychee",
         "name": "Lychee",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/lychee/config<br>mkdir -p /volume1/docker/lychee/pictures</p>",
-        "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.'### UPGRADE WARNINGPlease note that the upgrade process resets ALL password-protected albums. Any albums that were made public with a password will need to be re-secured.",
+        "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.'### UPGRADE WARNINGPlease note that the v4 upgrade process resets ALL password-protected albums. Any albums that were made public with a password will need to be re-secured.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-icon.png",
         "image": "linuxserver/lychee:latest",
@@ -6709,7 +6875,7 @@
                 "name": "TRANSMISSION_WEB_HOME",
                 "label": "TRANSMISSION_WEB_HOME",
                 "default": "/combustion-release/",
-                "description": "Specify an alternative UI options are `/combustion-release/`, `/transmission-web-control/`, and `/kettu/` ."
+                "description": "Specify an alternative UI options are [`/combustion-release/`](https://github.com/Secretmapper/combustion), [`/transmission-web-control/`](https://github.com/ronggang/transmission-web-control), [`/kettu/`](https://github.com/endor/kettu) and [`/flood-for-transmission/`](https://github.com/johman10/flood-for-transmission)."
             },
             {
                 "name": "USER",
