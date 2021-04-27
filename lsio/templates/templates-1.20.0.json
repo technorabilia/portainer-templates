@@ -4256,16 +4256,22 @@
                 "description": "for UserID"
             },
             {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
                 "name": "SUPERUSER_EMAIL",
                 "label": "SUPERUSER_EMAIL",
                 "default": "<SUPERUSER_EMAIL>",
-                "description": "Username for admin account"
+                "description": "Email address for `admin` account"
             },
             {
                 "name": "SUPERUSER_PASSWORD",
                 "label": "SUPERUSER_PASSWORD",
                 "default": "<SUPERUSER_PASSWORD>",
-                "description": "Password for admin account"
+                "description": "Password for `admin` account"
             },
             {
                 "name": "ALLOWED_HOST",
@@ -4274,16 +4280,10 @@
                 "description": "The hostname you will use to access the app (i.e., netbox.example.com)"
             },
             {
-                "name": "BASE_PATH",
-                "label": "BASE_PATH",
-                "default": "<BASE_PATH>",
-                "description": "The path you will use to access the app (i.e., /netbox, optional, default: none)"
-            },
-            {
                 "name": "DB_NAME",
                 "label": "DB_NAME",
                 "default": "<DB_NAME>",
-                "description": "Database name (optional, default: netbox)"
+                "description": "Database name (default: netbox)"
             },
             {
                 "name": "DB_USER",
@@ -4301,73 +4301,85 @@
                 "name": "DB_HOST",
                 "label": "DB_HOST",
                 "default": "<DB_HOST>",
-                "description": "Database host (optional, default: postgres)"
+                "description": "Database host (default: postgres)"
             },
             {
                 "name": "DB_PORT",
                 "label": "DB_PORT",
                 "default": "<DB_PORT>",
-                "description": "Database port (optional)"
+                "description": "Database port (defaul: 5432)"
             },
             {
                 "name": "REDIS_HOST",
                 "label": "REDIS_HOST",
                 "default": "<REDIS_HOST>",
-                "description": "Redis host (optional, default: redis)"
+                "description": "Redis host (default: redis)"
             },
             {
                 "name": "REDIS_PORT",
                 "label": "REDIS_PORT",
                 "default": "<REDIS_PORT>",
-                "description": "Redis port number (optional, default: 6379)"
+                "description": "Redis port number (default: 6379)"
             },
             {
                 "name": "REDIS_PASSWORD",
                 "label": "REDIS_PASSWORD",
                 "default": "<REDIS_PASSWORD>",
-                "description": "Redis password (optional, default: none)"
+                "description": "Redis password (default: none)"
+            },
+            {
+                "name": "REDIS_DB_TASK",
+                "label": "REDIS_DB_TASK",
+                "default": "<REDIS_DB_TASK>",
+                "description": "Redis database ID for tasks (default: 0)"
+            },
+            {
+                "name": "REDIS_DB_CACHE",
+                "label": "REDIS_DB_CACHE",
+                "default": "<REDIS_DB_CACHE>",
+                "description": "Redis database ID for caching (default: 1)"
+            },
+            {
+                "name": "BASE_PATH",
+                "label": "BASE_PATH",
+                "default": "<BASE_PATH>",
+                "description": "The path you will use to access the app (i.e., /netbox, optional, default: none)"
             },
             {
                 "name": "REMOTE_AUTH_ENABLED",
                 "label": "REMOTE_AUTH_ENABLED",
                 "default": "<REMOTE_AUTH_ENABLED>",
-                "description": "Enable remote authentication (optional, default: False"
+                "description": "Enable remote authentication (optional, default: False)"
             },
             {
                 "name": "REMOTE_AUTH_BACKEND",
                 "label": "REMOTE_AUTH_BACKEND",
                 "default": "<REMOTE_AUTH_BACKEND>",
-                "description": "Python path to the custom Django authentication backend to use for external user authentication (optional, default: netbox.authentication.RemoteUserBackend"
+                "description": "Python path to the custom Django authentication backend to use for external user authentication (optional, default: netbox.authentication.RemoteUserBackend)"
             },
             {
                 "name": "REMOTE_AUTH_HEADER",
                 "label": "REMOTE_AUTH_HEADER",
                 "default": "<REMOTE_AUTH_HEADER>",
-                "description": "Name of the HTTP header which informs NetBox of the currently authenticated user. (optional, default: HTTP_REMOTE_USER"
+                "description": "Name of the HTTP header which informs NetBox of the currently authenticated user. (optional, default: HTTP_REMOTE_USER)"
             },
             {
                 "name": "REMOTE_AUTH_AUTO_CREATE_USER",
                 "label": "REMOTE_AUTH_AUTO_CREATE_USER",
                 "default": "<REMOTE_AUTH_AUTO_CREATE_USER>",
-                "description": "If true, NetBox will automatically create local accounts for users authenticated via a remote service (optional, default: False"
+                "description": "If true, NetBox will automatically create local accounts for users authenticated via a remote service (optional, default: False)"
             },
             {
                 "name": "REMOTE_AUTH_DEFAULT_GROUPS",
                 "label": "REMOTE_AUTH_DEFAULT_GROUPS",
                 "default": "<REMOTE_AUTH_DEFAULT_GROUPS>",
-                "description": "The list of groups to assign a new user account when created using remote authentication (optional, default: []"
+                "description": "The list of groups to assign a new user account when created using remote authentication (optional, default: [])"
             },
             {
                 "name": "REMOTE_AUTH_DEFAULT_PERMISSIONS",
                 "label": "REMOTE_AUTH_DEFAULT_PERMISSIONS",
                 "default": "<REMOTE_AUTH_DEFAULT_PERMISSIONS>",
-                "description": "A mapping of permissions to assign a new user account when created using remote authentication (optional, default: {}"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "Specify a timezone to use for example Europe/Amsterdam"
+                "description": "A mapping of permissions to assign a new user account when created using remote authentication (optional, default: {})"
             }
         ],
         "ports": [
