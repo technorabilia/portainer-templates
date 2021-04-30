@@ -4214,6 +4214,12 @@
                 "label": "PORT_RANGE",
                 "default": "30000:30010",
                 "description": "Specify the port range tftp will use for data transfers [(see Wikipedia)](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol#Details)"
+            },
+            {
+                "name": "SUBFOLDER",
+                "label": "SUBFOLDER",
+                "default": "/",
+                "description": "Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)"
             }
         ],
         "ports": [
