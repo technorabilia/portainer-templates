@@ -6423,8 +6423,8 @@
                 "description": "for UserID"
             },
             {
-                "name": "APP_URL",
-                "label": "APP_URL",
+                "name": "NGINX_APP_URL",
+                "label": "NGINX_APP_URL",
                 "default": "<hostname or ip>",
                 "description": "Hostname or IP and port if applicable IE <ip or hostname>:8080"
             },
