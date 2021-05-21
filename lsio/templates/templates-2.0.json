@@ -1930,7 +1930,7 @@
 				"Home Media"
 			],
 			"platform": "linux",
-			"logo": "https://emby.media/community/uploads/inline/3/55626b855503c_logo800.png",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png",
 			"image": "linuxserver/emby:latest",
 			"env": [
 				{
