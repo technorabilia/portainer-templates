@@ -5222,7 +5222,7 @@
         "type": 1,
         "title": "Piwigo",
         "name": "Piwigo",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/piwigo/config</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/piwigo/config<br>mkdir -p /volume1/docker/piwigo/gallery</p>",
         "description": "[Piwigo](http://piwigo.org/) is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-banner.png",
@@ -5254,6 +5254,10 @@
             {
                 "container": "/config",
                 "bind": "/volume1/docker/piwigo/config"
+            },
+            {
+                "container": "/gallery",
+                "bind": "/volume1/docker/piwigo/gallery"
             }
         ],
         "restart_policy": "unless-stopped"
