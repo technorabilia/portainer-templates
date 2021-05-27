@@ -6927,6 +6927,55 @@
 		},
 		{
 			"type": 1,
+			"title": "Syslog-ng",
+			"name": "Syslog-ng",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/syslog-ng/config<br>mkdir -p /volume1/docker/syslog-ng/var/log</p>",
+			"description": "[syslog-ng](https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
+			"categories": [
+				"System Tools"
+			],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png",
+			"image": "linuxserver/syslog-ng:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for GroupID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for UserID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				}
+			],
+			"ports": [
+				"514:5514/tcp",
+				"601:6601/tcp",
+				"6514:6514/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/syslog-ng/config"
+			},
+			{
+				"container": "/var/log",
+				"bind": "/volume1/docker/syslog-ng/var/log"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Taisun",
 			"name": "Taisun",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/taisun/var/run/docker.sock</p>",
