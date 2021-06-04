@@ -3945,24 +3945,6 @@
                 "description": "for UserID"
             },
             {
-                "name": "USER",
-                "label": "USER",
-                "default": "admin",
-                "description": "Set username to login"
-            },
-            {
-                "name": "PASSWORD",
-                "label": "PASSWORD",
-                "default": "password",
-                "description": "Set password for user"
-            },
-            {
-                "name": "USE_JSON",
-                "label": "USE_JSON",
-                "default": "true/false",
-                "description": "Run mStream using the config specified at `/config/config.json`, note this will mean user/password is defined in `config.json`"
-            },
-            {
                 "name": "TZ",
                 "label": "TZ",
                 "default": "Europe/Amsterdam",
