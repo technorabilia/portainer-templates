@@ -1348,7 +1348,6 @@
 			"platform": "linux",
 			"logo": "https://avatars2.githubusercontent.com/u/6733935?v=3&s=200",
 			"image": "linuxserver/deluge:latest",
-			"network": "host",
 			"env": [
 				{
 					"name": "PUID",
@@ -1374,6 +1373,11 @@
 					"default": "error",
 					"description": "set the loglevel output when running Deluge, default is info for deluged and warning for delgued-web"
 				}
+			],
+			"ports": [
+				"8112:8112/tcp",
+				"6881:6881/tcp",
+				"6881/udp:6881/udp"
 			],
 			"volumes": [
 			{
