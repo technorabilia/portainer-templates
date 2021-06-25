@@ -661,6 +661,12 @@
 					"label": "DOCKER_MODS",
 					"default": "linuxserver/calibre-web:calibre",
 					"description": "#optional & **x86-64 only** Adds the ability to perform ebook conversion"
+				},
+				{
+					"name": "OAUTHLIB_RELAX_TOKEN_SCOPE",
+					"label": "OAUTHLIB_RELAX_TOKEN_SCOPE",
+					"default": "1",
+					"description": "Optionally set this to allow Google OAUTH to work"
 				}
 			],
 			"ports": [
