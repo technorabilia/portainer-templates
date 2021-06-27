@@ -5694,7 +5694,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/pyload/config<br>mkdir -p /volume1/docker/pyload/downloads</p>",
         "description": "[Pyload](https://pyload.net/) is a Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.",
         "platform": "linux",
-        "logo": "https://pyload.net/img/banner.png",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pyload-icon.png",
         "image": "linuxserver/pyload:latest",
         "env": [
             {
@@ -7472,6 +7472,12 @@
                 "label": "TZ",
                 "default": "Europe/Amsterdam",
                 "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "SUBFOLDER",
+                "label": "SUBFOLDER",
+                "default": "/",
+                "description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/`"
             }
         ],
         "ports": [
