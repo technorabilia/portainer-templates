@@ -3024,7 +3024,7 @@
             "P2P"
         ],
         "platform": "linux",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ipfs-logo-1024-ice-text.png/480px-Ipfs-logo-1024-ice-text.png",
+        "logo": "",
         "image": "linuxserver/ipfs:latest",
         "env": [
             {
@@ -4221,7 +4221,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nano/config</p>",
         "description": "[Nano](https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
         "platform": "linux",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nano_logo.png/640px-Nano_logo.png",
+        "logo": "",
         "image": "linuxserver/nano:latest",
         "env": [
             {
@@ -4305,7 +4305,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
         "description": "[Nano-wallet](https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located [here](https://github.com/linuxserver/nano-wallet). You will need to pass a valid RPC host when accessing this container.",
         "platform": "linux",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nano_logo.png/640px-Nano_logo.png",
+        "logo": "",
         "image": "linuxserver/nano-wallet:latest",
         "ports": [
             "80:80/tcp"
@@ -4854,7 +4854,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/openssh-server/config</p>",
         "description": "[Openssh-server](https://www.openssh.com/) is a sandboxed environment that allows ssh access without giving keys to the entire server. Giving ssh access via private key often means giving full access to the server. This container creates a limited and sandboxed environment that others can ssh into. The users only have access to the folders mapped and the processes running inside this container.",
         "platform": "linux",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/6/65/OpenSSH_logo.png",
+        "logo": "",
         "image": "linuxserver/openssh-server:latest",
         "env": [
             {
