@@ -4859,7 +4859,7 @@
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/openssh-server/config</p>",
 			"description": "[Openssh-server](https://www.openssh.com/) is a sandboxed environment that allows ssh access without giving keys to the entire server. Giving ssh access via private key often means giving full access to the server. This container creates a limited and sandboxed environment that others can ssh into. The users only have access to the folders mapped and the processes running inside this container.",
 			"platform": "linux",
-			"logo": "",
+			"logo": "https://upload.wikimedia.org/wikipedia/en/6/65/OpenSSH_logo.png",
 			"image": "linuxserver/openssh-server:latest",
 			"env": [
 				{
