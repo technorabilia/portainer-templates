@@ -1632,7 +1632,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/doc-builder/config</p>",
         "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/doc-builder for details.",
         "platform": "linux",
-        "logo": "",
+        "logo": "http://www.logo.com/logo.png",
         "image": "linuxserver/doc-builder:latest",
         "env": [
             {
@@ -1672,7 +1672,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/docker-compose/config</p>",
         "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/docker-compose for details.",
         "platform": "linux",
-        "logo": "",
+        "logo": "http://www.logo.com/logo.png",
         "image": "linuxserver/docker-compose:latest",
         "env": [
             {
@@ -2129,7 +2129,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ffmpeg/config</p>",
         "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ffmpeg for details.",
         "platform": "linux",
-        "logo": "",
+        "logo": "http://www.logo.com/logo.png",
         "image": "linuxserver/ffmpeg:latest",
         "env": [
             {
@@ -3027,7 +3027,7 @@
             "P2P"
         ],
         "platform": "linux",
-        "logo": "",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ipfs-logo-1024-ice-text.png/480px-Ipfs-logo-1024-ice-text.png",
         "image": "linuxserver/ipfs:latest",
         "env": [
             {
@@ -3188,7 +3188,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/jenkins-builder/config</p>",
         "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/jenkins-builder for details.",
         "platform": "linux",
-        "logo": "",
+        "logo": "http://www.logo.com/logo.png",
         "image": "linuxserver/jenkins-builder:latest",
         "env": [
             {
@@ -3375,7 +3375,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/letsencrypt/config</p>",
         "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/letsencrypt for details.",
         "platform": "linux",
-        "logo": "",
+        "logo": "http://www.logo.com/logo.png",
         "image": "linuxserver/letsencrypt:latest",
         "env": [
             {
@@ -4020,7 +4020,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/musicbrainz/config</p>",
         "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/musicbrainz for details.",
         "platform": "linux",
-        "logo": "",
+        "logo": "http://www.logo.com/logo.png",
         "image": "linuxserver/musicbrainz:latest",
         "env": [
             {
@@ -4224,7 +4224,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nano/config</p>",
         "description": "[Nano](https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
         "platform": "linux",
-        "logo": "",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nano_logo.png/640px-Nano_logo.png",
         "image": "linuxserver/nano:latest",
         "env": [
             {
@@ -4308,7 +4308,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
         "description": "[Nano-wallet](https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located [here](https://github.com/linuxserver/nano-wallet). You will need to pass a valid RPC host when accessing this container.",
         "platform": "linux",
-        "logo": "",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nano_logo.png/640px-Nano_logo.png",
         "image": "linuxserver/nano-wallet:latest",
         "ports": [
             "80:80/tcp"
@@ -7711,7 +7711,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/yq/config</p>",
         "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/yq for details.",
         "platform": "linux",
-        "logo": "",
+        "logo": "http://www.logo.com/logo.png",
         "image": "linuxserver/yq:latest",
         "env": [
             {
