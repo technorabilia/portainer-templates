@@ -841,7 +841,7 @@
         "type": 1,
         "title": "Cloud9",
         "name": "Cloud9",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/cloud9/config<br>mkdir -p /volume1/docker/cloud9/code<br>mkdir -p /volume1/docker/cloud9/var/run/docker.sock</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/cloud9/config<br>mkdir -p /volume1/docker/cloud9/code<br></p>",
         "description": "[Cloud9](https://github.com/c9/core) Cloud9 is a complete web based IDE with terminal access. This container is for running their core SDK locally and developing plugins.",
         "categories": [
             "Development"
@@ -901,7 +901,7 @@
             },
             {
                 "container": "/var/run/docker.sock",
-                "bind": "/volume1/docker/cloud9/var/run/docker.sock"
+                "bind": "/var/run/docker.sock"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -1960,7 +1960,7 @@
         "type": 1,
         "title": "Emby",
         "name": "Emby",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/emby/config<br>mkdir -p /volume1/docker/emby/data/tvshows<br>mkdir -p /volume1/docker/emby/data/movies<br>mkdir -p /volume1/docker/emby/opt/vc/lib</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/emby/config<br>mkdir -p /volume1/docker/emby/data/tvshows<br>mkdir -p /volume1/docker/emby/data/movies<br></p>",
         "description": "[Emby](https://emby.media/) organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
         "categories": [
             "Home Media"
@@ -2007,7 +2007,7 @@
             },
             {
                 "container": "/opt/vc/lib",
-                "bind": "/volume1/docker/emby/opt/vc/lib"
+                "bind": "/opt/vc/lib"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -3124,7 +3124,7 @@
         "type": 1,
         "title": "Jellyfin",
         "name": "Jellyfin",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/jellyfin/config<br>mkdir -p /volume1/docker/jellyfin/data/tvshows<br>mkdir -p /volume1/docker/jellyfin/data/movies<br>mkdir -p /volume1/docker/jellyfin/opt/vc/lib</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/jellyfin/config<br>mkdir -p /volume1/docker/jellyfin/data/tvshows<br>mkdir -p /volume1/docker/jellyfin/data/movies<br></p>",
         "description": "[Jellyfin](https://jellyfin.github.io/) is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Jellyfin is descended from Emby's 3.5.2 release and ported to the .NET Core framework to enable full cross-platform support. There are no strings attached, no premium licenses or features, and no hidden agendas: just a team who want to build something better and work together to achieve it.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-logo-solid.svg?sanitize=true",
@@ -3176,7 +3176,7 @@
             },
             {
                 "container": "/opt/vc/lib",
-                "bind": "/volume1/docker/jellyfin/opt/vc/lib"
+                "bind": "/opt/vc/lib"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -6040,7 +6040,7 @@
         "type": 1,
         "title": "Rdesktop",
         "name": "Rdesktop",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/rdesktop/var/run/docker.sock<br>mkdir -p /volume1/docker/rdesktop/config</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p><br>mkdir -p /volume1/docker/rdesktop/config</p>",
         "description": "[Rdesktop](http://xrdp.org/) - Ubuntu based containers containing full desktop environments in officially supported flavors accessible via RDP.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rdesktop.png",
@@ -6072,7 +6072,7 @@
         "volumes": [
             {
                 "container": "/var/run/docker.sock",
-                "bind": "/volume1/docker/rdesktop/var/run/docker.sock"
+                "bind": "/var/run/docker.sock"
             },
             {
                 "container": "/config",
@@ -6361,7 +6361,7 @@
         "type": 1,
         "title": "Scrutiny",
         "name": "Scrutiny",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/scrutiny/config<br>mkdir -p /volume1/docker/scrutiny/run/udev:ro</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/scrutiny/config<br></p>",
         "description": "[Scrutiny](https://github.com/AnalogJ/scrutiny) WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/AnalogJ/scrutiny/master/docs/dashboard.png",
@@ -6414,7 +6414,7 @@
             },
             {
                 "container": "/run/udev:ro",
-                "bind": "/volume1/docker/scrutiny/run/udev:ro"
+                "bind": "/run/udev:ro"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -7011,7 +7011,7 @@
         "type": 1,
         "title": "Syslog-ng",
         "name": "Syslog-ng",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/syslog-ng/config<br>mkdir -p /volume1/docker/syslog-ng/var/log</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/syslog-ng/config<br></p>",
         "description": "[syslog-ng](https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
         "categories": [
             "System Tools"
@@ -7040,7 +7040,7 @@
             }
         ],
         "ports": [
-            "514:5514/tcp",
+            "514:5514/udp",
             "601:6601/tcp",
             "6514:6514/tcp"
         ],
@@ -7051,7 +7051,7 @@
             },
             {
                 "container": "/var/log",
-                "bind": "/volume1/docker/syslog-ng/var/log"
+                "bind": "/var/log"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -7060,7 +7060,7 @@
         "type": 1,
         "title": "Taisun",
         "name": "Taisun",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/taisun/var/run/docker.sock</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p></p>",
         "description": "[Taisun](https://www.taisun.io/) is an application for a Docker enabled device with an emphasis on providing a web based interface for managing a single server. Taisun allows you to: - Deploy and manage web based virtual desktops. - Deploy Taisun specific stacks of applications - Browse available images on popular Docker repositories - Import a Docker project from any git repository and start developing on your choice of web based IDE or full Linux desktop - Spinup a developer container based on popular frameworks and work from a web based IDE - Single click remote server access to Taisun and your Docker applications",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/Taisun-Docker/taisun/master/public/favicon/apple-icon-180x180.png",
@@ -7071,7 +7071,7 @@
         "volumes": [
             {
                 "container": "/var/run/docker.sock",
-                "bind": "/volume1/docker/taisun/var/run/docker.sock"
+                "bind": "/var/run/docker.sock"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -7448,7 +7448,7 @@
         "type": 1,
         "title": "Webtop",
         "name": "Webtop",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/webtop/config<br>mkdir -p /volume1/docker/webtop/var/run/docker.sock</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/webtop/config<br></p>",
         "description": "[Webtop](https://github.com/linuxserver/docker-webtop) - Alpine and Ubuntu based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
         "categories": [
             "Utilities"
@@ -7493,7 +7493,7 @@
             },
             {
                 "container": "/var/run/docker.sock",
-                "bind": "/volume1/docker/webtop/var/run/docker.sock"
+                "bind": "/var/run/docker.sock"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -7546,7 +7546,7 @@
         "type": 1,
         "title": "Wireguard",
         "name": "Wireguard",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/wireguard/config<br>mkdir -p /volume1/docker/wireguard/lib/modules</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/wireguard/config<br></p>",
         "description": "[WireGuard\u00ae](https://www.wireguard.com/) is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.",
         "platform": "linux",
         "logo": "https://www.wireguard.com/img/wireguard.svg",
@@ -7617,7 +7617,7 @@
             },
             {
                 "container": "/lib/modules",
-                "bind": "/volume1/docker/wireguard/lib/modules"
+                "bind": "/lib/modules"
             }
         ],
         "restart_policy": "unless-stopped"
