@@ -1198,7 +1198,7 @@
         "title": "Daapd",
         "name": "Daapd",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/daapd/config<br>mkdir -p /volume1/docker/daapd/music</p>",
-        "description": "[Daapd](https://ejurgensen.github.io/forked-daapd/) (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio.",
+        "description": "[Daapd](https://owntone.github.io/owntone-server/) (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), Chromecast, MPD and internet radio.",
         "categories": [
             "Media"
         ],
