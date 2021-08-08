@@ -2411,6 +2411,12 @@
 					"label": "REGENERATE_SETTINGS",
 					"default": "True/False",
 					"description": "Defaults to False. Set to true to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file."
+				},
+				{
+					"name": "SITE_LOGO_URL",
+					"label": "SITE_LOGO_URL",
+					"default": "<SITE_LOGO_URL>",
+					"description": "Custom site logo URL"
 				}
 			],
 			"ports": [
@@ -6063,7 +6069,7 @@
 					"name": "DNSPLUGIN",
 					"label": "DNSPLUGIN",
 					"default": "cloudflare",
-					"description": "Required if `VALIDATION` is set to `dns`. Options are `aliyun`, `cloudflare`, `cloudxns`, `cpanel`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `domeneshop`, `gandi`, `gehirn`, `google`, `hetzner`, `inwx`, `linode`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `rfc2136`, `route53`, `sakuracloud`, `transip` and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`."
+					"description": "Required if `VALIDATION` is set to `dns`. Options are `aliyun`, `cloudflare`, `cloudxns`, `cpanel`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `domeneshop`, `gandi`, `gehirn`, `google`, `hetzner`, `inwx`, `ionos`, `linode`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `rfc2136`, `route53`, `sakuracloud`, `transip` and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`."
 				},
 				{
 					"name": "PROPAGATION",
