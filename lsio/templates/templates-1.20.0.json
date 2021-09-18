@@ -6046,16 +6046,16 @@
                 "description": "Top url you have control over (`customdomain.com` if you own it, or `customsubdomain.ddnsprovider.com` if dynamic dns)."
             },
             {
-                "name": "SUBDOMAINS",
-                "label": "SUBDOMAINS",
-                "default": "www,",
-                "description": "Subdomains you'd like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this _exactly_ to `wildcard` (wildcard cert is available via `dns` and `duckdns` validation only)"
-            },
-            {
                 "name": "VALIDATION",
                 "label": "VALIDATION",
                 "default": "http",
                 "description": "Certbot validation method to use, options are `http`, `dns` or `duckdns` (`dns` method also requires `DNSPLUGIN` variable set) (`duckdns` method requires `DUCKDNSTOKEN` variable set, and the `SUBDOMAINS` variable must be either empty or set to `wildcard`)."
+            },
+            {
+                "name": "SUBDOMAINS",
+                "label": "SUBDOMAINS",
+                "default": "www,",
+                "description": "Subdomains you'd like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this _exactly_ to `wildcard` (wildcard cert is available via `dns` and `duckdns` validation only)"
             },
             {
                 "name": "CERTPROVIDER",
