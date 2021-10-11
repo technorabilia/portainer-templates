@@ -4410,7 +4410,7 @@
 			"title": "Overseerr",
 			"name": "Overseerr",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/overseerr/config</p>",
-			"description": "[Overseerr](https://overseerr.dev/) is a free and open source software application for managing requests for your media library.",
+			"description": "[Overseerr](https://overseerr.dev/) is a request management and media discovery tool built to work with your existing Plex ecosystem.",
 			"categories": [
 				"Media"
 			],
