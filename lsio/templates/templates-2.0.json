@@ -1294,12 +1294,12 @@
 			"title": "Diskover",
 			"name": "Diskover",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/diskover/config<br>mkdir -p /volume1/docker/diskover/data</p>",
-			"description": "[Diskover](https://github.com/shirosaidev/diskover) is a file system crawler and disk space usage software that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
+			"description": "[Diskover](https://github.com/diskoverdata/diskover-community) is an open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
 			"categories": [
 				"Productivity"
 			],
 			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/shirosaidev/diskover/master/docs/diskover.png",
+			"logo": "https://raw.githubusercontent.com/diskoverdata/diskover-community/master/diskover-web/public/images/diskover.png",
 			"image": "linuxserver/diskover:latest",
 			"env": [
 				{
@@ -1319,18 +1319,6 @@
 					"label": "TZ",
 					"default": "Europe/Amsterdam",
 					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				},
-				{
-					"name": "REDIS_HOST",
-					"label": "REDIS_HOST",
-					"default": "redis",
-					"description": "Redis host (optional)"
-				},
-				{
-					"name": "REDIS_PORT",
-					"label": "REDIS_PORT",
-					"default": "6379",
-					"description": "Redis port (optional)"
 				},
 				{
 					"name": "ES_HOST",
@@ -1355,42 +1343,10 @@
 					"label": "ES_PASS",
 					"default": "changeme",
 					"description": "ElasticSearch password (optional)"
-				},
-				{
-					"name": "INDEX_NAME",
-					"label": "INDEX_NAME",
-					"default": "diskover-",
-					"description": "Index name prefix (optional)"
-				},
-				{
-					"name": "DISKOVER_OPTS",
-					"label": "DISKOVER_OPTS",
-					"default": "",
-					"description": "Optional arguments to pass to the diskover crawler (optional)"
-				},
-				{
-					"name": "WORKER_OPTS",
-					"label": "WORKER_OPTS",
-					"default": "",
-					"description": "Optional argumens to pass to the diskover bots launcher (optional)"
-				},
-				{
-					"name": "RUN_ON_START",
-					"label": "RUN_ON_START",
-					"default": "true",
-					"description": "Initiate a crawl every time the container is started (optional)"
-				},
-				{
-					"name": "USE_CRON",
-					"label": "USE_CRON",
-					"default": "true",
-					"description": "Run a crawl on as a cron job (optional)"
 				}
 			],
 			"ports": [
-				"80:80/tcp",
-				"9181:9181/tcp",
-				"9999:9999/tcp"
+				"80:80/tcp"
 			],
 			"volumes": [
 			{
@@ -2490,6 +2446,18 @@
 					"label": "TZ",
 					"default": "Europe/Amsterdam",
 					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				},
+				{
+					"name": "CMD_DOMAIN",
+					"label": "CMD_DOMAIN",
+					"default": "localhost",
+					"description": "The address the gui will be accessed at (ie. `192.168.1.1` or `hedgedoc.domain.com`)."
+				},
+				{
+					"name": "CMD_URL_ADDPORT",
+					"label": "CMD_URL_ADDPORT",
+					"default": "true",
+					"description": "Set to `false` if accessing at port `80` or `443`."
 				}
 			],
 			"ports": [
