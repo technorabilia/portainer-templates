@@ -687,7 +687,7 @@
         "title": "Chevereto",
         "name": "Chevereto",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/chevereto/config<br>mkdir -p /volume1/docker/chevereto/data</p>",
-        "description": "[Chevereto](https://github.com/Chevereto/Chevereto-Free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It's your hosting and your rules, so say goodbye to closures and restrictions.",
+        "description": "[Chevereto](https://github.com/rodber/chevereto-free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It's your hosting and your rules, so say goodbye to closures and restrictions.",
         "categories": [
             "Websites"
         ],
