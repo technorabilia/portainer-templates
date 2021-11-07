@@ -2348,7 +2348,7 @@
 					"name": "ALLOWED_HOSTS",
 					"label": "ALLOWED_HOSTS",
 					"default": "<ALLOWED_HOSTS>",
-					"description": "array of valid hostnames for the server `['test.com','test2.com']` or `'*'`"
+					"description": "array of valid hostnames for the server `['test.com','test2.com']` (default: `['*']`)"
 				},
 				{
 					"name": "SUPERUSER_EMAIL",
@@ -2373,6 +2373,12 @@
 					"label": "SITE_LOGO_URL",
 					"default": "<SITE_LOGO_URL>",
 					"description": "Custom site logo URL"
+				},
+				{
+					"name": "SECRET_KEY",
+					"label": "SECRET_KEY",
+					"default": "<SECRET_KEY>",
+					"description": "A secret key used for cryptographic signing. docker-healthchecks will generate a secure value if one does not exist"
 				}
 			],
 			"ports": [
@@ -6764,7 +6770,7 @@
 					"name": "PEERS",
 					"label": "PEERS",
 					"default": "1",
-					"description": "Number of peers to create confs for. Required for server mode. Can be a list of names too: myPC,myPhone,myTablet..."
+					"description": "Number of peers to create confs for. Required for server mode. Can also be a list of names: `myPC,myPhone,myTablet` (alphanumeric only)"
 				},
 				{
 					"name": "PEERDNS",
