@@ -6768,7 +6768,7 @@
                 "name": "PEERS",
                 "label": "PEERS",
                 "default": "1",
-                "description": "Number of peers to create confs for. Required for server mode. Can be a list of names too: myPC,myPhone,myTablet..."
+                "description": "Number of peers to create confs for. Required for server mode. Can also be a list of names: `myPC,myPhone,myTablet` (alphanumeric only)"
             },
             {
                 "name": "PEERDNS",
