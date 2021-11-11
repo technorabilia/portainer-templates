@@ -1747,6 +1747,54 @@
     },
     {
         "type": 1,
+        "title": "Emulatorjs",
+        "name": "Emulatorjs",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/emulatorjs/data</p>",
+        "description": "[Emulatorjs](https://github.com/linuxserver/emulatorjs) - A fork of NeptunJS used to run multiple web based emulators for retro games. This projects adds a management layer for adding roms and artwork to make it self hosted.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png",
+        "image": "linuxserver/emulatorjs:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "SUBFOLDER",
+                "label": "SUBFOLDER",
+                "default": "/",
+                "description": "Specify a subfolder for reverse proxies IE '/FOLDER/'"
+            }
+        ],
+        "ports": [
+            "3000:3000/tcp",
+            "80:80/tcp",
+            "4001:4001/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/data",
+                "bind": "/volume1/docker/emulatorjs/data"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
         "title": "Endlessh",
         "name": "Endlessh",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/endlessh/config</p>",
