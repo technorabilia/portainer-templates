@@ -1750,7 +1750,7 @@
         "title": "Emulatorjs",
         "name": "Emulatorjs",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/emulatorjs/data</p>",
-        "description": "[Emulatorjs](https://github.com/linuxserver/emulatorjs) - A fork of NeptunJS used to run multiple web based emulators for retro games. This projects adds a management layer for adding roms and artwork to make it self hosted.",
+        "description": "[Emulatorjs](https://github.com/linuxserver/emulatorjs) - In browser web based emulation portable to nearly any device for many retro consoles. A mix of emulators is used between Libretro and EmulatorJS.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emulatorjs-logo.png",
         "image": "linuxserver/emulatorjs:latest",
