@@ -6091,7 +6091,7 @@
 					"name": "DNSPLUGIN",
 					"label": "DNSPLUGIN",
 					"default": "cloudflare",
-					"description": "Required if `VALIDATION` is set to `dns`. Options are `aliyun`, `cloudflare`, `cloudxns`, `cpanel`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `domeneshop`, `gandi`, `gehirn`, `google`, `he`, `hetzner`, `inwx`, `ionos`, `linode`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `rfc2136`, `route53`, `sakuracloud`, `transip` and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`."
+					"description": "Required if `VALIDATION` is set to `dns`. Options are `aliyun`, `cloudflare`, `cloudxns`, `cpanel`, `desec`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `domeneshop`, `gandi`, `gehirn`, `google`, `he`, `hetzner`, `inwx`, `ionos`, `linode`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `rfc2136`, `route53`, `sakuracloud`, `transip` and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`."
 				},
 				{
 					"name": "PROPAGATION",
