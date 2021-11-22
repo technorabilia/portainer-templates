@@ -4346,6 +4346,12 @@
 					"description": "Optionally specify a directory containing the public keys (works with docker secrets)."
 				},
 				{
+					"name": "PUBLIC_KEY_URL",
+					"label": "PUBLIC_KEY_URL",
+					"default": "https://github.com/username.keys",
+					"description": "Optionally specify a URL containing the public key."
+				},
+				{
 					"name": "SUDO_ACCESS",
 					"label": "SUDO_ACCESS",
 					"default": "false",
