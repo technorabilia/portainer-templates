@@ -4430,6 +4430,18 @@
                 "label": "CONNECTION_SECRET",
                 "default": "",
                 "description": "Optional path to a file inside the container that contains the security token for accessing the Web UI (ie. `/path/to/file`). Overrides `CONNECTION_TOKEN`."
+            },
+            {
+                "name": "SUDO_PASSWORD",
+                "label": "SUDO_PASSWORD",
+                "default": "password",
+                "description": "If this optional variable is set, user will have sudo access in the openvscode-server terminal with the specified password."
+            },
+            {
+                "name": "SUDO_PASSWORD_HASH",
+                "label": "SUDO_PASSWORD_HASH",
+                "default": "",
+                "description": "Optionally set sudo password via hash (takes priority over `SUDO_PASSWORD` var). Format is `$type$salt$hashed`."
             }
         ],
         "ports": [
