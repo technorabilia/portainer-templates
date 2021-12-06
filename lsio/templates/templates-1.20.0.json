@@ -6196,12 +6196,6 @@
                 "label": "STAGING",
                 "default": "false",
                 "description": "Set to `true` to retrieve certs in staging mode. Rate limits will be much higher, but the resulting cert will not pass the browser's security test. Only to be used for testing purposes."
-            },
-            {
-                "name": "MAXMINDDB_LICENSE_KEY",
-                "label": "MAXMINDDB_LICENSE_KEY",
-                "default": "",
-                "description": "Add your MaxmindDB license key to automatically download the GeoLite2-City.mmdb database. Download location is /config/geoip2db. The database is updated weekly."
             }
         ],
         "ports": [
