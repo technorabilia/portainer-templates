@@ -6676,14 +6676,14 @@
             {
                 "name": "MEM_LIMIT",
                 "label": "MEM_LIMIT",
-                "default": "1024M",
-                "description": "Optionally change the Java memory limit (-Xmx) (default is 1024M)."
+                "default": "1024",
+                "description": "Optionally change the Java memory limit. Set to `default` to reset to default"
             },
             {
                 "name": "MEM_STARTUP",
                 "label": "MEM_STARTUP",
-                "default": "1024M",
-                "description": "Optionally change the Java initial memory (-Xms) (default is 1024M)."
+                "default": "1024",
+                "description": "Optionally change the Java initial/minimum memory. Set to `default` to reset to default"
             }
         ],
         "ports": [
