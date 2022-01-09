@@ -2433,6 +2433,12 @@
 					"label": "SECRET_KEY",
 					"default": "<SECRET_KEY>",
 					"description": "A secret key used for cryptographic signing. docker-healthchecks will generate a secure value if one does not exist"
+				},
+				{
+					"name": "APPRISE_ENABLED",
+					"label": "APPRISE_ENABLED",
+					"default": "True/False",
+					"description": "Defaults to False. A boolean that turns on/off the Apprise integration (https://github.com/caronc/apprise)"
 				}
 			],
 			"ports": [
