@@ -1447,6 +1447,145 @@
     },
     {
         "type": 1,
+        "title": "Doplarr",
+        "name": "Doplarr",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/doplarr/config</p>",
+        "description": "[Doplarr](https://github.com/kiranshila/Doplarr) is an *arr request bot for Discord.'",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr-logo_title.png",
+        "image": "linuxserver/doplarr:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "DISCORD__TOKEN",
+                "label": "DISCORD__TOKEN",
+                "default": "<discord__token>",
+                "description": "Specify your discord bot token."
+            },
+            {
+                "name": "OVERSEERR__API",
+                "label": "OVERSEERR__API",
+                "default": "",
+                "description": "Specify your Overseerr API key. Leave blank if using Radarr/Sonarr."
+            },
+            {
+                "name": "OVERSEERR__URL",
+                "label": "OVERSEERR__URL",
+                "default": "http://localhost:5055",
+                "description": "Specify your Overseerr URL. Leave blank if using Radarr/Sonarr."
+            },
+            {
+                "name": "RADARR__API",
+                "label": "RADARR__API",
+                "default": "",
+                "description": "Specify your Radarr API key. Leave blank if using Overseerr."
+            },
+            {
+                "name": "RADARR__URL",
+                "label": "RADARR__URL",
+                "default": "http://localhost:7878",
+                "description": "Specify your Radarr URL. Leave blank if using Overseerr."
+            },
+            {
+                "name": "SONARR__API",
+                "label": "SONARR__API",
+                "default": "",
+                "description": "Specify your Sonarr API key. Leave blank if using Overseerr."
+            },
+            {
+                "name": "SONARR__URL",
+                "label": "SONARR__URL",
+                "default": "http://localhost:8989",
+                "description": "Specify your Sonarr URL. Leave blank if using Overseerr."
+            },
+            {
+                "name": "DISCORD__MAX_RESULTS",
+                "label": "DISCORD__MAX_RESULTS",
+                "default": "25",
+                "description": "Sets the maximum size of the search results selection"
+            },
+            {
+                "name": "DISCORD__ROLE_ID",
+                "label": "DISCORD__ROLE_ID",
+                "default": "",
+                "description": "The discord role id for users of the bot (omitting this lets everyone on the server use the bot)"
+            },
+            {
+                "name": "DISCORD__REQUESTED_MSG_STYLE",
+                "label": "DISCORD__REQUESTED_MSG_STYLE",
+                "default": ":plain",
+                "description": "Sets the style of the request alert message. One of `:plain` `:embed` `:none`"
+            },
+            {
+                "name": "SONARR__QUALITY_PROFILE",
+                "label": "SONARR__QUALITY_PROFILE",
+                "default": "",
+                "description": "The name of the quality profile to use by default for Sonarr"
+            },
+            {
+                "name": "RADARR__QUALITY_PROFILE",
+                "label": "RADARR__QUALITY_PROFILE",
+                "default": "",
+                "description": "The name of the quality profile to use by default for Radarr"
+            },
+            {
+                "name": "SONARR__LANGUAGE_PROFILE",
+                "label": "SONARR__LANGUAGE_PROFILE",
+                "default": "",
+                "description": "The name of the language profile to use by default for Radarr"
+            },
+            {
+                "name": "OVERSEERR__DEFAULT_ID",
+                "label": "OVERSEERR__DEFAULT_ID",
+                "default": "",
+                "description": "The Overseerr user id to use by default if there is no associated discord account for the requester"
+            },
+            {
+                "name": "PARTIAL_SEASONS",
+                "label": "PARTIAL_SEASONS",
+                "default": "true",
+                "description": "Sets whether users can request partial seasons."
+            },
+            {
+                "name": "LOG_LEVEL",
+                "label": "LOG_LEVEL",
+                "default": ":info",
+                "description": "The log level for the logging backend. This can be changed for debugging purposes. One of trace `:debug` `:info` `:warn` `:error` `:fatal` `:report`"
+            },
+            {
+                "name": "JAVA_OPTS",
+                "label": "JAVA_OPTS",
+                "default": "",
+                "description": "For passing additional java options."
+            }
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/doplarr/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
         "title": "Doublecommander",
         "name": "Doublecommander",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/doublecommander/config<br>mkdir -p /volume1/docker/doublecommander/data</p>",
