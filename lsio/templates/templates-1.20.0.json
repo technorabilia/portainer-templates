@@ -1482,7 +1482,7 @@
             {
                 "name": "OVERSEERR__API",
                 "label": "OVERSEERR__API",
-                "default": "",
+                "default": "<overseerr__api>",
                 "description": "Specify your Overseerr API key. Leave blank if using Radarr/Sonarr."
             },
             {
@@ -1494,7 +1494,7 @@
             {
                 "name": "RADARR__API",
                 "label": "RADARR__API",
-                "default": "",
+                "default": "<radarr__api>",
                 "description": "Specify your Radarr API key. Leave blank if using Overseerr."
             },
             {
@@ -1506,7 +1506,7 @@
             {
                 "name": "SONARR__API",
                 "label": "SONARR__API",
-                "default": "",
+                "default": "<sonarr__api>",
                 "description": "Specify your Sonarr API key. Leave blank if using Overseerr."
             },
             {
@@ -1524,7 +1524,7 @@
             {
                 "name": "DISCORD__ROLE_ID",
                 "label": "DISCORD__ROLE_ID",
-                "default": "",
+                "default": "<not_set_by_default>",
                 "description": "The discord role id for users of the bot (omitting this lets everyone on the server use the bot)"
             },
             {
@@ -1536,25 +1536,25 @@
             {
                 "name": "SONARR__QUALITY_PROFILE",
                 "label": "SONARR__QUALITY_PROFILE",
-                "default": "",
+                "default": "<not_set_by_default>",
                 "description": "The name of the quality profile to use by default for Sonarr"
             },
             {
                 "name": "RADARR__QUALITY_PROFILE",
                 "label": "RADARR__QUALITY_PROFILE",
-                "default": "",
+                "default": "<not_set_by_default>",
                 "description": "The name of the quality profile to use by default for Radarr"
             },
             {
                 "name": "SONARR__LANGUAGE_PROFILE",
                 "label": "SONARR__LANGUAGE_PROFILE",
-                "default": "",
+                "default": "<not_set_by_default>",
                 "description": "The name of the language profile to use by default for Radarr"
             },
             {
                 "name": "OVERSEERR__DEFAULT_ID",
                 "label": "OVERSEERR__DEFAULT_ID",
-                "default": "",
+                "default": "<not_set_by_default>",
                 "description": "The Overseerr user id to use by default if there is no associated discord account for the requester"
             },
             {
@@ -1572,7 +1572,7 @@
             {
                 "name": "JAVA_OPTS",
                 "label": "JAVA_OPTS",
-                "default": "",
+                "default": "<not_set_by_default>",
                 "description": "For passing additional java options."
             }
         ],
@@ -5035,6 +5035,76 @@
             {
                 "container": "/movies",
                 "bind": "/volume1/docker/plex/movies"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
+        "title": "Plex-meta-manager",
+        "name": "Plex-meta-manager",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/plex-meta-manager/config</p>",
+        "description": "[Plex-meta-manager](https://github.com/meisnate12/Plex-Meta-Manager) is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.",
+        "categories": [
+            "Media Management"
+        ],
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-meta-manager-banner.png",
+        "image": "linuxserver/plex-meta-manager:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "PMM_CONFIG",
+                "label": "PMM_CONFIG",
+                "default": "/config/config.yml",
+                "description": "Specify a custom config file to use."
+            },
+            {
+                "name": "PMM_TIME",
+                "label": "PMM_TIME",
+                "default": "03:00",
+                "description": "Comma-separated list of times to update each day. Format: `HH:MM`."
+            },
+            {
+                "name": "PMM_RUN",
+                "label": "PMM_RUN",
+                "default": "False",
+                "description": "Set to `True` to run without the scheduler."
+            },
+            {
+                "name": "PMM_TEST",
+                "label": "PMM_TEST",
+                "default": "False",
+                "description": "Set to `True` to run in debug mode with only collections that have `test: true`."
+            },
+            {
+                "name": "PMM_NO_MISSING",
+                "label": "PMM_NO_MISSING",
+                "default": "False",
+                "description": "Set to `True` to run without any of the missing movie/show functions."
+            }
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/plex-meta-manager/config"
             }
         ],
         "restart_policy": "unless-stopped"
