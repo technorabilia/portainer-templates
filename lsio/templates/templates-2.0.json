@@ -6961,14 +6961,13 @@
 			"title": "Webtop",
 			"name": "Webtop",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/webtop/config<br></p>",
-			"description": "[Webtop](https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
+			"description": "[Webtop](https://github.com/linuxserver/gclient) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
 			"categories": [
 				"Utilities"
 			],
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png",
 			"image": "linuxserver/webtop:latest",
-			"privileged": true,
 			"env": [
 				{
 					"name": "PUID",
@@ -6993,6 +6992,12 @@
 					"label": "SUBFOLDER",
 					"default": "/",
 					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/`"
+				},
+				{
+					"name": "KEYBOARD",
+					"label": "KEYBOARD",
+					"default": "en-us-qwerty",
+					"description": "See the keyboard layouts section for more information and options."
 				}
 			],
 			"ports": [
