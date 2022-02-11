@@ -1430,6 +1430,12 @@
                 "label": "WEBROOT",
                 "default": "domoticz",
                 "description": "Sets webroot to domoticz for usage with subfolder reverse proxy. Not needed unless reverse proxying."
+            },
+            {
+                "name": "DBASE",
+                "label": "DBASE",
+                "default": "<path to database>",
+                "description": "Sets path to database. Do not set unless you know what this does."
             }
         ],
         "ports": [
