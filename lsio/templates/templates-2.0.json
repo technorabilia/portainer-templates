@@ -4539,8 +4539,8 @@
 				{
 					"name": "CONNECTION_TOKEN",
 					"label": "CONNECTION_TOKEN",
-					"default": "supersecrettoken",
-					"description": "Optional security token for accessing the Web UI."
+					"default": "",
+					"description": "Optional security token for accessing the Web UI (ie. `supersecrettoken`)."
 				},
 				{
 					"name": "CONNECTION_SECRET",
