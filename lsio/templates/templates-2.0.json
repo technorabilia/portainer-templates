@@ -1226,6 +1226,18 @@
 					"label": "TZ",
 					"default": "Europe/Amsterdam",
 					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				},
+				{
+					"name": "SUBFOLDER",
+					"label": "SUBFOLDER",
+					"default": "/",
+					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/`"
+				},
+				{
+					"name": "KEYBOARD",
+					"label": "KEYBOARD",
+					"default": "en-us-qwerty",
+					"description": "See the keyboard layouts section for more information and options."
 				}
 			],
 			"ports": [
@@ -4344,10 +4356,16 @@
 					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				},
 				{
-					"name": "VERSION",
-					"label": "VERSION",
-					"default": "latest",
-					"description": "Supported values are LATEST, PLEXPASS or a specific version number."
+					"name": "NZBGET_USER",
+					"label": "NZBGET_USER",
+					"default": "nzbget",
+					"description": "Specify the user for web authentication."
+				},
+				{
+					"name": "NZBGET_PASS",
+					"label": "NZBGET_PASS",
+					"default": "tegbzn6789",
+					"description": "Specify the password for web authentication."
 				}
 			],
 			"ports": [
@@ -6772,6 +6790,12 @@
 					"label": "WHITELIST",
 					"default": "iplist",
 					"description": "Specify an optional list of comma separated ip whitelist. Fill rpc-whitelist setting."
+				},
+				{
+					"name": "PEERPORT",
+					"label": "PEERPORT",
+					"default": "peerport",
+					"description": "Specify an optional port for torrent TCP/UDP connections. Fill peer-port setting."
 				},
 				{
 					"name": "HOST_WHITELIST",
