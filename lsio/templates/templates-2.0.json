@@ -6254,10 +6254,10 @@
 					"description": "for UserID"
 				},
 				{
-					"name": "NGINX_APP_URL",
-					"label": "NGINX_APP_URL",
-					"default": "<hostname or ip>",
-					"description": "Hostname or IP and port if applicable IE <ip or hostname>:8080"
+					"name": "APP_URL",
+					"label": "APP_URL",
+					"default": "http://localhost:8080",
+					"description": "Hostname or IP and port if applicable, be sure to define https/http"
 				},
 				{
 					"name": "MYSQL_PORT_3306_TCP_ADDR",
@@ -6288,6 +6288,12 @@
 					"label": "MYSQL_PASSWORD",
 					"default": "changeme",
 					"description": "Mysql password to use"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
