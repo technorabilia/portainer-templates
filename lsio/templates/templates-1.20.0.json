@@ -3074,6 +3074,58 @@
     },
     {
         "type": 1,
+        "title": "Kdenlive",
+        "name": "Kdenlive",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kdenlive/config</p>",
+        "description": "[Kdenlive](https://kdenlive.org/) is a powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kdenlive-logo.png",
+        "image": "linuxserver/kdenlive:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for GroupID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for UserID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "SUBFOLDER",
+                "label": "SUBFOLDER",
+                "default": "/",
+                "description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/`"
+            },
+            {
+                "name": "KEYBOARD",
+                "label": "KEYBOARD",
+                "default": "en-us-qwerty",
+                "description": "See the keyboard layouts section for more information and options."
+            }
+        ],
+        "ports": [
+            "3000:3000/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/kdenlive/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
         "title": "Lazylibrarian",
         "name": "Lazylibrarian",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/lazylibrarian/config<br>mkdir -p /volume1/docker/lazylibrarian/downloads<br>mkdir -p /volume1/docker/lazylibrarian/books</p>",
