@@ -2597,12 +2597,6 @@
                 "description": "Use TLS for SMTP (`True` or `False`)"
             },
             {
-                "name": "ALLOWED_HOSTS",
-                "label": "ALLOWED_HOSTS",
-                "default": "<ALLOWED_HOSTS>",
-                "description": "array of valid hostnames for the server `['test.com','test2.com']` (default: `['*']`)"
-            },
-            {
                 "name": "SUPERUSER_EMAIL",
                 "label": "SUPERUSER_EMAIL",
                 "default": "<SUPERUSER_EMAIL>",
@@ -2625,6 +2619,12 @@
                 "label": "SITE_LOGO_URL",
                 "default": "<SITE_LOGO_URL>",
                 "description": "Custom site logo URL"
+            },
+            {
+                "name": "ALLOWED_HOSTS",
+                "label": "ALLOWED_HOSTS",
+                "default": "<ALLOWED_HOSTS>",
+                "description": "array of valid hostnames for the server `['test.com','test2.com']` (default: `['*']`)"
             },
             {
                 "name": "SECRET_KEY",
