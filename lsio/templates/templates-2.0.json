@@ -4870,6 +4870,56 @@
 		},
 		{
 			"type": 1,
+			"title": "Paperless-ngx",
+			"name": "Paperless-ngx",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/paperless-ngx/config<br>mkdir -p /volume1/docker/paperless-ngx/data</p>",
+			"description": "[Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents.'",
+			"platform": "linux",
+			"logo": "",
+			"image": "linuxserver/paperless-ngx:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for GroupID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for UserID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				},
+				{
+					"name": "REDIS_URL",
+					"label": "REDIS_URL",
+					"default": "",
+					"description": "Specify an external redis instance to use. Can optionally include a port (`redis:6379`) and/or db (`redis/foo`). If left blank or not included, will use a built-in redis instance. If changed after initial setup will also require manual modification of /config/settings.py"
+				}
+			],
+			"ports": [
+				"8000:8000/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/paperless-ngx/config"
+			},
+			{
+				"container": "/data",
+				"bind": "/volume1/docker/paperless-ngx/data"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Papermerge",
 			"name": "Papermerge",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/papermerge/config<br>mkdir -p /volume1/docker/papermerge/data</p>",
