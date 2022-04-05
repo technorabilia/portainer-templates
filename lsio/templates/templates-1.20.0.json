@@ -211,6 +211,12 @@
                 "label": "TZ",
                 "default": "Europe/Amsterdam",
                 "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "CSRF_TRUSTED_ORIGINS",
+                "label": "CSRF_TRUSTED_ORIGINS",
+                "default": "http://127.0.0.1:8000,https://babybuddy.domain.com",
+                "description": "Add any address you'd like to access babybuddy at (comma separated, no spaces)"
             }
         ],
         "ports": [
