@@ -7364,6 +7364,12 @@
 					"label": "ALLOWEDIPS",
 					"default": "0.0.0.0/0",
 					"description": "The IPs/Ranges that the peers will be able to reach using the VPN connection. If not specified the default value is: '0.0.0.0/0, ::0/0' This will cause ALL traffic to route through the VPN, if you want split tunneling, set this to only the IPs you would like to use the tunnel AND the ip of the server's WG ip, such as 10.13.13.1."
+				},
+				{
+					"name": "LOG_CONFS",
+					"label": "LOG_CONFS",
+					"default": "true",
+					"description": "Generated QR codes will be displayed in the docker log. Set to `false` to skip log output."
 				}
 			],
 			"ports": [
