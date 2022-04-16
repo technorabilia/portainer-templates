@@ -6936,7 +6936,7 @@
 					"name": "TRANSMISSION_WEB_HOME",
 					"label": "TRANSMISSION_WEB_HOME",
 					"default": "/combustion-release/",
-					"description": "Specify an alternative UI options are [`/combustion-release/`](https://github.com/Secretmapper/combustion), [`/transmission-web-control/`](https://github.com/ronggang/transmission-web-control), [`/kettu/`](https://github.com/endor/kettu) and [`/flood-for-transmission/`](https://github.com/johman10/flood-for-transmission)."
+					"description": "Specify an alternative UI options are [`/combustion-release/`](https://github.com/Secretmapper/combustion), [`/transmission-web-control/`](https://github.com/ronggang/transmission-web-control), [`/kettu/`](https://github.com/endor/kettu), [`/flood-for-transmission/`](https://github.com/johman10/flood-for-transmission), and [`/transmissionic/`](https://github.com/6c65726f79/Transmissionic)."
 				},
 				{
 					"name": "USER",
@@ -6954,19 +6954,19 @@
 					"name": "WHITELIST",
 					"label": "WHITELIST",
 					"default": "iplist",
-					"description": "Specify an optional list of comma separated ip whitelist. Fill rpc-whitelist setting."
+					"description": "Specify an optional list of comma separated ip whitelist. Fills rpc-whitelist setting."
 				},
 				{
 					"name": "PEERPORT",
 					"label": "PEERPORT",
 					"default": "peerport",
-					"description": "Specify an optional port for torrent TCP/UDP connections. Fill peer-port setting."
+					"description": "Specify an optional port for torrent TCP/UDP connections. Fills peer-port setting."
 				},
 				{
 					"name": "HOST_WHITELIST",
 					"label": "HOST_WHITELIST",
-					"default": "dnsnane list",
-					"description": "Specify an optional list of comma separated dns name whitelist. Fill rpc-host-whitelist setting."
+					"default": "dnsname list",
+					"description": "Specify an optional list of comma separated dns name whitelist. Fills rpc-host-whitelist setting."
 				}
 			],
 			"ports": [
