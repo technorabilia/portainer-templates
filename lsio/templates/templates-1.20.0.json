@@ -1663,10 +1663,22 @@
                 "description": "The name of the quality profile to use by default for Radarr"
             },
             {
+                "name": "SONARR__ROOTFOLDER",
+                "label": "SONARR__ROOTFOLDER",
+                "default": "<not_set_by_default>",
+                "description": "The root folder to use by default for Sonarr"
+            },
+            {
+                "name": "RADARR__ROOTFOLDER",
+                "label": "RADARR__ROOTFOLDER",
+                "default": "<not_set_by_default>",
+                "description": "The root folder to use by default for Radarr"
+            },
+            {
                 "name": "SONARR__LANGUAGE_PROFILE",
                 "label": "SONARR__LANGUAGE_PROFILE",
                 "default": "<not_set_by_default>",
-                "description": "The name of the language profile to use by default for Radarr"
+                "description": "The name of the language profile to use by default for Sonarr"
             },
             {
                 "name": "OVERSEERR__DEFAULT_ID",
