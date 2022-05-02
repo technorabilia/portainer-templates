@@ -1641,12 +1641,6 @@
 					"description": "Sets the maximum size of the search results selection"
 				},
 				{
-					"name": "DISCORD__ROLE_ID",
-					"label": "DISCORD__ROLE_ID",
-					"default": "<not_set_by_default>",
-					"description": "The discord role id for users of the bot (omitting this lets everyone on the server use the bot)"
-				},
-				{
 					"name": "DISCORD__REQUESTED_MSG_STYLE",
 					"label": "DISCORD__REQUESTED_MSG_STYLE",
 					"default": ":plain",
