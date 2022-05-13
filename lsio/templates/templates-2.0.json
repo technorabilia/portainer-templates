@@ -4887,7 +4887,7 @@
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/paperless-ngx/config<br>mkdir -p /volume1/docker/paperless-ngx/data</p>",
 			"description": "[Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents.'",
 			"platform": "linux",
-			"logo": "",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/paperless-ngx-banner.png",
 			"image": "linuxserver/paperless-ngx:latest",
 			"env": [
 				{
