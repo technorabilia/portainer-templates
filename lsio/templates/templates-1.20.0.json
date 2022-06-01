@@ -207,6 +207,18 @@
         "image": "linuxserver/babybuddy:latest",
         "env": [
             {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for UserID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for GroupID"
+            },
+            {
                 "name": "TZ",
                 "label": "TZ",
                 "default": "Europe/Amsterdam",
