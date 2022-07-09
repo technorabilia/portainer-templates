@@ -3150,6 +3150,58 @@
     },
     {
         "type": 1,
+        "title": "Kasm",
+        "name": "Kasm",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kasm/opt<br>mkdir -p /volume1/docker/kasm/profiles</p>",
+        "description": "[Kasm](https://www.kasmweb.com/?utm_campaign=LinuxServer&utm_source=listing) Workspaces is a docker container streaming platform for delivering browser-based access to desktops, applications, and web services. Kasm uses devops-enabled Containerized Desktop Infrastructure (CDI) to create on-demand, disposable, docker containers that are accessible via web browser. Example use-cases include Remote Browser Isolation (RBI), Data Loss Prevention (DLP), Desktop as a Service (DaaS), Secure Remote Access Services (RAS), and Open Source Intelligence (OSINT) collections. The rendering of the graphical-based containers is powered by the open-source project [KasmVNC](https://www.kasmweb.com/kasmvnc.html?utm_campaign=LinuxServer&utm_source=kasmvnc).",
+        "platform": "linux",
+        "logo": "https://kasm-ci.s3.amazonaws.com/kasm_wide.png",
+        "image": "linuxserver/kasm:latest",
+        "privileged": true,
+        "env": [
+            {
+                "name": "KASM_PORT",
+                "label": "KASM_PORT",
+                "default": "443",
+                "description": "Specify the port you bind to the outside for Kasm Workspaces."
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "DOCKER_HUB_USERNAME",
+                "label": "DOCKER_HUB_USERNAME",
+                "default": "USER",
+                "description": "Optionally specify a DockerHub Username to pull private images."
+            },
+            {
+                "name": "DOCKER_HUB_PASSWORD",
+                "label": "DOCKER_HUB_PASSWORD",
+                "default": "PASS",
+                "description": "Optionally specify a DockerHub password to pull private images."
+            }
+        ],
+        "ports": [
+            "3000:3000/tcp",
+            "443:443/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/opt",
+                "bind": "/volume1/docker/kasm/opt"
+            },
+            {
+                "container": "/profiles",
+                "bind": "/volume1/docker/kasm/profiles"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
         "title": "Kdenlive",
         "name": "Kdenlive",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kdenlive/config</p>",
