@@ -767,7 +767,7 @@
 				{
 					"name": "DOCKER_MODS",
 					"label": "DOCKER_MODS",
-					"default": "linuxserver/calibre-web:calibre",
+					"default": "linuxserver/mods:universal-calibre",
 					"description": "#optional & **x86-64 only** Adds the ability to perform ebook conversion"
 				},
 				{
