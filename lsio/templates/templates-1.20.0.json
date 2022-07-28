@@ -1605,13 +1605,13 @@
             {
                 "name": "DISCORD__TOKEN",
                 "label": "DISCORD__TOKEN",
-                "default": "<discord__token>",
+                "default": "",
                 "description": "Specify your discord bot token."
             },
             {
                 "name": "OVERSEERR__API",
                 "label": "OVERSEERR__API",
-                "default": "<overseerr__api>",
+                "default": "",
                 "description": "Specify your Overseerr API key. Leave blank if using Radarr/Sonarr."
             },
             {
@@ -1623,7 +1623,7 @@
             {
                 "name": "RADARR__API",
                 "label": "RADARR__API",
-                "default": "<radarr__api>",
+                "default": "",
                 "description": "Specify your Radarr API key. Leave blank if using Overseerr."
             },
             {
@@ -1635,7 +1635,7 @@
             {
                 "name": "SONARR__API",
                 "label": "SONARR__API",
-                "default": "<sonarr__api>",
+                "default": "",
                 "description": "Specify your Sonarr API key. Leave blank if using Overseerr."
             },
             {
@@ -1659,37 +1659,37 @@
             {
                 "name": "SONARR__QUALITY_PROFILE",
                 "label": "SONARR__QUALITY_PROFILE",
-                "default": "<not_set_by_default>",
+                "default": "",
                 "description": "The name of the quality profile to use by default for Sonarr"
             },
             {
                 "name": "RADARR__QUALITY_PROFILE",
                 "label": "RADARR__QUALITY_PROFILE",
-                "default": "<not_set_by_default>",
+                "default": "",
                 "description": "The name of the quality profile to use by default for Radarr"
             },
             {
                 "name": "SONARR__ROOTFOLDER",
                 "label": "SONARR__ROOTFOLDER",
-                "default": "<not_set_by_default>",
+                "default": "",
                 "description": "The root folder to use by default for Sonarr"
             },
             {
                 "name": "RADARR__ROOTFOLDER",
                 "label": "RADARR__ROOTFOLDER",
-                "default": "<not_set_by_default>",
+                "default": "",
                 "description": "The root folder to use by default for Radarr"
             },
             {
                 "name": "SONARR__LANGUAGE_PROFILE",
                 "label": "SONARR__LANGUAGE_PROFILE",
-                "default": "<not_set_by_default>",
+                "default": "",
                 "description": "The name of the language profile to use by default for Sonarr"
             },
             {
                 "name": "OVERSEERR__DEFAULT_ID",
                 "label": "OVERSEERR__DEFAULT_ID",
-                "default": "<not_set_by_default>",
+                "default": "",
                 "description": "The Overseerr user id to use by default if there is no associated discord account for the requester"
             },
             {
@@ -1707,7 +1707,7 @@
             {
                 "name": "JAVA_OPTS",
                 "label": "JAVA_OPTS",
-                "default": "<not_set_by_default>",
+                "default": "",
                 "description": "For passing additional java options."
             }
         ],
