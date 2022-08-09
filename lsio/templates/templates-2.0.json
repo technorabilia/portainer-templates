@@ -794,6 +794,52 @@
 		},
 		{
 			"type": 1,
+			"title": "Changedetection.io",
+			"name": "Changedetection.io",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/changedetection.io/config</p>",
+			"description": "[Changedetection.io](https://github.com/dgtlmoon/changedetection.io) provides free, open-source web page monitoring, notification and change detection.",
+			"platform": "linux",
+			"logo": "https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/changedetection-icon.png",
+			"image": "linuxserver/changedetection.io:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				},
+				{
+					"name": "BASE_URL",
+					"label": "BASE_URL",
+					"default": "",
+					"description": "Specify the full URL (including protocol) when running behind a reverse proxy"
+				}
+			],
+			"ports": [
+				"5000:5000/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/changedetection.io/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Chevereto",
 			"name": "Chevereto",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/chevereto/config<br>mkdir -p /volume1/docker/chevereto/data</p>",
