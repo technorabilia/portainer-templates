@@ -2145,7 +2145,7 @@
 			"type": 1,
 			"title": "Fail2ban",
 			"name": "Fail2ban",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/fail2ban/config<br>mkdir -p /volume1/docker/fail2ban/var/log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/airsonic/airsonic.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/apache2:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/audit/audit.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/authelia/authelia.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/emby/embyserver.txt:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/exim/mainlog:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/filebrowser/filebrowser.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/gitea/gitea.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/homeassistant/home-assistant.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/lighttpd/error.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/nextcloud/nextcloud.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/nginx:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/nzbget/nzbget.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/overseerr/overseerr.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/prowlarr/prowlarr.txt:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/radarr/radarr.txt:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/roundcube/errors:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/sabnzbd/sabnzbd.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/sonarr/sonarr.txt:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/unificontroller/server.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/vaultwarden/vaultwarden.log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/vsftpd/vsftpd.log:ro</p>",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/fail2ban/config<br>mkdir -p /volume1/docker/fail2ban/var/log:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/airsonic:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/apache2:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/authelia:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/emby:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/filebrowser:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/homeassistant:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/lighttpd:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/nextcloud:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/nginx:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/nzbget:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/overseerr:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/prowlarr:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/radarr:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/sabnzbd:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/sonarr:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/unificontroller:ro<br>mkdir -p /volume1/docker/fail2ban/remotelogs/vaultwarden:ro</p>",
 			"description": "[Fail2ban](http://www.fail2ban.org/) is a daemon to ban hosts that cause multiple authentication errors.",
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/fail2ban-logo.png",
@@ -2184,92 +2184,72 @@
 				"bind": "/volume1/docker/fail2ban/var/log:ro"
 			},
 			{
-				"container": "/remotelogs/airsonic/airsonic.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/airsonic/airsonic.log:ro"
+				"container": "/remotelogs/airsonic:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/airsonic:ro"
 			},
 			{
 				"container": "/remotelogs/apache2:ro",
 				"bind": "/volume1/docker/fail2ban/remotelogs/apache2:ro"
 			},
 			{
-				"container": "/remotelogs/audit/audit.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/audit/audit.log:ro"
+				"container": "/remotelogs/authelia:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/authelia:ro"
 			},
 			{
-				"container": "/remotelogs/authelia/authelia.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/authelia/authelia.log:ro"
+				"container": "/remotelogs/emby:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/emby:ro"
 			},
 			{
-				"container": "/remotelogs/emby/embyserver.txt:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/emby/embyserver.txt:ro"
+				"container": "/remotelogs/filebrowser:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/filebrowser:ro"
 			},
 			{
-				"container": "/remotelogs/exim/mainlog:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/exim/mainlog:ro"
+				"container": "/remotelogs/homeassistant:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/homeassistant:ro"
 			},
 			{
-				"container": "/remotelogs/filebrowser/filebrowser.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/filebrowser/filebrowser.log:ro"
+				"container": "/remotelogs/lighttpd:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/lighttpd:ro"
 			},
 			{
-				"container": "/remotelogs/gitea/gitea.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/gitea/gitea.log:ro"
-			},
-			{
-				"container": "/remotelogs/homeassistant/home-assistant.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/homeassistant/home-assistant.log:ro"
-			},
-			{
-				"container": "/remotelogs/lighttpd/error.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/lighttpd/error.log:ro"
-			},
-			{
-				"container": "/remotelogs/nextcloud/nextcloud.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/nextcloud/nextcloud.log:ro"
+				"container": "/remotelogs/nextcloud:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/nextcloud:ro"
 			},
 			{
 				"container": "/remotelogs/nginx:ro",
 				"bind": "/volume1/docker/fail2ban/remotelogs/nginx:ro"
 			},
 			{
-				"container": "/remotelogs/nzbget/nzbget.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/nzbget/nzbget.log:ro"
+				"container": "/remotelogs/nzbget:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/nzbget:ro"
 			},
 			{
-				"container": "/remotelogs/overseerr/overseerr.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/overseerr/overseerr.log:ro"
+				"container": "/remotelogs/overseerr:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/overseerr:ro"
 			},
 			{
-				"container": "/remotelogs/prowlarr/prowlarr.txt:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/prowlarr/prowlarr.txt:ro"
+				"container": "/remotelogs/prowlarr:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/prowlarr:ro"
 			},
 			{
-				"container": "/remotelogs/radarr/radarr.txt:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/radarr/radarr.txt:ro"
+				"container": "/remotelogs/radarr:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/radarr:ro"
 			},
 			{
-				"container": "/remotelogs/roundcube/errors:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/roundcube/errors:ro"
+				"container": "/remotelogs/sabnzbd:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/sabnzbd:ro"
 			},
 			{
-				"container": "/remotelogs/sabnzbd/sabnzbd.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/sabnzbd/sabnzbd.log:ro"
+				"container": "/remotelogs/sonarr:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/sonarr:ro"
 			},
 			{
-				"container": "/remotelogs/sonarr/sonarr.txt:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/sonarr/sonarr.txt:ro"
+				"container": "/remotelogs/unificontroller:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/unificontroller:ro"
 			},
 			{
-				"container": "/remotelogs/unificontroller/server.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/unificontroller/server.log:ro"
-			},
-			{
-				"container": "/remotelogs/vaultwarden/vaultwarden.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/vaultwarden/vaultwarden.log:ro"
-			},
-			{
-				"container": "/remotelogs/vsftpd/vsftpd.log:ro",
-				"bind": "/volume1/docker/fail2ban/remotelogs/vsftpd/vsftpd.log:ro"
+				"container": "/remotelogs/vaultwarden:ro",
+				"bind": "/volume1/docker/fail2ban/remotelogs/vaultwarden:ro"
 			}
 			],
 			"restart_policy": "unless-stopped"
