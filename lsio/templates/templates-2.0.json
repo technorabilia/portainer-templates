@@ -7250,7 +7250,7 @@
 				{
 					"name": "RUN_OPTS",
 					"label": "RUN_OPTS",
-					"default": "<run options here>",
+					"default": "",
 					"description": "Optionally specify additional arguments to be passed. See Additional runtime parameters."
 				}
 			],
