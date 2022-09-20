@@ -6511,6 +6511,12 @@
                 "label": "PGID",
                 "default": "100",
                 "description": "for GroupID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
             }
         ],
         "ports": [
