@@ -7261,6 +7261,12 @@
 					"description": "for GroupID"
 				},
 				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				},
+				{
 					"name": "MEM_LIMIT",
 					"label": "MEM_LIMIT",
 					"default": "1024",
