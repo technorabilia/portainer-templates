@@ -6736,7 +6736,7 @@
 					"name": "SUBDOMAINS",
 					"label": "SUBDOMAINS",
 					"default": "www,",
-					"description": "Subdomains you'd like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this _exactly_ to `wildcard` (wildcard cert is available via `dns` and `duckdns` validation only)"
+					"description": "Subdomains you'd like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this *exactly* to `wildcard` (wildcard cert is available via `dns` and `duckdns` validation only)"
 				},
 				{
 					"name": "CERTPROVIDER",
@@ -6760,7 +6760,7 @@
 					"name": "DUCKDNSTOKEN",
 					"label": "DUCKDNSTOKEN",
 					"default": "",
-					"description": "Required if `VALIDATION` is set to `duckdns`. Retrieve your token from https://www.duckdns.org"
+					"description": "Required if `VALIDATION` is set to `duckdns`. Retrieve your token from <https://www.duckdns.org>"
 				},
 				{
 					"name": "EMAIL",
