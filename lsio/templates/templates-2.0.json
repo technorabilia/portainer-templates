@@ -622,7 +622,7 @@
 					"name": "DB_DATABASE",
 					"label": "DB_DATABASE",
 					"default": "bookstackapp",
-					"description": "for specifying the database to be used"
+					"description": "for specifying the database to be used (non-alphanumeric passwords must be properly escaped.)"
 				}
 			],
 			"ports": [
@@ -6730,13 +6730,13 @@
 					"name": "VALIDATION",
 					"label": "VALIDATION",
 					"default": "http",
-					"description": "Certbot validation method to use, options are `http`, `dns` or `duckdns` (`dns` method also requires `DNSPLUGIN` variable set) (`duckdns` method requires `DUCKDNSTOKEN` variable set, and the `SUBDOMAINS` variable must be either empty or set to `wildcard`)."
+					"description": "Certbot validation method to use, options are `http` or `dns` (`dns` method also requires `DNSPLUGIN` variable set)."
 				},
 				{
 					"name": "SUBDOMAINS",
 					"label": "SUBDOMAINS",
 					"default": "www,",
-					"description": "Subdomains you'd like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this *exactly* to `wildcard` (wildcard cert is available via `dns` and `duckdns` validation only)"
+					"description": "Subdomains you'd like the cert to cover (comma separated, no spaces) ie. `www,ftp,cloud`. For a wildcard cert, set this *exactly* to `wildcard` (wildcard cert is available via `dns` validation only)"
 				},
 				{
 					"name": "CERTPROVIDER",
@@ -6748,19 +6748,13 @@
 					"name": "DNSPLUGIN",
 					"label": "DNSPLUGIN",
 					"default": "cloudflare",
-					"description": "Required if `VALIDATION` is set to `dns`. Options are `acmedns`, `aliyun`, `azure`, `cloudflare`, `cloudxns`, `cpanel`, `desec`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `dnspod`, `do`, `domeneshop`, `dynu`, `gandi`, `gehirn`, `godaddy`, `google`, `he`, `hetzner`, `infomaniak`, `inwx`, `ionos`, `linode`, `loopia`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `porkbun`, `rfc2136`, `route53`, `sakuracloud`, `standalone`, `transip`, and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`."
+					"description": "Required if `VALIDATION` is set to `dns`. Options are `acmedns`, `aliyun`, `azure`, `cloudflare`, `cloudxns`, `cpanel`, `desec`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `dnspod`, `do`, `domeneshop`, `duckdns`, `dynu`, `gandi`, `gehirn`, `godaddy`, `google`, `he`, `hetzner`, `infomaniak`, `inwx`, `ionos`, `linode`, `loopia`, `luadns`, `netcup`, `njalla`, `nsone`, `ovh`, `porkbun`, `rfc2136`, `route53`, `sakuracloud`, `standalone`, `transip`, and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`."
 				},
 				{
 					"name": "PROPAGATION",
 					"label": "PROPAGATION",
 					"default": "",
 					"description": "Optionally override (in seconds) the default propagation time for the dns plugins."
-				},
-				{
-					"name": "DUCKDNSTOKEN",
-					"label": "DUCKDNSTOKEN",
-					"default": "",
-					"description": "Required if `VALIDATION` is set to `duckdns`. Retrieve your token from <https://www.duckdns.org>"
 				},
 				{
 					"name": "EMAIL",
