@@ -2736,91 +2736,91 @@
 				{
 					"name": "SITE_ROOT",
 					"label": "SITE_ROOT",
-					"default": "<SITE_ROOT>",
+					"default": "",
 					"description": "The site's top-level URL and the port it listens to if differrent than 80 or 443 (e.g., https://healthchecks.example.com:8000)"
 				},
 				{
 					"name": "SITE_NAME",
 					"label": "SITE_NAME",
-					"default": "<SITE_NAME>",
+					"default": "",
 					"description": "The site's name (e.g., 'Example Corp HealthChecks')"
 				},
 				{
 					"name": "DEFAULT_FROM_EMAIL",
 					"label": "DEFAULT_FROM_EMAIL",
-					"default": "<DEFAULT_FROM_EMAIL>",
+					"default": "",
 					"description": "From email for alerts"
 				},
 				{
 					"name": "EMAIL_HOST",
 					"label": "EMAIL_HOST",
-					"default": "<EMAIL_HOST>",
+					"default": "",
 					"description": "SMTP host"
 				},
 				{
 					"name": "EMAIL_PORT",
 					"label": "EMAIL_PORT",
-					"default": "<EMAIL_PORT>",
+					"default": "",
 					"description": "SMTP port"
 				},
 				{
 					"name": "EMAIL_HOST_USER",
 					"label": "EMAIL_HOST_USER",
-					"default": "<EMAIL_HOST_USER>",
+					"default": "",
 					"description": "SMTP user"
 				},
 				{
 					"name": "EMAIL_HOST_PASSWORD",
 					"label": "EMAIL_HOST_PASSWORD",
-					"default": "<EMAIL_HOST_PASSWORD>",
+					"default": "",
 					"description": "SMTP password"
 				},
 				{
 					"name": "EMAIL_USE_TLS",
 					"label": "EMAIL_USE_TLS",
-					"default": "<True or False>",
+					"default": "",
 					"description": "Use TLS for SMTP (`True` or `False`)"
 				},
 				{
 					"name": "SUPERUSER_EMAIL",
 					"label": "SUPERUSER_EMAIL",
-					"default": "<SUPERUSER_EMAIL>",
+					"default": "",
 					"description": "Superuser email"
 				},
 				{
 					"name": "SUPERUSER_PASSWORD",
 					"label": "SUPERUSER_PASSWORD",
-					"default": "<SUPERUSER_PASSWORD>",
+					"default": "",
 					"description": "Superuser password"
 				},
 				{
 					"name": "REGENERATE_SETTINGS",
 					"label": "REGENERATE_SETTINGS",
-					"default": "True/False",
+					"default": "",
 					"description": "Defaults to False. Set to true to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file."
 				},
 				{
 					"name": "SITE_LOGO_URL",
 					"label": "SITE_LOGO_URL",
-					"default": "<SITE_LOGO_URL>",
-					"description": "Custom site logo URL"
+					"default": "",
+					"description": "Full URL to custom site logo"
 				},
 				{
 					"name": "ALLOWED_HOSTS",
 					"label": "ALLOWED_HOSTS",
-					"default": "<ALLOWED_HOSTS>",
-					"description": "array of valid hostnames for the server `['test.com','test2.com']` (default: `['*']`)"
+					"default": "",
+					"description": "Array of valid hostnames for the server `['test.com','test2.com']` (default: `['*']`)"
 				},
 				{
 					"name": "SECRET_KEY",
 					"label": "SECRET_KEY",
-					"default": "<SECRET_KEY>",
-					"description": "A secret key used for cryptographic signing. docker-healthchecks will generate a secure value if one does not exist"
+					"default": "",
+					"description": "A secret key used for cryptographic signing. Will generate a secure value if one is not supplied"
 				},
 				{
 					"name": "APPRISE_ENABLED",
 					"label": "APPRISE_ENABLED",
-					"default": "True/False",
+					"default": "",
 					"description": "Defaults to False. A boolean that turns on/off the Apprise integration (https://github.com/caronc/apprise)"
 				}
 			],
@@ -3821,7 +3821,7 @@
 					"name": "MYSQL_ROOT_PASSWORD",
 					"label": "MYSQL_ROOT_PASSWORD",
 					"default": "ROOT_ACCESS_PASSWORD",
-					"description": "Set this to root password for installation (minimum 4 characters)."
+					"description": "Set this to root password for installation (minimum 4 characters & non-alphanumeric passwords must be properly escaped)."
 				},
 				{
 					"name": "TZ",
@@ -3845,7 +3845,7 @@
 					"name": "MYSQL_PASSWORD",
 					"label": "MYSQL_PASSWORD",
 					"default": "DATABASE_PASSWORD",
-					"description": "Set this to the password you want to use for you MYSQL_USER (minimum 4 characters)."
+					"description": "Set this to the password you want to use for you MYSQL_USER (minimum 4 characters & non-alphanumeric passwords must be properly escaped)."
 				},
 				{
 					"name": "REMOTE_SQL",
