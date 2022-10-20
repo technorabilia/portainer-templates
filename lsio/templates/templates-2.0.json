@@ -7375,6 +7375,12 @@
 					"label": "KEYBOARD",
 					"default": "en-us-qwerty",
 					"description": "See the keyboard layouts section for more information and options."
+				},
+				{
+					"name": "TITLE",
+					"label": "TITLE",
+					"default": "Webtop",
+					"description": "String which will be used as page/tab title in the web browser."
 				}
 			],
 			"ports": [
