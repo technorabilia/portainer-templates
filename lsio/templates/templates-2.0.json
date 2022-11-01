@@ -2905,8 +2905,8 @@
 				{
 					"name": "CMD_URL_ADDPORT",
 					"label": "CMD_URL_ADDPORT",
-					"default": "true",
-					"description": "Set to `false` if accessing at port `80` or `443`."
+					"default": "false",
+					"description": "Set to `true` if using a port other than `80` or `443`."
 				},
 				{
 					"name": "CMD_PROTOCOL_USESSL",
