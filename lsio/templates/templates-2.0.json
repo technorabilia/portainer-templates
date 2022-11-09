@@ -449,67 +449,6 @@
 		},
 		{
 			"type": 1,
-			"title": "Booksonic",
-			"name": "Booksonic",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/booksonic/config<br>mkdir -p /volume1/docker/booksonic/audiobooks<br>mkdir -p /volume1/docker/booksonic/podcasts<br>mkdir -p /volume1/docker/booksonic/othermedia</p>",
-			"description": "[Booksonic](http://booksonic.org) is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic.",
-			"categories": [
-				"Media"
-			],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic.png",
-			"image": "linuxserver/booksonic:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				},
-				{
-					"name": "CONTEXT_PATH",
-					"label": "CONTEXT_PATH",
-					"default": "url-base",
-					"description": "Base url for use with reverse proxies etc."
-				}
-			],
-			"ports": [
-				"4040:4040/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/booksonic/config"
-			},
-			{
-				"container": "/audiobooks",
-				"bind": "/volume1/docker/booksonic/audiobooks"
-			},
-			{
-				"container": "/podcasts",
-				"bind": "/volume1/docker/booksonic/podcasts"
-			},
-			{
-				"container": "/othermedia",
-				"bind": "/volume1/docker/booksonic/othermedia"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
 			"title": "Booksonic-air",
 			"name": "Booksonic-air",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/booksonic-air/config<br>mkdir -p /volume1/docker/booksonic-air/audiobooks<br>mkdir -p /volume1/docker/booksonic-air/podcasts<br>mkdir -p /volume1/docker/booksonic-air/othermedia</p>",
@@ -834,123 +773,6 @@
 			{
 				"container": "/config",
 				"bind": "/volume1/docker/changedetection.io/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Chevereto",
-			"name": "Chevereto",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/chevereto/config<br>mkdir -p /volume1/docker/chevereto/data</p>",
-			"description": "[Chevereto](https://github.com/rodber/chevereto-free) is an image hosting software that allows you to create a beautiful and full-featured image hosting website on your own server. It's your hosting and your rules, so say goodbye to closures and restrictions.",
-			"categories": [
-				"Websites"
-			],
-			"platform": "linux",
-			"logo": "",
-			"image": "linuxserver/chevereto:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				}
-			],
-			"ports": [
-				"80:80/tcp",
-				"443:443/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/chevereto/config"
-			},
-			{
-				"container": "/data",
-				"bind": "/volume1/docker/chevereto/data"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Cloud9",
-			"name": "Cloud9",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/cloud9/config<br>mkdir -p /volume1/docker/cloud9/code<br></p>",
-			"description": "[Cloud9](https://github.com/c9/core) Cloud9 is a complete web based IDE with terminal access. This container is for running their core SDK locally and developing plugins.",
-			"categories": [
-				"Development"
-			],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png",
-			"image": "linuxserver/cloud9:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				},
-				{
-					"name": "GITURL",
-					"label": "GITURL",
-					"default": "https://github.com/linuxserver/docker-cloud9.git",
-					"description": "Specify a git repo to checkout on first startup"
-				},
-				{
-					"name": "USERNAME",
-					"label": "USERNAME",
-					"default": "",
-					"description": "Optionally specify a username for http auth"
-				},
-				{
-					"name": "PASSWORD",
-					"label": "PASSWORD",
-					"default": "",
-					"description": "Optionally specify a password for http auth (if USERNAME and PASSWORD are not set, there will be no http auth)"
-				}
-			],
-			"ports": [
-				"8000:8000/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/cloud9/config"
-			},
-			{
-				"container": "/code",
-				"bind": "/volume1/docker/cloud9/code"
-			},
-			{
-				"container": "/var/run/docker.sock",
-				"bind": "/var/run/docker.sock"
 			}
 			],
 			"restart_policy": "unless-stopped"
@@ -3271,58 +3093,6 @@
 		},
 		{
 			"type": 1,
-			"title": "Kanzi",
-			"name": "Kanzi",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kanzi/config</p>",
-			"description": "[Kanzi](https://lexigr.am/), formerly titled Kodi-Alexa, this custom skill is the ultimate voice remote control for navigating Kodi. It can do anything you can think of (100+ intents). This container also contains lexigram-cli to setup Kanzi with an Amazon Developer Account and automatically deploy it to Amazon.",
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kanzi.png",
-			"image": "linuxserver/kanzi:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				},
-				{
-					"name": "INVOCATION_NAME",
-					"label": "INVOCATION_NAME",
-					"default": "kanzi",
-					"description": "Specify an invocation name for this skill, use either kanzi or kod."
-				},
-				{
-					"name": "URL_ENDPOINT",
-					"label": "URL_ENDPOINT",
-					"default": "https://server.com/kanzi/",
-					"description": "Specify the URL at which the webserver is reachable either `https://kanzi.server.com/` or `https://server.com/kanzi/` Note the trailing slash **MUST** be included."
-				}
-			],
-			"ports": [
-				"8000:8000/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/kanzi/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
 			"title": "Kasm",
 			"name": "Kasm",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kasm/opt<br>mkdir -p /volume1/docker/kasm/profiles</p>",
@@ -3879,6 +3649,218 @@
 		},
 		{
 			"type": 1,
+			"title": "Mastodon",
+			"name": "Mastodon",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/mastodon/config</p>",
+			"description": "[Mastodon](https://github.com/mastodon/mastodon/) is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..",
+			"categories": [
+				"Social"
+			],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mastodon-banner.png",
+			"image": "linuxserver/mastodon:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				},
+				{
+					"name": "LOCAL_DOMAIN",
+					"label": "LOCAL_DOMAIN",
+					"default": "example.com",
+					"description": "This is the unique identifier of your server in the network. It cannot be safely changed later."
+				},
+				{
+					"name": "REDIS_HOST",
+					"label": "REDIS_HOST",
+					"default": "redis",
+					"description": "Redis server hostname"
+				},
+				{
+					"name": "REDIS_PORT",
+					"label": "REDIS_PORT",
+					"default": "6379",
+					"description": "Redis port"
+				},
+				{
+					"name": "DB_HOST",
+					"label": "DB_HOST",
+					"default": "db",
+					"description": "Postgres database hostname"
+				},
+				{
+					"name": "DB_USER",
+					"label": "DB_USER",
+					"default": "mastodon",
+					"description": "Postgres username"
+				},
+				{
+					"name": "DB_NAME",
+					"label": "DB_NAME",
+					"default": "mastodon",
+					"description": "Postgres db name"
+				},
+				{
+					"name": "DB_PASS",
+					"label": "DB_PASS",
+					"default": "mastodon",
+					"description": "Postgres password"
+				},
+				{
+					"name": "DB_PORT",
+					"label": "DB_PORT",
+					"default": "5432",
+					"description": "Portgres port"
+				},
+				{
+					"name": "ES_ENABLED",
+					"label": "ES_ENABLED",
+					"default": "false",
+					"description": "Enable or disable Elasticsearch (requires a separate ES instance)"
+				},
+				{
+					"name": "SECRET_KEY_BASE",
+					"label": "SECRET_KEY_BASE",
+					"default": "",
+					"description": "Browser session secret. Changing it will break all active browser sessions."
+				},
+				{
+					"name": "OTP_SECRET",
+					"label": "OTP_SECRET",
+					"default": "",
+					"description": "MFA secret. Changing it will break two-factor authentication."
+				},
+				{
+					"name": "VAPID_PRIVATE_KEY",
+					"label": "VAPID_PRIVATE_KEY",
+					"default": "",
+					"description": "Push notification private key. Changing it will break push notifications."
+				},
+				{
+					"name": "VAPID_PUBLIC_KEY",
+					"label": "VAPID_PUBLIC_KEY",
+					"default": "",
+					"description": "Push notification public key. Changing it will break push notifications."
+				},
+				{
+					"name": "SMTP_SERVER",
+					"label": "SMTP_SERVER",
+					"default": "mail.example.com",
+					"description": "SMTP server for email notifications"
+				},
+				{
+					"name": "SMTP_PORT",
+					"label": "SMTP_PORT",
+					"default": "25",
+					"description": "SMTP server port"
+				},
+				{
+					"name": "SMTP_LOGIN",
+					"label": "SMTP_LOGIN",
+					"default": "",
+					"description": "SMTP username"
+				},
+				{
+					"name": "SMTP_PASSWORD",
+					"label": "SMTP_PASSWORD",
+					"default": "",
+					"description": "SMTP password"
+				},
+				{
+					"name": "SMTP_FROM_ADDRESS",
+					"label": "SMTP_FROM_ADDRESS",
+					"default": "notifications@example.com",
+					"description": "From address for emails send from Mastodon"
+				},
+				{
+					"name": "S3_ENABLED",
+					"label": "S3_ENABLED",
+					"default": "false",
+					"description": "Enable or disable S3 storage of uploaded files"
+				},
+				{
+					"name": "WEB_DOMAIN",
+					"label": "WEB_DOMAIN",
+					"default": "mastodon.example.com",
+					"description": "This can be set if you want your server identifier to be different to the subdomain hosting Mastodon. See https://docs.joinmastodon.org/admin/config/#basic"
+				},
+				{
+					"name": "ES_HOST",
+					"label": "ES_HOST",
+					"default": "es",
+					"description": "Elasticsearch server hostname"
+				},
+				{
+					"name": "ES_PORT",
+					"label": "ES_PORT",
+					"default": "9200",
+					"description": "Elasticsearch port"
+				},
+				{
+					"name": "ES_USER",
+					"label": "ES_USER",
+					"default": "elastic",
+					"description": "Elasticsearch username"
+				},
+				{
+					"name": "ES_PASS",
+					"label": "ES_PASS",
+					"default": "elastic",
+					"description": "Elasticsearch password"
+				},
+				{
+					"name": "S3_BUCKET",
+					"label": "S3_BUCKET",
+					"default": "",
+					"description": "S3 bucket hostname"
+				},
+				{
+					"name": "AWS_ACCESS_KEY_ID",
+					"label": "AWS_ACCESS_KEY_ID",
+					"default": "",
+					"description": "S3 bucket access key ID"
+				},
+				{
+					"name": "AWS_SECRET_ACCESS_KEY",
+					"label": "AWS_SECRET_ACCESS_KEY",
+					"default": "",
+					"description": "S3 bucket secret access key"
+				},
+				{
+					"name": "S3_ALIAS_HOST",
+					"label": "S3_ALIAS_HOST",
+					"default": "",
+					"description": "Alternate hostname for object fetching if you are front the S3 connections."
+				}
+			],
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/mastodon/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Medusa",
 			"name": "Medusa",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/medusa/config<br>mkdir -p /volume1/docker/medusa/downloads<br>mkdir -p /volume1/docker/medusa/tv</p>",
@@ -4059,46 +4041,6 @@
 			{
 				"container": "/music",
 				"bind": "/volume1/docker/mstream/music"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Muximux",
-			"name": "Muximux",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/muximux/config</p>",
-			"description": "[Muximux](https://github.com/mescon/Muximux) is a lightweight portal to view & manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/muximux-icon.png",
-			"image": "linuxserver/muximux:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				}
-			],
-			"ports": [
-				"80:80/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/muximux/config"
 			}
 			],
 			"restart_policy": "unless-stopped"
@@ -5117,54 +5059,6 @@
 		},
 		{
 			"type": 1,
-			"title": "Photoshow",
-			"name": "Photoshow",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/photoshow/config<br>mkdir -p /volume1/docker/photoshow/Pictures:ro<br>mkdir -p /volume1/docker/photoshow/Thumbs</p>",
-			"description": "[Photoshow](https://github.com/thibaud-rohmer/PhotoShow) is gallery software at its easiest, it doesn't even require a database.",
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png",
-			"image": "linuxserver/photoshow:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				}
-			],
-			"ports": [
-				"80:80/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/photoshow/config"
-			},
-			{
-				"container": "/Pictures:ro",
-				"bind": "/volume1/docker/photoshow/Pictures:ro"
-			},
-			{
-				"container": "/Thumbs",
-				"bind": "/volume1/docker/photoshow/Thumbs"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
 			"title": "Phpmyadmin",
 			"name": "Phpmyadmin",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/phpmyadmin/config</p>",
@@ -5298,65 +5192,6 @@
 			{
 				"container": "/gallery",
 				"bind": "/volume1/docker/piwigo/gallery"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Pixapop",
-			"name": "Pixapop",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/pixapop/config<br>mkdir -p /volume1/docker/pixapop/photos</p>",
-			"description": "[Pixapop](https://github.com/bierdok/pixapop) is an open-source single page application to view your photos in the easiest way possible.",
-			"categories": [
-				"Productivity"
-			],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png",
-			"image": "linuxserver/pixapop:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				},
-				{
-					"name": "APP_USERNAME",
-					"label": "APP_USERNAME",
-					"default": "admin",
-					"description": "Specify a username to enable authentication."
-				},
-				{
-					"name": "APP_PASSWORD",
-					"label": "APP_PASSWORD",
-					"default": "admin",
-					"description": "Specify a password to enable authentication."
-				}
-			],
-			"ports": [
-				"80:80/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/pixapop/config"
-			},
-			{
-				"container": "/photos",
-				"bind": "/volume1/docker/pixapop/photos"
 			}
 			],
 			"restart_policy": "unless-stopped"
@@ -6296,68 +6131,6 @@
 		},
 		{
 			"type": 1,
-			"title": "Scrutiny",
-			"name": "Scrutiny",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/scrutiny/config<br></p>",
-			"description": "[Scrutiny](https://github.com/AnalogJ/scrutiny) WebUI for smartd S.M.A.R.T monitoring. Scrutiny is a Hard Drive Health Dashboard & Monitoring solution, merging manufacturer provided S.M.A.R.T metrics with real-world failure rates from Backblaze.",
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/AnalogJ/scrutiny/master/docs/dashboard.png",
-			"image": "linuxserver/scrutiny:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
-				},
-				{
-					"name": "SCRUTINY_API_ENDPOINT",
-					"label": "SCRUTINY_API_ENDPOINT",
-					"default": "http://localhost:8080",
-					"description": "# optional - API endpoint of the scrutiny UI. Do not change unless using as a remote collector"
-				},
-				{
-					"name": "SCRUTINY_WEB",
-					"label": "SCRUTINY_WEB",
-					"default": "true",
-					"description": "# optional - Run the web service."
-				},
-				{
-					"name": "SCRUTINY_COLLECTOR",
-					"label": "SCRUTINY_COLLECTOR",
-					"default": "true",
-					"description": "# optional - Run the metrics collector."
-				}
-			],
-			"ports": [
-				"8080:8080/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/scrutiny/config"
-			},
-			{
-				"container": "/run/udev:ro",
-				"bind": "/run/udev:ro"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
 			"title": "Sickchill",
 			"name": "Sickchill",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/sickchill/config<br>mkdir -p /volume1/docker/sickchill/downloads<br>mkdir -p /volume1/docker/sickchill/tv</p>",
@@ -6941,26 +6714,6 @@
 			{
 				"container": "/var/log",
 				"bind": "/var/log"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Taisun",
-			"name": "Taisun",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p></p>",
-			"description": "[Taisun](https://www.taisun.io/) is an application for a Docker enabled device with an emphasis on providing a web based interface for managing a single server. Taisun allows you to: - Deploy and manage web based virtual desktops. - Deploy Taisun specific stacks of applications - Browse available images on popular Docker repositories - Import a Docker project from any git repository and start developing on your choice of web based IDE or full Linux desktop - Spinup a developer container based on popular frameworks and work from a web based IDE - Single click remote server access to Taisun and your Docker applications",
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/Taisun-Docker/taisun/master/public/favicon/apple-icon-180x180.png",
-			"image": "linuxserver/taisun:latest",
-			"ports": [
-				"3000:3000/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/var/run/docker.sock",
-				"bind": "/var/run/docker.sock"
 			}
 			],
 			"restart_policy": "unless-stopped"
