@@ -2076,6 +2076,49 @@
     },
     {
         "type": 1,
+        "title": "Feed2toot",
+        "name": "Feed2toot",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/feed2toot/config</p>",
+        "description": "[Feed2toot](https://gitlab.com/chaica/feed2toot) automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/feed2toot-banner.png",
+        "image": "linuxserver/feed2toot:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for UserID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for GroupID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "FEED_LIMIT",
+                "label": "FEED_LIMIT",
+                "default": "5",
+                "description": "Limit number of RSS entries published at each execution."
+            }
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/feed2toot/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
         "title": "Ffmpeg",
         "name": "Ffmpeg",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ffmpeg/config</p>",
