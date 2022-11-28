@@ -3839,7 +3839,7 @@
 					"name": "WEB_DOMAIN",
 					"label": "WEB_DOMAIN",
 					"default": "mastodon.example.com",
-					"description": "This can be set if you want your server identifier to be different to the subdomain hosting Mastodon. See https://docs.joinmastodon.org/admin/config/#basic"
+					"description": "This can be set if you want your server identifier to be different to the subdomain hosting Mastodon. See [https://docs.joinmastodon.org/admin/config/#basic](https://docs.joinmastodon.org/admin/config/#basic)"
 				},
 				{
 					"name": "ES_HOST",
