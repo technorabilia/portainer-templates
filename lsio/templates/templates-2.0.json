@@ -7072,13 +7072,13 @@
 					"name": "MEM_LIMIT",
 					"label": "MEM_LIMIT",
 					"default": "1024",
-					"description": "Optionally change the Java memory limit. Set to `default` to reset to default"
+					"description": "Optionally change the Java memory limit (in Megabytes). Set to `default` to reset to default"
 				},
 				{
 					"name": "MEM_STARTUP",
 					"label": "MEM_STARTUP",
 					"default": "1024",
-					"description": "Optionally change the Java initial/minimum memory. Set to `default` to reset to default"
+					"description": "Optionally change the Java initial/minimum memory (in Megabytes). Set to `default` to reset to default"
 				}
 			],
 			"ports": [
