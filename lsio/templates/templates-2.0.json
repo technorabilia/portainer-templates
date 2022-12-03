@@ -3138,7 +3138,7 @@
 			"type": 1,
 			"title": "Kasm",
 			"name": "Kasm",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kasm/opt<br>mkdir -p /volume1/docker/kasm/profiles</p>",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kasm/opt<br>mkdir -p /volume1/docker/kasm/profiles<br>mkdir -p /volume1/docker/kasm/dev/input<br>mkdir -p /volume1/docker/kasm/run/udev/data</p>",
 			"description": "[Kasm](https://www.kasmweb.com/?utm_campaign=LinuxServer&utm_source=listing) Workspaces is a docker container streaming platform for delivering browser-based access to desktops, applications, and web services. Kasm uses devops-enabled Containerized Desktop Infrastructure (CDI) to create on-demand, disposable, docker containers that are accessible via web browser. Example use-cases include Remote Browser Isolation (RBI), Data Loss Prevention (DLP), Desktop as a Service (DaaS), Secure Remote Access Services (RAS), and Open Source Intelligence (OSINT) collections. The rendering of the graphical-based containers is powered by the open-source project [KasmVNC](https://www.kasmweb.com/kasmvnc.html?utm_campaign=LinuxServer&utm_source=kasmvnc).",
 			"platform": "linux",
 			"logo": "https://kasm-ci.s3.amazonaws.com/kasm_wide.png",
@@ -3182,6 +3182,14 @@
 			{
 				"container": "/profiles",
 				"bind": "/volume1/docker/kasm/profiles"
+			},
+			{
+				"container": "/dev/input",
+				"bind": "/volume1/docker/kasm/dev/input"
+			},
+			{
+				"container": "/run/udev/data",
+				"bind": "/volume1/docker/kasm/run/udev/data"
 			}
 			],
 			"restart_policy": "unless-stopped"
