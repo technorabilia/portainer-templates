@@ -544,6 +544,12 @@
                 "description": "for specifying the database host"
             },
             {
+                "name": "DB_PORT",
+                "label": "DB_PORT",
+                "default": "<yourdbport>",
+                "description": "for specifying the database port if not default 3306"
+            },
+            {
                 "name": "DB_USER",
                 "label": "DB_USER",
                 "default": "<yourdbuser>",
@@ -553,13 +559,13 @@
                 "name": "DB_PASS",
                 "label": "DB_PASS",
                 "default": "<yourdbpass>",
-                "description": "for specifying the database password"
+                "description": "for specifying the database password (non-alphanumeric passwords must be properly escaped.)"
             },
             {
                 "name": "DB_DATABASE",
                 "label": "DB_DATABASE",
                 "default": "bookstackapp",
-                "description": "for specifying the database to be used (non-alphanumeric passwords must be properly escaped.)"
+                "description": "for specifying the database to be used"
             }
         ],
         "ports": [
