@@ -2666,25 +2666,13 @@
                 "name": "REGENERATE_SETTINGS",
                 "label": "REGENERATE_SETTINGS",
                 "default": "",
-                "description": "Defaults to False. Set to true to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file."
-            },
-            {
-                "name": "SITE_LOGO_URL",
-                "label": "SITE_LOGO_URL",
-                "default": "",
-                "description": "Full URL to custom site logo"
+                "description": "Defaults to False. Set to True to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file."
             },
             {
                 "name": "ALLOWED_HOSTS",
                 "label": "ALLOWED_HOSTS",
                 "default": "",
                 "description": "Array of valid hostnames for the server `['test.com','test2.com']` (default: `['*']`)"
-            },
-            {
-                "name": "SECRET_KEY",
-                "label": "SECRET_KEY",
-                "default": "",
-                "description": "A secret key used for cryptographic signing. Will generate a secure value if one is not supplied"
             },
             {
                 "name": "APPRISE_ENABLED",
@@ -2697,10 +2685,35 @@
                 "label": "DEBUG",
                 "default": "",
                 "description": "Defaults to True. Debug mode relaxes CSRF protections and increases logging verbosity but should be disabled for production instances as it will impact performance and security."
+            },
+            {
+                "name": "INTEGRATIONS_ALLOW_PRIVATE_IPS",
+                "label": "INTEGRATIONS_ALLOW_PRIVATE_IPS",
+                "default": "",
+                "description": "Defaults to False. Set to True to allow integrations to connect to private IP addresses."
+            },
+            {
+                "name": "PING_EMAIL_DOMAIN",
+                "label": "PING_EMAIL_DOMAIN",
+                "default": "",
+                "description": "The domain to use for generating ping email addresses."
+            },
+            {
+                "name": "SECRET_KEY",
+                "label": "SECRET_KEY",
+                "default": "",
+                "description": "A secret key used for cryptographic signing. Will generate a secure value if one is not supplied"
+            },
+            {
+                "name": "SITE_LOGO_URL",
+                "label": "SITE_LOGO_URL",
+                "default": "",
+                "description": "Full URL to custom site logo"
             }
         ],
         "ports": [
-            "8000:8000/tcp"
+            "8000:8000/tcp",
+            "2525:2525/tcp"
         ],
         "volumes": [
             {
