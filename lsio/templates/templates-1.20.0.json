@@ -3919,6 +3919,36 @@
                 "label": "S3_ALIAS_HOST",
                 "default": "",
                 "description": "Alternate hostname for object fetching if you are front the S3 connections."
+            },
+            {
+                "name": "SIDEKIQ_ONLY",
+                "label": "SIDEKIQ_ONLY",
+                "default": "false",
+                "description": "Only run the sidekiq service in this container instance. For large scale instances that need better queue handling."
+            },
+            {
+                "name": "SIDEKIQ_QUEUE",
+                "label": "SIDEKIQ_QUEUE",
+                "default": "",
+                "description": "The name of the sidekiq queue to run in this container. See [notes](https://docs.joinmastodon.org/admin/scaling/#sidekiq-queues)."
+            },
+            {
+                "name": "SIDEKIQ_DEFAULT",
+                "label": "SIDEKIQ_DEFAULT",
+                "default": "false",
+                "description": "Set to `true` on the main container if you're running additional sidekiq instances. It will run the `default` queue."
+            },
+            {
+                "name": "SIDEKIQ_THREADS",
+                "label": "SIDEKIQ_THREADS",
+                "default": "5",
+                "description": "The number of threads for sidekiq to use. See [notes](https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)."
+            },
+            {
+                "name": "DB_POOL",
+                "label": "DB_POOL",
+                "default": "5",
+                "description": "The size of the DB connection pool, must be *at least* the same as `SIDEKIQ_THREADS`. See [notes](https://docs.joinmastodon.org/admin/scaling/#sidekiq-threads)."
             }
         ],
         "ports": [
@@ -6415,31 +6445,31 @@
             {
                 "name": "MYSQL_PORT_3306_TCP_ADDR",
                 "label": "MYSQL_PORT_3306_TCP_ADDR",
-                "default": "<mysql host>",
+                "default": "",
                 "description": "Mysql hostname or IP to use"
             },
             {
                 "name": "MYSQL_PORT_3306_TCP_PORT",
                 "label": "MYSQL_PORT_3306_TCP_PORT",
-                "default": "<mysql port>",
+                "default": "",
                 "description": "Mysql port to use"
             },
             {
                 "name": "MYSQL_DATABASE",
                 "label": "MYSQL_DATABASE",
-                "default": "<mysql database>",
+                "default": "",
                 "description": "Mysql database to use"
             },
             {
                 "name": "MYSQL_USER",
                 "label": "MYSQL_USER",
-                "default": "<mysql pass>",
+                "default": "",
                 "description": "Mysql user to use"
             },
             {
                 "name": "MYSQL_PASSWORD",
                 "label": "MYSQL_PASSWORD",
-                "default": "changeme",
+                "default": "",
                 "description": "Mysql password to use"
             },
             {
