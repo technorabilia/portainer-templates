@@ -3620,6 +3620,12 @@
 					"description": "for specifying the database host"
 				},
 				{
+					"name": "DB_PORT",
+					"label": "DB_PORT",
+					"default": "3306",
+					"description": "for specifying the database port"
+				},
+				{
 					"name": "DB_USERNAME",
 					"label": "DB_USERNAME",
 					"default": "lychee",
