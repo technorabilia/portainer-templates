@@ -1155,7 +1155,6 @@
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png",
         "image": "linuxserver/digikam:latest",
-        "network": "host",
         "env": [
             {
                 "name": "PUID",
