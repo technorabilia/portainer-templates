@@ -6978,8 +6978,8 @@
             {
                 "name": "TRANSMISSION_WEB_HOME",
                 "label": "TRANSMISSION_WEB_HOME",
-                "default": "/combustion-release/",
-                "description": "Specify an alternative UI options are [`/combustion-release/`](https://github.com/Secretmapper/combustion), [`/transmission-web-control/`](https://github.com/ronggang/transmission-web-control), [`/kettu/`](https://github.com/endor/kettu), [`/flood-for-transmission/`](https://github.com/johman10/flood-for-transmission), and [`/transmissionic/`](https://github.com/6c65726f79/Transmissionic)."
+                "default": "",
+                "description": "Specify the path to an alternative UI folder."
             },
             {
                 "name": "USER",
