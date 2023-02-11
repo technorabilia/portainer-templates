@@ -7534,6 +7534,71 @@
 		},
 		{
 			"type": 1,
+			"title": "Your_spotify",
+			"name": "Your_spotify",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
+			"description": "[Your_spotify](https://github.com/Yooooomi/your_spotify) is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png",
+			"image": "linuxserver/your_spotify:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				},
+				{
+					"name": "APP_URL",
+					"label": "APP_URL",
+					"default": "http://localhost",
+					"description": "The protocol and hostname where the app will be accessed."
+				},
+				{
+					"name": "SPOTIFY_PUBLIC",
+					"label": "SPOTIFY_PUBLIC",
+					"default": "",
+					"description": "Your Spotify application client ID."
+				},
+				{
+					"name": "SPOTIFY_SECRET",
+					"label": "SPOTIFY_SECRET",
+					"default": "",
+					"description": "Your Spotify application secret."
+				},
+				{
+					"name": "CORS",
+					"label": "CORS",
+					"default": "http://localhost:80,https://localhost:443",
+					"description": "Allowed CORS sources, set to `all` to allow any source."
+				},
+				{
+					"name": "MONGO_ENDPOINT",
+					"label": "MONGO_ENDPOINT",
+					"default": "mongodb://mongo:27017/your_spotify",
+					"description": "Set mongodb endpoint address/port."
+				}
+			],
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp"
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Yq",
 			"name": "Yq",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/yq/config</p>",
