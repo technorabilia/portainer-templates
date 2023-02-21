@@ -1464,52 +1464,6 @@
     },
     {
         "type": 1,
-        "title": "Docker-compose",
-        "name": "Docker-compose",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/docker-compose/config</p>",
-        "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/docker-compose for details.",
-        "platform": "linux",
-        "logo": "",
-        "image": "linuxserver/docker-compose:latest",
-        "env": [
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "1024",
-                "description": "for UserID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "100",
-                "description": "for GroupID"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Etc/UTC",
-                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "Specify a timezone to use for example Europe/Amsterdam"
-            }
-        ],
-        "ports": [
-            "80:80/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/docker-compose/config"
-            }
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
         "title": "Dokuwiki",
         "name": "Dokuwiki",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/dokuwiki/config</p>",
@@ -2754,20 +2708,6 @@
     },
     {
         "type": 1,
-        "title": "Guacd",
-        "name": "Guacd",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
-        "description": "[Guacd](https://guacamole.apache.org/) - Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH. This container is only the backend server component needed to use The official or 3rd party HTML5 frontends.",
-        "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/guacd.png",
-        "image": "linuxserver/guacd:latest",
-        "ports": [
-            "4822:4822/tcp"
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
         "title": "Habridge",
         "name": "Habridge",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/habridge/config</p>",
@@ -3270,59 +3210,6 @@
             {
                 "container": "/config",
                 "bind": "/volume1/docker/htpcmanager/config"
-            }
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
-        "title": "Ipfs",
-        "name": "Ipfs",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ipfs/config</p>",
-        "description": "[Ipfs](https://ipfs.io/) - A peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open.",
-        "categories": [
-            "P2P"
-        ],
-        "platform": "linux",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ipfs-logo-1024-ice-text.png/480px-Ipfs-logo-1024-ice-text.png",
-        "image": "linuxserver/ipfs:latest",
-        "env": [
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "1024",
-                "description": "for UserID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "100",
-                "description": "for GroupID"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Etc/UTC",
-                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "Specify a timezone to use for example Europe/Amsterdam"
-            }
-        ],
-        "ports": [
-            "80:80/tcp",
-            "4001:4001/tcp",
-            "5001:5001/tcp",
-            "8080:8080/tcp",
-            "443:443/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/ipfs/config"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -5205,68 +5092,6 @@
     },
     {
         "type": 1,
-        "title": "Nzbget",
-        "name": "Nzbget",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nzbget/config<br>mkdir -p /volume1/docker/nzbget/downloads</p>",
-        "description": "[Nzbget](http://nzbget.net/) is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.",
-        "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-banner.png",
-        "image": "linuxserver/nzbget:latest",
-        "env": [
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "1024",
-                "description": "for UserID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "100",
-                "description": "for GroupID"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Etc/UTC",
-                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "Specify a timezone to use for example Europe/Amsterdam"
-            },
-            {
-                "name": "NZBGET_USER",
-                "label": "NZBGET_USER",
-                "default": "nzbget",
-                "description": "Specify the user for web authentication."
-            },
-            {
-                "name": "NZBGET_PASS",
-                "label": "NZBGET_PASS",
-                "default": "tegbzn6789",
-                "description": "Specify the password for web authentication."
-            }
-        ],
-        "ports": [
-            "6789:6789/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/nzbget/config"
-            },
-            {
-                "container": "/downloads",
-                "bind": "/volume1/docker/nzbget/downloads"
-            }
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
         "title": "Nzbhydra2",
         "name": "Nzbhydra2",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nzbhydra2/config<br>mkdir -p /volume1/docker/nzbhydra2/downloads</p>",
@@ -5634,13 +5459,13 @@
     },
     {
         "type": 1,
-        "title": "Papermerge",
-        "name": "Papermerge",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/papermerge/config<br>mkdir -p /volume1/docker/papermerge/data</p>",
-        "description": "[Papermerge](https://www.papermerge.com/) is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. Instead of having piles of paper documents all over your desk, office or drawers - you can quickly scan them and configure your scanner to directly upload to Papermerge DMS.'",
+        "title": "Pairdrop",
+        "name": "Pairdrop",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
+        "description": "[PairDrop](https://github.com/schlagmichdoch/PairDrop) is a sublime alternative to AirDrop that works on all platforms. Send images, documents or text via peer to peer connection to devices in the same local network/Wi-Fi or to paired devices.",
         "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png",
-        "image": "linuxserver/papermerge:latest",
+        "logo": "https://raw.githubusercontent.com/schlagmichdoch/PairDrop/master/public/images/android-chrome-512x512.png",
+        "image": "linuxserver/pairdrop:latest",
         "env": [
             {
                 "name": "PUID",
@@ -5661,30 +5486,20 @@
                 "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
             },
             {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "Specify a timezone to use for example Europe/Amsterdam"
+                "name": "RATE_LIMIT",
+                "label": "RATE_LIMIT",
+                "default": "false",
+                "description": "Set to `true` to limit clients to 100 requests per 5 min"
             },
             {
-                "name": "REDIS_URL",
-                "label": "REDIS_URL",
-                "default": "",
-                "description": "Specify an external redis instance to use. Can optionally include a port (`redis:6379`) and/or db (`redis/foo`). If left blank or not included, will use a built-in redis instance. If changed after initial setup will also require manual modification of /config/settings.py"
+                "name": "WS_FALLBACK",
+                "label": "WS_FALLBACK",
+                "default": "false",
+                "description": "Set to `true` to enable websocket fallback if the peer to peer WebRTC connection is not available to the client (see App Setup notes)."
             }
         ],
         "ports": [
-            "8000:8000/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/papermerge/config"
-            },
-            {
-                "container": "/data",
-                "bind": "/volume1/docker/papermerge/data"
-            }
+            "3000:3000/tcp"
         ],
         "restart_policy": "unless-stopped"
     },
