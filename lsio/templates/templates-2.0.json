@@ -145,12 +145,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -191,12 +185,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -286,12 +274,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -343,12 +325,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -638,12 +614,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -928,12 +898,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -982,12 +946,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"volumes": [
@@ -1032,12 +990,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -1081,12 +1033,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -1134,12 +1080,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"volumes": [
@@ -1290,12 +1230,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -1410,12 +1344,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -1662,12 +1590,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -1824,12 +1746,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -1883,12 +1799,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2052,12 +1962,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2213,12 +2117,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2259,12 +2157,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2305,12 +2197,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2421,12 +2307,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2468,12 +2348,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2517,12 +2391,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2563,12 +2431,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2615,12 +2477,6 @@
 					"label": "SEC_KEY",
 					"default": "<Your Key To Encrypt Security Data>",
 					"description": "Key used to secure communication."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2662,12 +2518,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -2968,12 +2818,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -3019,12 +2863,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -3065,12 +2903,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -3224,12 +3056,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -3468,12 +3294,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -3602,12 +3422,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -3656,12 +3470,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4088,12 +3896,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4236,12 +4038,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4334,12 +4130,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4702,12 +4492,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4752,12 +4536,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4799,12 +4577,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4857,12 +4629,6 @@
 					"label": "PGID",
 					"default": "<yourGID>",
 					"description": "specify your GID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -4903,12 +4669,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -5157,12 +4917,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -5206,12 +4960,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -5353,12 +5101,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -5399,12 +5141,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -5627,12 +5363,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -5772,12 +5502,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -5937,12 +5661,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6092,12 +5810,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6146,12 +5858,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6192,12 +5898,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6242,12 +5942,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6291,12 +5985,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6337,12 +6025,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6392,12 +6074,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6446,12 +6122,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6500,12 +6170,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6554,12 +6218,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6608,12 +6266,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6658,12 +6310,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6741,12 +6387,6 @@
 					"label": "MYSQL_PASSWORD",
 					"default": "",
 					"description": "Mysql password to use"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6790,12 +6430,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -6844,12 +6478,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7025,12 +6653,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7085,12 +6707,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7137,12 +6753,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7183,12 +6793,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7488,12 +7092,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"volumes": [
@@ -7600,12 +7198,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7743,12 +7335,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7789,12 +7375,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7901,12 +7481,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
@@ -7947,12 +7521,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "Specify a timezone to use for example Europe/Amsterdam"
 				}
 			],
 			"ports": [
