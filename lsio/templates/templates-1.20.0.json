@@ -6841,31 +6841,31 @@
             {
                 "name": "USER",
                 "label": "USER",
-                "default": "username",
+                "default": "",
                 "description": "Specify an optional username for the interface"
             },
             {
                 "name": "PASS",
                 "label": "PASS",
-                "default": "password",
+                "default": "",
                 "description": "Specify an optional password for the interface"
             },
             {
                 "name": "WHITELIST",
                 "label": "WHITELIST",
-                "default": "iplist",
+                "default": "",
                 "description": "Specify an optional list of comma separated ip whitelist. Fills rpc-whitelist setting."
             },
             {
                 "name": "PEERPORT",
                 "label": "PEERPORT",
-                "default": "peerport",
+                "default": "",
                 "description": "Specify an optional port for torrent TCP/UDP connections. Fills peer-port setting."
             },
             {
                 "name": "HOST_WHITELIST",
                 "label": "HOST_WHITELIST",
-                "default": "dnsname list",
+                "default": "",
                 "description": "Specify an optional list of comma separated dns name whitelist. Fills rpc-host-whitelist setting."
             }
         ],
