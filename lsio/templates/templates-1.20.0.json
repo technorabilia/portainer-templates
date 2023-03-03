@@ -76,13 +76,13 @@
             {
                 "name": "CONTEXT_PATH",
                 "label": "CONTEXT_PATH",
-                "default": "<URL_BASE>",
+                "default": "",
                 "description": "For setting url-base in reverse proxy setups."
             },
             {
                 "name": "JAVA_OPTS",
                 "label": "JAVA_OPTS",
-                "default": "<options>",
+                "default": "",
                 "description": "For passing additional java options."
             }
         ],
