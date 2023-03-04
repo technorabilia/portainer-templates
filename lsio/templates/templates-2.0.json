@@ -5012,6 +5012,12 @@
 					"label": "WS_FALLBACK",
 					"default": "false",
 					"description": "Set to `true` to enable websocket fallback if the peer to peer WebRTC connection is not available to the client (see App Setup notes)."
+				},
+				{
+					"name": "RTC_CONFIG",
+					"label": "RTC_CONFIG",
+					"default": "",
+					"description": "Path to a json file containing custom STUN/TURN config (see App Setup notes)"
 				}
 			],
 			"ports": [
