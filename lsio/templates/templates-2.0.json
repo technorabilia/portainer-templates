@@ -15,13 +15,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -61,13 +61,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -132,13 +132,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -172,13 +172,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -212,13 +212,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -261,13 +261,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -312,13 +312,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -360,13 +360,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -415,13 +415,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -464,13 +464,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -525,13 +525,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -601,13 +601,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -645,13 +645,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -701,13 +701,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -757,13 +757,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -803,13 +803,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -844,13 +844,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -887,13 +887,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -966,13 +966,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1014,13 +1014,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1058,13 +1058,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1101,13 +1101,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1148,13 +1148,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1188,13 +1188,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1243,13 +1243,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1298,13 +1298,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1341,13 +1341,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1412,13 +1412,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1456,13 +1456,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1510,13 +1510,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1658,13 +1658,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1702,13 +1702,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1757,13 +1757,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1814,13 +1814,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1867,13 +1867,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1907,13 +1907,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -1959,13 +1959,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2030,13 +2030,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2142,13 +2142,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2185,13 +2185,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2225,13 +2225,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2265,13 +2265,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2305,13 +2305,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2375,13 +2375,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2416,13 +2416,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2459,13 +2459,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2499,13 +2499,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2539,13 +2539,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2586,13 +2586,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2634,13 +2634,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2786,13 +2786,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2886,13 +2886,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2931,13 +2931,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -2971,13 +2971,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3011,13 +3011,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3067,13 +3067,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3124,13 +3124,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3218,13 +3218,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3270,13 +3270,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3362,13 +3362,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3402,13 +3402,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3490,13 +3490,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3538,13 +3538,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3578,13 +3578,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3652,13 +3652,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3725,13 +3725,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -3964,13 +3964,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4012,13 +4012,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4058,13 +4058,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4106,13 +4106,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4150,13 +4150,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4198,13 +4198,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4238,13 +4238,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4336,13 +4336,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4400,13 +4400,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4560,13 +4560,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4604,13 +4604,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4645,13 +4645,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4685,13 +4685,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4737,13 +4737,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4781,13 +4781,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4827,13 +4827,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4921,13 +4921,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -4985,13 +4985,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5028,13 +5028,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5068,13 +5068,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5123,13 +5123,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5175,13 +5175,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5215,13 +5215,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5260,13 +5260,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5320,13 +5320,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5387,13 +5387,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5437,13 +5437,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5477,13 +5477,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5523,13 +5523,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5576,13 +5576,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5621,13 +5621,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5683,13 +5683,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5735,13 +5735,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5779,13 +5779,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5826,13 +5826,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5884,13 +5884,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5932,13 +5932,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -5972,13 +5972,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6016,13 +6016,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6056,13 +6056,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6099,13 +6099,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6139,13 +6139,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6188,13 +6188,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6236,13 +6236,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6284,13 +6284,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6332,13 +6332,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6380,13 +6380,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6424,13 +6424,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6465,13 +6465,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6544,13 +6544,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6592,13 +6592,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6632,13 +6632,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6767,13 +6767,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6821,13 +6821,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6867,13 +6867,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6929,13 +6929,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -6969,13 +6969,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7055,13 +7055,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7106,13 +7106,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7168,13 +7168,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7228,13 +7228,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7272,13 +7272,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7334,13 +7334,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7414,13 +7414,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7507,13 +7507,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7547,13 +7547,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7588,13 +7588,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7653,13 +7653,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
@@ -7693,13 +7693,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "for UserID - see below for explanation"
+					"description": "for UserID"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "for GroupID - see below for explanation"
+					"description": "for GroupID"
 				},
 				{
 					"name": "TZ",
