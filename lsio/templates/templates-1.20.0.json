@@ -814,6 +814,12 @@
                 "label": "TZ",
                 "default": "Europe/Amsterdam",
                 "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+            },
+            {
+                "name": "CHROME_CLI",
+                "label": "CHROME_CLI",
+                "default": "https://www.linuxserver.io/",
+                "description": "Specify one or multiple Chromium CLI flags, this string will be passed to the application in full."
             }
         ],
         "ports": [
