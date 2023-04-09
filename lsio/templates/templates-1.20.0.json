@@ -7465,12 +7465,6 @@
                 "description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/`"
             },
             {
-                "name": "KEYBOARD",
-                "label": "KEYBOARD",
-                "default": "en-us-qwerty",
-                "description": "See the keyboard layouts section for more information and options."
-            },
-            {
                 "name": "TITLE",
                 "label": "TITLE",
                 "default": "Webtop",
@@ -7478,7 +7472,8 @@
             }
         ],
         "ports": [
-            "3000:3000/tcp"
+            "3000:3000/tcp",
+            "3001:3001/tcp"
         ],
         "volumes": [
             {
