@@ -3395,26 +3395,26 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
         "description": "[Ldap-auth](https://github.com/nginxinc/nginx-ldap-auth) software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user\u2019s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).",
         "platform": "linux",
-        "logo": "https://jumpcloud.com/wp-content/uploads/2016/12/LDAP_Logo-1420591101.jpg",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ldap-auth-logo.png",
         "image": "linuxserver/ldap-auth:latest",
         "env": [
             {
                 "name": "FERNETKEY",
                 "label": "FERNETKEY",
                 "default": "",
-                "description": "Optionally define a custom fernet key, has to be base64-encoded 32-byte (only needed if container is frequently recreated, or if using multi-node setups, invalidating previous authentications)"
+                "description": "Optionally define a custom valid fernet key (only needed if container is frequently recreated, or if using multi-node setups, invalidating previous authentications)"
             },
             {
                 "name": "CERTFILE",
                 "label": "CERTFILE",
                 "default": "",
-                "description": "Point this to a certificate file to enable HTTP over SSL (HTTPS) for the ldap auth daemon"
+                "description": "Optionally point this to a certificate file to enable HTTP over SSL (HTTPS) for the ldap auth daemon"
             },
             {
                 "name": "KEYFILE",
                 "label": "KEYFILE",
                 "default": "",
-                "description": "Point this to the private key file, matching the certificate file referred to in CERTFILE"
+                "description": "Optionally point this to the private key file, matching the certificate file referred to in CERTFILE"
             }
         ],
         "ports": [
