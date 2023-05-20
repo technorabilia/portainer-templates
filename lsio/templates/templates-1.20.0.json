@@ -3582,6 +3582,12 @@
                 "label": "DB_PORT",
                 "default": "DB_PORT",
                 "description": "Database port. Required for mysql."
+            },
+            {
+                "name": "IPINFO_APIKEY",
+                "label": "IPINFO_APIKEY",
+                "default": "ACCESS_TOKEN",
+                "description": "Access token from ipinfo.io. Required for detailed IP information."
             }
         ],
         "ports": [
