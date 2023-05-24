@@ -539,7 +539,7 @@
 				{
 					"name": "APP_URL",
 					"label": "APP_URL",
-					"default": "",
+					"default": "<yourbaseurl>",
 					"description": "for specifying the IP:port or URL your application will be accessed on (ie. `http://192.168.1.1:6875` or `https://bookstack.mydomain.com`"
 				},
 				{
@@ -7794,7 +7794,7 @@
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/wireguard/config</p>",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/wireguard/config<br></p>",
 			"description": "[WireGuard®](https://www.wireguard.com/) is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.",
 			"platform": "linux",
 			"logo": "https://www.wireguard.com/img/wireguard.svg",
@@ -7874,6 +7874,10 @@
 			{
 				"container": "/config",
 				"bind": "/volume1/docker/wireguard/config"
+			},
+			{
+				"container": "/lib/modules",
+				"bind": "/lib/modules"
 			}
 			],
 			"restart_policy": "unless-stopped"
