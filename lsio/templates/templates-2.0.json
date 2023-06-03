@@ -2084,6 +2084,12 @@
 					"label": "TZ",
 					"default": "Europe/Amsterdam",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "VERBOSITY",
+					"label": "VERBOSITY",
+					"default": "-vv",
+					"description": "Set the container log verbosity. Valid options are -v, -vv, -vvv, -vvvv, or leaving the value blank or not setting the variable."
 				}
 			],
 			"ports": [
