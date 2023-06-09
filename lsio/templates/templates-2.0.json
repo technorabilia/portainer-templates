@@ -3807,6 +3807,12 @@
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
 				},
 				{
+					"name": "DB_CONNECTION",
+					"label": "DB_CONNECTION",
+					"default": "mysql",
+					"description": "for specifying the database type"
+				},
+				{
 					"name": "DB_HOST",
 					"label": "DB_HOST",
 					"default": "mariadb",
