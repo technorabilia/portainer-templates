@@ -3349,6 +3349,12 @@
 					"label": "DOCKER_HUB_PASSWORD",
 					"default": "PASS",
 					"description": "Optionally specify a DockerHub password to pull private images."
+				},
+				{
+					"name": "DOCKER_MTU",
+					"label": "DOCKER_MTU",
+					"default": "1500",
+					"description": "Optionally specify the mtu options passed to dockerd."
 				}
 			],
 			"ports": [
