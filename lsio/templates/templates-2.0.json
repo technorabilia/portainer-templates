@@ -2445,6 +2445,18 @@
 					"description": "Set the FlexGet logging level."
 				},
 				{
+					"name": "FG_LOG_FILE",
+					"label": "FG_LOG_FILE",
+					"default": "/config/flexget.log",
+					"description": "Set the FlexGet log file location."
+				},
+				{
+					"name": "FG_CONFIG_FILE",
+					"label": "FG_CONFIG_FILE",
+					"default": "/config/.flexget/config.yml",
+					"description": "Set the FlexGet config file location."
+				},
+				{
 					"name": "FG_WEBUI_PASSWORD",
 					"label": "FG_WEBUI_PASSWORD",
 					"default": "info",
