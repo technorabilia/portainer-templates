@@ -562,7 +562,7 @@
                 "name": "DB_PASS",
                 "label": "DB_PASS",
                 "default": "<yourdbpass>",
-                "description": "for specifying the database password (non-alphanumeric passwords must be properly escaped.)"
+                "description": "for specifying the database password (minimum 4 characters & non-alphanumeric passwords must be properly escaped.)"
             },
             {
                 "name": "DB_DATABASE",
@@ -3534,6 +3534,53 @@
             {
                 "container": "/config",
                 "bind": "/volume1/docker/kdenlive/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
+        "title": "Kimai",
+        "name": "Kimai",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kimai/config</p>",
+        "description": "[Kimai](https://kimai.org/) is a professional grade time-tracking application, free and open-source. It handles use-cases of freelancers as well as companies with dozens or hundreds of users. Kimai was build to track your project times and ships with many advanced features, including but not limited to: JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language ([over 30 translations existing](https://hosted.weblate.org/projects/kimai/)!), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search & filtering, money and time budgets, advanced reporting, support for [plugins](https://www.kimai.org/store/) and so much more.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png",
+        "image": "linuxserver/kimai:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for UserID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for GroupID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+            },
+            {
+                "name": "DATABASE_URL",
+                "label": "DATABASE_URL",
+                "default": "mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name",
+                "description": "Configure your database connection"
+            }
+        ],
+        "ports": [
+            "80:80/tcp",
+            "443:443/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/kimai/config"
             }
         ],
         "restart_policy": "unless-stopped"
