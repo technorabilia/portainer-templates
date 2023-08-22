@@ -3569,8 +3569,8 @@
             {
                 "name": "DATABASE_URL",
                 "label": "DATABASE_URL",
-                "default": "mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name",
-                "description": "Configure your database connection"
+                "default": "mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name?charset=your_db_charset&serverVersion=your_db_version",
+                "description": "Configure your database connection, see Application Setup instructions."
             }
         ],
         "ports": [
