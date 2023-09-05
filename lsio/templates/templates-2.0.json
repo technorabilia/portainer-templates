@@ -539,31 +539,31 @@
 				{
 					"name": "APP_URL",
 					"label": "APP_URL",
-					"default": "<yourbaseurl>",
+					"default": "yourbaseurl",
 					"description": "for specifying the IP:port or URL your application will be accessed on (ie. `http://192.168.1.1:6875` or `https://bookstack.mydomain.com`"
 				},
 				{
 					"name": "DB_HOST",
 					"label": "DB_HOST",
-					"default": "<yourdbhost>",
+					"default": "yourdbhost",
 					"description": "for specifying the database host"
 				},
 				{
 					"name": "DB_PORT",
 					"label": "DB_PORT",
-					"default": "<yourdbport>",
+					"default": "yourdbport",
 					"description": "for specifying the database port if not default 3306"
 				},
 				{
 					"name": "DB_USER",
 					"label": "DB_USER",
-					"default": "<yourdbuser>",
+					"default": "yourdbuser",
 					"description": "for specifying the database user"
 				},
 				{
 					"name": "DB_PASS",
 					"label": "DB_PASS",
-					"default": "<yourdbpass>",
+					"default": "yourdbpass",
 					"description": "for specifying the database password (minimum 4 characters & non-alphanumeric passwords must be properly escaped.)"
 				},
 				{
@@ -571,6 +571,12 @@
 					"label": "DB_DATABASE",
 					"default": "bookstackapp",
 					"description": "for specifying the database to be used"
+				},
+				{
+					"name": "QUEUE_CONNECTION",
+					"label": "QUEUE_CONNECTION",
+					"default": "",
+					"description": "Set to `database` to enable async actions like sending email or triggering webhooks. See [documentation](https://www.bookstackapp.com/docs/admin/email-webhooks/#async-action-handling)."
 				}
 			],
 			"ports": [
