@@ -7820,13 +7820,13 @@
 					"name": "MONGO_USER",
 					"label": "MONGO_USER",
 					"default": "unifi",
-					"description": "Mongodb Username. Only evaluated on first run."
+					"description": "Mongodb Username. Only evaluated on first run. **Special characters must be [url encoded](https://en.wikipedia.org/wiki/Percent-encoding)**."
 				},
 				{
 					"name": "MONGO_PASS",
 					"label": "MONGO_PASS",
 					"default": "",
-					"description": "Mongodb Password. Only evaluated on first run."
+					"description": "Mongodb Password. Only evaluated on first run. **Special characters must be [url encoded](https://en.wikipedia.org/wiki/Percent-encoding)**."
 				},
 				{
 					"name": "MONGO_HOST",
