@@ -1767,7 +1767,7 @@
 					"name": "SUBDOMAINS",
 					"label": "SUBDOMAINS",
 					"default": "subdomain1,subdomain2",
-					"description": "multiple subdomains allowed, comma separated, no spaces"
+					"description": "multiple subdomains allowed, comma separated, no spaces, if your domain is user.duckdns.org you put user, not a sub-subdomain"
 				},
 				{
 					"name": "TOKEN",
