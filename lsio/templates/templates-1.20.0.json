@@ -2777,54 +2777,6 @@
     },
     {
         "type": 1,
-        "title": "Headphones",
-        "name": "Headphones",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/headphones/config<br>mkdir -p /volume1/docker/headphones/downloads<br>mkdir -p /volume1/docker/headphones/music</p>",
-        "description": "[Headphones](https://github.com/rembo10/headphones) is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, \u00b5Torrent and Blackhole.",
-        "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/headphones-banner.png",
-        "image": "linuxserver/headphones:latest",
-        "env": [
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "1024",
-                "description": "for UserID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "100",
-                "description": "for GroupID"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-            }
-        ],
-        "ports": [
-            "8181:8181/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/headphones/config"
-            },
-            {
-                "container": "/downloads",
-                "bind": "/volume1/docker/headphones/downloads"
-            },
-            {
-                "container": "/music",
-                "bind": "/volume1/docker/headphones/music"
-            }
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
         "title": "Healthchecks",
         "name": "Healthchecks",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/healthchecks/config</p>",
@@ -3622,7 +3574,7 @@
             {
                 "name": "DOCKER_MODS",
                 "label": "DOCKER_MODS",
-                "default": "linuxserver/calibre-web:calibre|linuxserver/mods:lazylibrarian-ffmpeg",
+                "default": "linuxserver/mods:universal-calibre|linuxserver/mods:lazylibrarian-ffmpeg",
                 "description": "Allows additional functionality to be added, e.g. the Calibredb import program (optional, more info below)"
             }
         ],
@@ -4669,104 +4621,6 @@
     },
     {
         "type": 1,
-        "title": "Nano",
-        "name": "Nano",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nano/config</p>",
-        "description": "[Nano](https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
-        "platform": "linux",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nano_logo.png/640px-Nano_logo.png",
-        "image": "linuxserver/nano:latest",
-        "env": [
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "1024",
-                "description": "for UserID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "100",
-                "description": "for GroupID"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-            },
-            {
-                "name": "PEER_HOST",
-                "label": "PEER_HOST",
-                "default": "localhost",
-                "description": "Default peer host (can be overidden with an array by command line options)"
-            },
-            {
-                "name": "LIVE_GENESIS_PUB",
-                "label": "LIVE_GENESIS_PUB",
-                "default": "GENESIS_PUBLIC",
-                "description": "Genesis block public key"
-            },
-            {
-                "name": "LIVE_GENESIS_ACCOUNT",
-                "label": "LIVE_GENESIS_ACCOUNT",
-                "default": "nano_xxxxxx",
-                "description": "Genesis block account"
-            },
-            {
-                "name": "LIVE_GENESIS_WORK",
-                "label": "LIVE_GENESIS_WORK",
-                "default": "WORK_FOR_BLOCK",
-                "description": "Genesis block proof of work"
-            },
-            {
-                "name": "LIVE_GENESIS_SIG",
-                "label": "LIVE_GENESIS_SIG",
-                "default": "BLOCK_SIGNATURE",
-                "description": "Genesis block signature"
-            },
-            {
-                "name": "CLI_OPTIONS",
-                "label": "CLI_OPTIONS",
-                "default": "--config node.enable_voting=true",
-                "description": "Node run command cli args"
-            },
-            {
-                "name": "LMDB_BOOTSTRAP_URL",
-                "label": "LMDB_BOOTSTRAP_URL",
-                "default": "http://example.com/Nano_64_version_20.7z",
-                "description": "HTTP/HTTPS endpoint to download a 7z file with the data.ldb to bootstrap to this node"
-            }
-        ],
-        "ports": [
-            "8075:8075/tcp",
-            "7076:3000/tcp",
-            "7077:3001/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/nano/config"
-            }
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
-        "title": "Nano-wallet",
-        "name": "Nano-wallet",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
-        "description": "[Nano-wallet](https://nano.org/) is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located [here](https://github.com/linuxserver/nano-wallet). You will need to pass a valid RPC host when accessing this container.",
-        "platform": "linux",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Nano_logo.png/640px-Nano_logo.png",
-        "image": "linuxserver/nano-wallet:latest",
-        "ports": [
-            "80:80/tcp"
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
         "title": "Netbootxyz",
         "name": "Netbootxyz",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/netbootxyz/config<br>mkdir -p /volume1/docker/netbootxyz/assets</p>",
@@ -5110,58 +4964,6 @@
             {
                 "container": "/config",
                 "bind": "/volume1/docker/ngircd/config"
-            }
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
-        "title": "Nntp2nntp",
-        "name": "Nntp2nntp",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nntp2nntp/config</p>",
-        "description": "[Nntp2nntp](https://github.com/linuxserver/nntp2nntp) proxy allow you to use your NNTP Account from multiple systems, each with own user name and password. It fully supports SSL and you can also limit the access to proxy with SSL certificates. nntp2nntp proxy is very simple and pretty fast. ## Warning Whilst we know of no nntp2nntp security issues the [upstream code](https://github.com/linuxserver/nntp2nntp) for this project has received no changes since 06.08.15 and is likely abandoned permanently. For this reason we strongly recommend you do not make this application public facing and if you must do so other layers of security and SSL should be considered an absolute bare minimum requirement. We see this proxy being used primarily on a LAN so that all the users NNTP applications can share a common set of internal credentials allowing for central managment of the upstream account e.g change provider, server, thread limits for all applications with one global config change.",
-        "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nntp2nntp.png",
-        "image": "linuxserver/nntp2nntp:latest",
-        "env": [
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "1024",
-                "description": "for UserID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "100",
-                "description": "for GroupID"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-            },
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "<yourUID>",
-                "description": "specify your UID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "<yourGID>",
-                "description": "specify your GID"
-            }
-        ],
-        "ports": [
-            "1563:1563/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/nntp2nntp/config"
             }
         ],
         "restart_policy": "unless-stopped"
@@ -7902,6 +7704,18 @@
                 "label": "MEM_STARTUP",
                 "default": "1024",
                 "description": "Optionally change the Java initial/minimum memory (in Megabytes). Set to `default` to reset to default"
+            },
+            {
+                "name": "MONGO_TLS",
+                "label": "MONGO_TLS",
+                "default": "",
+                "description": "Mongodb enable TLS. Only evaluated on first run."
+            },
+            {
+                "name": "MONGO_AUTHSOURCE",
+                "label": "MONGO_AUTHSOURCE",
+                "default": "",
+                "description": "Mongodb authSource. For Atlas set to `admin`.Defaults to `MONGO_DBNAME`.Only evaluated on first run."
             }
         ],
         "ports": [
