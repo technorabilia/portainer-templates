@@ -1744,6 +1744,7 @@
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns.png",
 			"image": "linuxserver/duckdns:latest",
+			"network": "host",
 			"env": [
 				{
 					"name": "PUID",
@@ -1774,6 +1775,12 @@
 					"label": "TOKEN",
 					"default": "token",
 					"description": "DuckDNS token"
+				},
+				{
+					"name": "UPDATE_IP",
+					"label": "UPDATE_IP",
+					"default": "ipv4",
+					"description": "Set to `ipv6` or `ipv4` to update  **only** your public IPv4/6 address. Set to `both` to update IPv6 and IPv4 address. This variable makes use of a [third-party service](#notice-regarding-automatic-detection). Omitting this variable uses DuckDNS for detection and only supports IPv4. `both` and `ipv6` modes needs [host networking](#networking-net)."
 				},
 				{
 					"name": "LOG_FILE",
