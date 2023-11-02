@@ -5146,6 +5146,12 @@
                 "label": "USER_NAME",
                 "default": "linuxserver.io",
                 "description": "Optionally specify a user name (Default:`linuxserver.io`)"
+            },
+            {
+                "name": "LOG_STDOUT",
+                "label": "LOG_STDOUT",
+                "default": "",
+                "description": "Set to `true` to log to stdout instead of file."
             }
         ],
         "ports": [
