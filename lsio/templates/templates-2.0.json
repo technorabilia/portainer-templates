@@ -4153,19 +4153,19 @@
 					"name": "OTP_SECRET",
 					"label": "OTP_SECRET",
 					"default": "",
-					"description": "MFA secret. Changing it will break two-factor authentication."
+					"description": "MFA secret. Changing it after initial setup will break two-factor authentication."
 				},
 				{
 					"name": "VAPID_PRIVATE_KEY",
 					"label": "VAPID_PRIVATE_KEY",
 					"default": "",
-					"description": "Push notification private key. Changing it will break push notifications."
+					"description": "Push notification private key. Changing it after initial setup will break push notifications."
 				},
 				{
 					"name": "VAPID_PUBLIC_KEY",
 					"label": "VAPID_PUBLIC_KEY",
 					"default": "",
-					"description": "Push notification public key. Changing it will break push notifications."
+					"description": "Push notification public key. Changing it after initial setup will break push notifications."
 				},
 				{
 					"name": "SMTP_SERVER",
