@@ -3110,6 +3110,12 @@
 					"label": "HISHTORY_POSTGRES_DB",
 					"default": "postgresql://${HISHTORY_DB_USER}:${HISHTORY_DB_PASS}@hishtory-db:5432/hishtory?sslmode=disable",
 					"description": "Postgres DB [Connection URI](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING). Special characters must be [URL encoded](https://en.wikipedia.org/wiki/URL_encoding)."
+				},
+				{
+					"name": "HISHTORY_SQLITE_DB",
+					"label": "HISHTORY_SQLITE_DB",
+					"default": "/config/hishtory.db",
+					"description": "SQLite database path. Needs to be a mounted volume for persistence. Don't set at the same time as HISHTORY_POSTGRES_DB."
 				}
 			],
 			"ports": [
