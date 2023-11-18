@@ -6172,6 +6172,12 @@
                 "description": "specify the port of your Quassel Core instance"
             },
             {
+                "name": "QUASSEL_HTTPS",
+                "label": "QUASSEL_HTTPS",
+                "default": "",
+                "description": "Set to `true` to have Quassel web serve over https on port 64443 instead of http on port 64080."
+            },
+            {
                 "name": "URL_BASE",
                 "label": "URL_BASE",
                 "default": "/quassel",
@@ -6179,6 +6185,7 @@
             }
         ],
         "ports": [
+            "64080:64080/tcp",
             "64443:64443/tcp"
         ],
         "volumes": [
