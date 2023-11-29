@@ -6142,7 +6142,7 @@
                 "name": "WEBUI_PORT",
                 "label": "WEBUI_PORT",
                 "default": "8080",
-                "description": "for changing the port of the webui, see below for explanation"
+                "description": "for changing the port of the web UI, see below for explanation"
             }
         ],
         "ports": [
