@@ -2273,7 +2273,7 @@
         "title": "Faster-whisper",
         "name": "Faster-whisper",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/faster-whisper/config</p>",
-        "description": "[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.",
+        "description": "[Faster-whisper](https://github.com/SYSTRAN/faster-whisper) is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/faster-whisper-logo.png",
         "image": "linuxserver/faster-whisper:latest",
@@ -5696,6 +5696,82 @@
             {
                 "container": "/config",
                 "bind": "/volume1/docker/pidgin/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
+        "title": "Piper",
+        "name": "Piper",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/piper/config</p>",
+        "description": "[Piper](https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png",
+        "image": "linuxserver/piper:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for UserID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for GroupID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+            },
+            {
+                "name": "PIPER_VOICE",
+                "label": "PIPER_VOICE",
+                "default": "en_US-lessac-medium",
+                "description": "The [Piper voice](https://huggingface.co/rhasspy/piper-voices/tree/main) to use, in the format `<language>-<name>-<quality>`"
+            },
+            {
+                "name": "PIPER_LENGTH",
+                "label": "PIPER_LENGTH",
+                "default": "1.0",
+                "description": "Voice speaking rate, 1.0 is default with < 1.0 being faster and > 1.0 being slower."
+            },
+            {
+                "name": "PIPER_NOISE",
+                "label": "PIPER_NOISE",
+                "default": "0.667",
+                "description": "Controls the variability of the voice by adding noise. Values above 1 will start to degrade audio."
+            },
+            {
+                "name": "PIPER_NOISEW",
+                "label": "PIPER_NOISEW",
+                "default": "0.333",
+                "description": "Controls the variability of speaking cadence. Values above 1 produce extreme stutters and pauses."
+            },
+            {
+                "name": "PIPER_SPEAKER",
+                "label": "PIPER_SPEAKER",
+                "default": "0",
+                "description": "Speaker number to use if the voice supports multiple speakers."
+            },
+            {
+                "name": "PIPER_PROCS",
+                "label": "PIPER_PROCS",
+                "default": "1",
+                "description": "Number of Piper processes to run simultaneously."
+            }
+        ],
+        "ports": [
+            "10200:10200/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/piper/config"
             }
         ],
         "restart_policy": "unless-stopped"
