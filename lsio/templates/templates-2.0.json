@@ -2302,7 +2302,7 @@
 					"name": "WHISPER_MODEL",
 					"label": "WHISPER_MODEL",
 					"default": "tiny-int8",
-					"description": "Whisper model that will be used for transcription."
+					"description": "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants"
 				},
 				{
 					"name": "WHISPER_BEAM",
