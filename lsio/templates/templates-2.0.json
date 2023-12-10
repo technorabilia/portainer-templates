@@ -8364,13 +8364,13 @@
 					"name": "MONGO_TLS",
 					"label": "MONGO_TLS",
 					"default": "",
-					"description": "Mongodb enable TLS. Only evaluated on first run."
+					"description": "Mongodb enable [TLS](https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.tls). Only evaluated on first run."
 				},
 				{
 					"name": "MONGO_AUTHSOURCE",
 					"label": "MONGO_AUTHSOURCE",
 					"default": "",
-					"description": "Mongodb authSource. For Atlas set to `admin`.Defaults to `MONGO_DBNAME`.Only evaluated on first run."
+					"description": "Mongodb [authSource](https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.authSource). For Atlas set to `admin`.Defaults to `MONGO_DBNAME`.Only evaluated on first run."
 				}
 			],
 			"ports": [
