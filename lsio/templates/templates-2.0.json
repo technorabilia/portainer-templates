@@ -4460,10 +4460,10 @@
 					"description": "The URL you will use to access Lychee including protocol, and port where appropriate."
 				},
 				{
-					"name": "APP_FORCE_HTTPS",
-					"label": "APP_FORCE_HTTPS",
+					"name": "TRUSTED_PROXIES",
+					"label": "TRUSTED_PROXIES",
 					"default": "",
-					"description": "Set to `true` if running behind an https reverse proxy."
+					"description": "Set to the IP or netmask covering your reverse proxy, if running behind one. Set to `*` to trust all IPs (**do not** use `*` if exposed to the internet`)."
 				}
 			],
 			"ports": [
