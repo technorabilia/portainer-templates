@@ -4984,6 +4984,101 @@
 		},
 		{
 			"type": 1,
+			"title": "Monica",
+			"name": "Monica",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/monica/config</p>",
+			"description": "[Monica](https://github.com/monicahq/monica) is an open source personal relationship management system, that lets you document your life.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/monica-logo.png",
+			"image": "linuxserver/monica:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "DB_HOST",
+					"label": "DB_HOST",
+					"default": "",
+					"description": "Mariadb DB server hostname."
+				},
+				{
+					"name": "DB_PORT",
+					"label": "DB_PORT",
+					"default": "",
+					"description": "Mariadb DB server port."
+				},
+				{
+					"name": "DB_USERNAME",
+					"label": "DB_USERNAME",
+					"default": "",
+					"description": "Mariadb DB user."
+				},
+				{
+					"name": "DB_PASSWORD",
+					"label": "DB_PASSWORD",
+					"default": "",
+					"description": "Mariadb DB password."
+				},
+				{
+					"name": "DB_DATABASE",
+					"label": "DB_DATABASE",
+					"default": "",
+					"description": "Mariadb DB name."
+				},
+				{
+					"name": "APP_URL",
+					"label": "APP_URL",
+					"default": "http://localhost:80",
+					"description": "The URL you will use to access Monica including protocol, and port where appropriate."
+				},
+				{
+					"name": "TRUSTED_PROXIES",
+					"label": "TRUSTED_PROXIES",
+					"default": "",
+					"description": "Set to the IP or netmask covering your reverse proxy, if running behind one. Set to `*` to trust all IPs (**do not** use `*` if exposed to the internet`)."
+				},
+				{
+					"name": "APP_ENV",
+					"label": "APP_ENV",
+					"default": "local",
+					"description": "Set to `production` when exposing the container to anyone else; this also makes https mandatory."
+				},
+				{
+					"name": "APP_DISABLE_SIGNUP",
+					"label": "APP_DISABLE_SIGNUP",
+					"default": "true",
+					"description": "Set to `false` to enable new account sign-ups."
+				}
+			],
+			"ports": [
+				"80:80/tcp",
+				"443:443/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/monica/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Mstream",
 			"name": "Mstream",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/mstream/config<br>mkdir -p /volume1/docker/mstream/music</p>",
