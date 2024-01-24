@@ -3226,7 +3226,13 @@
                 "name": "ALLOWED_HOSTS",
                 "label": "ALLOWED_HOSTS",
                 "default": "",
-                "description": "Array of valid hostnames for the server `['test.com','test2.com']` (default: `['*']`)"
+                "description": "A [list](https://docs.python.org/3/tutorial/introduction.html#lists) of valid hostnames for the server. Default is: `['*']`"
+            },
+            {
+                "name": "CSRF_TRUSTED_ORIGINS",
+                "label": "CSRF_TRUSTED_ORIGINS",
+                "default": "",
+                "description": "A [list](https://docs.python.org/3/tutorial/introduction.html#lists) of trusted origins for unsafe requests (e.g. POST). Defaults to the value of `SITE_ROOT`."
             },
             {
                 "name": "APPRISE_ENABLED",
