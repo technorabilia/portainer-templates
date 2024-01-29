@@ -3137,7 +3137,7 @@
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/healthchecks/config</p>",
 			"description": "[Healthchecks](https://github.com/healthchecks/healthchecks) is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",
 			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/healthchecks/healthchecks/master/static/img/welcome.png",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/healthchecks-logo.png",
 			"image": "linuxserver/healthchecks:latest",
 			"env": [
 				{
@@ -3162,73 +3162,37 @@
 					"name": "SITE_ROOT",
 					"label": "SITE_ROOT",
 					"default": "",
-					"description": "The site's top-level URL and the port it listens to if differrent than 80 or 443 (e.g., https://healthchecks.example.com:8000)"
+					"description": "The site's top-level URL and the port it listens to if different than 80 or 443 (e.g., https://healthchecks.example.com:8000)."
 				},
 				{
 					"name": "SITE_NAME",
 					"label": "SITE_NAME",
 					"default": "",
-					"description": "The site's name (e.g., 'Example Corp HealthChecks')"
-				},
-				{
-					"name": "DEFAULT_FROM_EMAIL",
-					"label": "DEFAULT_FROM_EMAIL",
-					"default": "",
-					"description": "From email for alerts"
-				},
-				{
-					"name": "EMAIL_HOST",
-					"label": "EMAIL_HOST",
-					"default": "",
-					"description": "SMTP host"
-				},
-				{
-					"name": "EMAIL_PORT",
-					"label": "EMAIL_PORT",
-					"default": "",
-					"description": "SMTP port"
-				},
-				{
-					"name": "EMAIL_HOST_USER",
-					"label": "EMAIL_HOST_USER",
-					"default": "",
-					"description": "SMTP user"
-				},
-				{
-					"name": "EMAIL_HOST_PASSWORD",
-					"label": "EMAIL_HOST_PASSWORD",
-					"default": "",
-					"description": "SMTP password"
-				},
-				{
-					"name": "EMAIL_USE_TLS",
-					"label": "EMAIL_USE_TLS",
-					"default": "",
-					"description": "Use TLS for SMTP (`True` or `False`)"
+					"description": "The site's name (e.g., 'Example Corp HealthChecks')."
 				},
 				{
 					"name": "SUPERUSER_EMAIL",
 					"label": "SUPERUSER_EMAIL",
 					"default": "",
-					"description": "Superuser email"
+					"description": "Superuser email."
 				},
 				{
 					"name": "SUPERUSER_PASSWORD",
 					"label": "SUPERUSER_PASSWORD",
 					"default": "",
-					"description": "Superuser password"
-				},
-				{
-					"name": "REGENERATE_SETTINGS",
-					"label": "REGENERATE_SETTINGS",
-					"default": "",
-					"description": "Defaults to False. Set to True to always override the `local_settings.py` file with values from environment variables. Do not set to True if you have made manual modifications to this file."
+					"description": "Superuser password."
 				},
 				{
 					"name": "ALLOWED_HOSTS",
 					"label": "ALLOWED_HOSTS",
 					"default": "",
-					"description": "A [list](https://docs.python.org/3/tutorial/introduction.html#lists) of valid hostnames for the server. Default is: `['*']`"
+					"description": "A comma-separated list of valid hostnames for the server. Default is: `*`."
+				},
+				{
+					"name": "APPRISE_ENABLED",
+					"label": "APPRISE_ENABLED",
+					"default": "False",
+					"description": "Set to `True` to enable the Apprise integration (https://github.com/caronc/apprise)."
 				},
 				{
 					"name": "CSRF_TRUSTED_ORIGINS",
@@ -3237,16 +3201,46 @@
 					"description": "A [list](https://docs.python.org/3/tutorial/introduction.html#lists) of trusted origins for unsafe requests (e.g. POST). Defaults to the value of `SITE_ROOT`."
 				},
 				{
-					"name": "APPRISE_ENABLED",
-					"label": "APPRISE_ENABLED",
-					"default": "",
-					"description": "Defaults to False. A boolean that turns on/off the Apprise integration (https://github.com/caronc/apprise)"
-				},
-				{
 					"name": "DEBUG",
 					"label": "DEBUG",
+					"default": "True",
+					"description": "Set to `False` to disable. Debug mode relaxes CSRF protections and increases logging verbosity but should be disabled for production instances as it will impact performance and security."
+				},
+				{
+					"name": "DEFAULT_FROM_EMAIL",
+					"label": "DEFAULT_FROM_EMAIL",
 					"default": "",
-					"description": "Defaults to True. Debug mode relaxes CSRF protections and increases logging verbosity but should be disabled for production instances as it will impact performance and security."
+					"description": "From email for alerts."
+				},
+				{
+					"name": "EMAIL_HOST",
+					"label": "EMAIL_HOST",
+					"default": "",
+					"description": "SMTP host."
+				},
+				{
+					"name": "EMAIL_PORT",
+					"label": "EMAIL_PORT",
+					"default": "",
+					"description": "SMTP port."
+				},
+				{
+					"name": "EMAIL_HOST_USER",
+					"label": "EMAIL_HOST_USER",
+					"default": "",
+					"description": "SMTP user."
+				},
+				{
+					"name": "EMAIL_HOST_PASSWORD",
+					"label": "EMAIL_HOST_PASSWORD",
+					"default": "",
+					"description": "SMTP password."
+				},
+				{
+					"name": "EMAIL_USE_TLS",
+					"label": "EMAIL_USE_TLS",
+					"default": "",
+					"description": "Use TLS for SMTP (`True` or `False`)."
 				},
 				{
 					"name": "INTEGRATIONS_ALLOW_PRIVATE_IPS",
@@ -3258,19 +3252,25 @@
 					"name": "PING_EMAIL_DOMAIN",
 					"label": "PING_EMAIL_DOMAIN",
 					"default": "",
-					"description": "The domain to use for generating ping email addresses."
+					"description": "The domain to use for generating ping email addresses. Defaults to `localhost`."
+				},
+				{
+					"name": "RP_ID",
+					"label": "RP_ID",
+					"default": "",
+					"description": "If using webauthn for 2FA set this to match your Healthchecks domain. Webauthn will only work over https."
 				},
 				{
 					"name": "SECRET_KEY",
 					"label": "SECRET_KEY",
 					"default": "",
-					"description": "A secret key used for cryptographic signing. Will generate a secure value if one is not supplied"
+					"description": "A secret key used for cryptographic signing. Will generate a random value if one is not supplied and save it to `/config/local_settings.py`."
 				},
 				{
 					"name": "SITE_LOGO_URL",
 					"label": "SITE_LOGO_URL",
 					"default": "",
-					"description": "Full URL to custom site logo"
+					"description": "Full URL to custom site logo."
 				}
 			],
 			"ports": [
