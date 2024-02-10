@@ -7737,6 +7737,88 @@
 		},
 		{
 			"type": 1,
+			"title": "Speedtest-tracker",
+			"name": "Speedtest-tracker",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/speedtest-tracker/config</p>",
+			"description": "[Speedtest-tracker](https://github.com/alexjustesen/speedtest-tracker) is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/speedtest-tracker-logo.png",
+			"image": "linuxserver/speedtest-tracker:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "DB_CONNECTION",
+					"label": "DB_CONNECTION",
+					"default": "sqlite",
+					"description": "Set the database type to use. `sqlite`, `pgsql`, or `mysql`"
+				},
+				{
+					"name": "APP_KEY",
+					"label": "APP_KEY",
+					"default": "",
+					"description": "App key used for encrypting stored data. Generate with `docker exec speedtest-tracker php /app/www/artisan key:generate --show`"
+				},
+				{
+					"name": "DB_HOST",
+					"label": "DB_HOST",
+					"default": "",
+					"description": "Database hostname (postgres/mysql)."
+				},
+				{
+					"name": "DB_PORT",
+					"label": "DB_PORT",
+					"default": "",
+					"description": "Database port (postgres/mysql)."
+				},
+				{
+					"name": "DB_DATABASE",
+					"label": "DB_DATABASE",
+					"default": "",
+					"description": "Database name (postgres/mysql)."
+				},
+				{
+					"name": "DB_USERNAME",
+					"label": "DB_USERNAME",
+					"default": "",
+					"description": "Database username (postgres/mysql)."
+				},
+				{
+					"name": "DB_PASSWORD",
+					"label": "DB_PASSWORD",
+					"default": "",
+					"description": "Database password (postgres/mysql)."
+				}
+			],
+			"ports": [
+				"80:80/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/speedtest-tracker/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Sqlitebrowser",
 			"name": "Sqlitebrowser",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/sqlitebrowser/config</p>",
