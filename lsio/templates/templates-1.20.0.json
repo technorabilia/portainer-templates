@@ -2601,6 +2601,12 @@
                 "label": "TZ",
                 "default": "Europe/Amsterdam",
                 "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+            },
+            {
+                "name": "FIREFOX_CLI",
+                "label": "FIREFOX_CLI",
+                "default": "https://www.linuxserver.io/",
+                "description": "Specify one or multiple Firefox CLI flags, this string will be passed to the application in full."
             }
         ],
         "ports": [
