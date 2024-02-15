@@ -6772,6 +6772,12 @@
                 "label": "WEBUI_PORT",
                 "default": "8080",
                 "description": "for changing the port of the web UI, see below for explanation"
+            },
+            {
+                "name": "TORRENTING_PORT",
+                "label": "TORRENTING_PORT",
+                "default": "6881",
+                "description": "for changing the port of tcp/udp connection, see below for explanation"
             }
         ],
         "ports": [
