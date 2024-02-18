@@ -7681,6 +7681,66 @@
                 "label": "MYSQL_PASSWORD",
                 "default": "",
                 "description": "Mysql password to use"
+            },
+            {
+                "name": "APP_ENV",
+                "label": "APP_ENV",
+                "default": "production",
+                "description": "Default is `production` but can use `testing` or `develop`."
+            },
+            {
+                "name": "APP_DEBUG",
+                "label": "APP_DEBUG",
+                "default": "false",
+                "description": "Set to `true` to see debugging output in the web UI."
+            },
+            {
+                "name": "APP_LOCALE",
+                "label": "APP_LOCALE",
+                "default": "",
+                "description": "Default is `en`. Set to a language from [this list](https://snipe-it.readme.io/docs/configuration#section-setting-a-language)."
+            },
+            {
+                "name": "MAIL_PORT_587_TCP_ADDR",
+                "label": "MAIL_PORT_587_TCP_ADDR",
+                "default": "US/Pacific",
+                "description": "SMTP mail server ip or hostname."
+            },
+            {
+                "name": "MAIL_PORT_587_TCP_PORT",
+                "label": "MAIL_PORT_587_TCP_PORT",
+                "default": "US/Pacific",
+                "description": "SMTP mail server port."
+            },
+            {
+                "name": "MAIL_ENV_FROM_ADDR",
+                "label": "MAIL_ENV_FROM_ADDR",
+                "default": "US/Pacific",
+                "description": "The email address mail should be replied to and listed when sent."
+            },
+            {
+                "name": "MAIL_ENV_FROM_NAME",
+                "label": "MAIL_ENV_FROM_NAME",
+                "default": "US/Pacific",
+                "description": "The name listed on email sent from the default account on the system."
+            },
+            {
+                "name": "MAIL_ENV_ENCRYPTION",
+                "label": "MAIL_ENV_ENCRYPTION",
+                "default": "US/Pacific",
+                "description": "Mail encryption to use e.g. `tls`."
+            },
+            {
+                "name": "MAIL_ENV_USERNAME",
+                "label": "MAIL_ENV_USERNAME",
+                "default": "US/Pacific",
+                "description": "SMTP server login username."
+            },
+            {
+                "name": "MAIL_ENV_PASSWORD",
+                "label": "MAIL_ENV_PASSWORD",
+                "default": "US/Pacific",
+                "description": "SMTP server login password."
             }
         ],
         "ports": [
