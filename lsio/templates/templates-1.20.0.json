@@ -5312,6 +5312,18 @@
                 "label": "SUBFOLDER",
                 "default": "/",
                 "description": "Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)"
+            },
+            {
+                "name": "NGINX_PORT",
+                "label": "NGINX_PORT",
+                "default": "80",
+                "description": "Specify a different internal port for the asset server"
+            },
+            {
+                "name": "WEB_APP_PORT",
+                "label": "WEB_APP_PORT",
+                "default": "3000",
+                "description": "Specify a different internal port for the configuration UI"
             }
         ],
         "ports": [
