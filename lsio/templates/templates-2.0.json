@@ -943,6 +943,12 @@
 					"label": "BASE_URL",
 					"default": "",
 					"description": "Specify the full URL (including protocol) when running behind a reverse proxy"
+				},
+				{
+					"name": "PLAYWRIGHT_DRIVER_URL",
+					"label": "PLAYWRIGHT_DRIVER_URL",
+					"default": "",
+					"description": "Specify the full URL to your chrome driver instance. See the [wiki](https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher) for details."
 				}
 			],
 			"ports": [
