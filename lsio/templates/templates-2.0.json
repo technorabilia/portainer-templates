@@ -1504,49 +1504,6 @@
 		},
 		{
 			"type": 1,
-			"title": "Dillinger",
-			"name": "Dillinger",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/dillinger/config</p>",
-			"description": "[Dillinger](https://github.com/joemccann/dillinger) is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.",
-			"categories": [
-				"Development"
-			],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dillinger.png",
-			"image": "linuxserver/dillinger:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				}
-			],
-			"ports": [
-				"8080:8080/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/dillinger/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
 			"title": "Diskover",
 			"name": "Diskover",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/diskover/config<br>mkdir -p /volume1/docker/diskover/data</p>",
@@ -1656,63 +1613,6 @@
 			{
 				"container": "/config",
 				"bind": "/volume1/docker/dokuwiki/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Domoticz",
-			"name": "Domoticz",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/domoticz/config</p>",
-			"description": "[Domoticz](https://www.domoticz.com) is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.",
-			"categories": [
-				"Automation"
-			],
-			"platform": "linux",
-			"logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
-			"image": "linuxserver/domoticz:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "WEBROOT",
-					"label": "WEBROOT",
-					"default": "domoticz",
-					"description": "Sets webroot to domoticz for usage with subfolder reverse proxy. Not needed unless reverse proxying."
-				},
-				{
-					"name": "DBASE",
-					"label": "DBASE",
-					"default": "<path to database>",
-					"description": "Sets path to database. Do not set unless you know what this does."
-				}
-			],
-			"ports": [
-				"8080:8080/tcp",
-				"6144:6144/tcp",
-				"1443:1443/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/domoticz/config"
 			}
 			],
 			"restart_policy": "unless-stopped"
@@ -2170,80 +2070,6 @@
 			{
 				"container": "/data",
 				"bind": "/volume1/docker/emulatorjs/data"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Endlessh",
-			"name": "Endlessh",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/endlessh/config<br>mkdir -p /volume1/docker/endlessh/config</p>",
-			"description": "[Endlessh](https://github.com/skeeto/endlessh) is an SSH tarpit that very slowly sends an endless, random SSH banner. It keeps SSH clients locked up for hours or even days at a time. The purpose is to put your real SSH server on another port and then let the script kiddies get stuck in this tarpit instead of bothering a real server.",
-			"platform": "linux",
-			"logo": "https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/openssh-server-logo.png",
-			"image": "linuxserver/endlessh:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "MSDELAY",
-					"label": "MSDELAY",
-					"default": "10000",
-					"description": "The endless banner is sent one line at a time. This is the delay in milliseconds between individual lines."
-				},
-				{
-					"name": "MAXLINES",
-					"label": "MAXLINES",
-					"default": "32",
-					"description": "The length of each line is randomized. This controls the maximum length of each line. Shorter lines may keep clients on for longer if they give up after a certain number of bytes."
-				},
-				{
-					"name": "MAXCLIENTS",
-					"label": "MAXCLIENTS",
-					"default": "4096",
-					"description": "Maximum number of connections to accept at a time. Connections beyond this are not immediately rejected, but will wait in the queue."
-				},
-				{
-					"name": "LOGFILE",
-					"label": "LOGFILE",
-					"default": "false",
-					"description": "By default, the app logs to container log. If this is set to `true`, the log will be output to file under `/config/logs/endlessh` (`/config` needs to be mapped)."
-				},
-				{
-					"name": "BINDFAMILY",
-					"label": "BINDFAMILY",
-					"default": "",
-					"description": "By default, the app binds to IPv4 and IPv6 addresses. Set it to `4` or `6` to bind to IPv4 only or IPv6 only, respectively. Leave blank to bind to both."
-				}
-			],
-			"ports": [
-				"22:2222/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/endlessh/config"
-			},
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/endlessh/config"
 			}
 			],
 			"restart_policy": "unless-stopped"
@@ -8608,69 +8434,6 @@
 			{
 				"container": "/files",
 				"bind": "/volume1/docker/ubooquity/files"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Unifi-controller",
-			"name": "Unifi-controller",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/unifi-controller/config</p>",
-			"description": "The [Unifi-controller](https://www.ubnt.com/enterprise/#unifi) software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
-			"categories": [
-				"Networking"
-			],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png",
-			"image": "linuxserver/unifi-controller:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "MEM_LIMIT",
-					"label": "MEM_LIMIT",
-					"default": "1024",
-					"description": "Optionally change the Java memory limit (in Megabytes). Set to `default` to reset to default"
-				},
-				{
-					"name": "MEM_STARTUP",
-					"label": "MEM_STARTUP",
-					"default": "1024",
-					"description": "Optionally change the Java initial/minimum memory (in Megabytes). Set to `default` to reset to default"
-				}
-			],
-			"ports": [
-				"8443:8443/tcp",
-				"3478:3478/udp",
-				"10001:10001/udp",
-				"8080:8080/tcp",
-				"1900:1900/udp",
-				"8843:8843/tcp",
-				"8880:8880/tcp",
-				"6789:6789/tcp",
-				"5514:5514/udp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/unifi-controller/config"
 			}
 			],
 			"restart_policy": "unless-stopped"
