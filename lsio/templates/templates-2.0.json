@@ -3969,6 +3969,73 @@
 		},
 		{
 			"type": 1,
+			"title": "Kometa",
+			"name": "Kometa",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kometa/config</p>",
+			"description": "[Kometa](https://github.com/Kometa-Team/Kometa) is a powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kometa-banner.png",
+			"image": "linuxserver/kometa:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "KOMETA_CONFIG",
+					"label": "KOMETA_CONFIG",
+					"default": "/config/config.yml",
+					"description": "Specify a custom config file to use."
+				},
+				{
+					"name": "KOMETA_TIME",
+					"label": "KOMETA_TIME",
+					"default": "03:00",
+					"description": "Comma-separated list of times to update each day. Format: `HH:MM`."
+				},
+				{
+					"name": "KOMETA_RUN",
+					"label": "KOMETA_RUN",
+					"default": "False",
+					"description": "Set to `True` to run without the scheduler."
+				},
+				{
+					"name": "KOMETA_TEST",
+					"label": "KOMETA_TEST",
+					"default": "False",
+					"description": "Set to `True` to run in debug mode with only collections that have `test: true`."
+				},
+				{
+					"name": "KOMETA_NO_MISSING",
+					"label": "KOMETA_NO_MISSING",
+					"default": "False",
+					"description": "Set to `True` to run without any of the missing movie/show functions."
+				}
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/kometa/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Krita",
 			"name": "Krita",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/krita/config</p>",
