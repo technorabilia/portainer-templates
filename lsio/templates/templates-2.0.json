@@ -5014,7 +5014,7 @@
 				{
 					"name": "CLI_ARGS",
 					"label": "CLI_ARGS",
-					"default": "--gameid minetest --port 30000",
+					"default": "--gameid devtest",
 					"description": "Optionally specify any [CLI variables](https://wiki.minetest.net/Command_line) you want to launch the app with"
 				}
 			],
