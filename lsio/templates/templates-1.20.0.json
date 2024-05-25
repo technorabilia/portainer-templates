@@ -3365,7 +3365,7 @@
         "type": 1,
         "title": "Hishtory-server",
         "name": "Hishtory-server",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/hishtory-server/config</p>",
         "description": "[hiSHtory](https://github.com/ddworken/hishtory) is a better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hishtory-server-icon.png",
@@ -3404,6 +3404,12 @@
         ],
         "ports": [
             "8080:8080/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/hishtory-server/config"
+            }
         ],
         "restart_policy": "unless-stopped"
     },
@@ -9473,7 +9479,7 @@
         "type": 1,
         "title": "Your_spotify",
         "name": "Your_spotify",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/your_spotify/config</p>",
         "description": "[Your_spotify](https://github.com/Yooooomi/your_spotify) is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
         "platform": "linux",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png",
@@ -9531,6 +9537,12 @@
         "ports": [
             "80:80/tcp",
             "443:443/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/your_spotify/config"
+            }
         ],
         "restart_policy": "unless-stopped"
     },
