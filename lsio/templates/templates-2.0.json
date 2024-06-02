@@ -644,7 +644,7 @@
 				"Media"
 			],
 			"platform": "linux",
-			"logo": "https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/bookstack-logo500x500.png",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bookstack-logo.png",
 			"image": "linuxserver/bookstack:latest",
 			"env": [
 				{
