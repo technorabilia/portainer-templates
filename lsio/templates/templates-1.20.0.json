@@ -5553,7 +5553,7 @@
                 "name": "DB_PORT",
                 "label": "DB_PORT",
                 "default": "",
-                "description": "Database port (defaul: 5432)"
+                "description": "Database port (default: 5432)"
             },
             {
                 "name": "REDIS_HOST",
