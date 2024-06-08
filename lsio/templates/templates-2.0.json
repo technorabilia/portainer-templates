@@ -8188,16 +8188,28 @@
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
 				},
 				{
+					"name": "APP_KEY",
+					"label": "APP_KEY",
+					"default": "",
+					"description": "App key used for encrypting stored data. You can generate a key at [https://speedtest-tracker.dev](https://speedtest-tracker.dev)"
+				},
+				{
 					"name": "DB_CONNECTION",
 					"label": "DB_CONNECTION",
 					"default": "sqlite",
 					"description": "Set the database type to use. `sqlite`, `pgsql`, or `mysql`"
 				},
 				{
-					"name": "APP_KEY",
-					"label": "APP_KEY",
+					"name": "SPEEDTEST_SCHEDULE",
+					"label": "SPEEDTEST_SCHEDULE",
 					"default": "",
-					"description": "App key used for encrypting stored data. Generate with `docker exec speedtest-tracker php /app/www/artisan key:generate --show`"
+					"description": "Set the test schedule in cron format. e.g. `0 */6 * * *`"
+				},
+				{
+					"name": "SPEEDTEST_SERVERS",
+					"label": "SPEEDTEST_SERVERS",
+					"default": "",
+					"description": "A comma-separated list of server IDs to test against. Run `docker exec speedtest-tracker php /app/www/artisan app:ookla-list-servers` to get a list of nearby servers."
 				},
 				{
 					"name": "DB_HOST",
@@ -8228,6 +8240,18 @@
 					"label": "DB_PASSWORD",
 					"default": "",
 					"description": "Database password (postgres/mysql)."
+				},
+				{
+					"name": "DISPLAY_TIMEZONE",
+					"label": "DISPLAY_TIMEZONE",
+					"default": "Etc/UTC",
+					"description": "Timezone for the UI."
+				},
+				{
+					"name": "PRUNE_RESULTS_OLDER_THAN",
+					"label": "PRUNE_RESULTS_OLDER_THAN",
+					"default": "0",
+					"description": "Days to keep test results."
 				}
 			],
 			"ports": [
