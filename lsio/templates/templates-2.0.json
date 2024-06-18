@@ -7945,7 +7945,7 @@
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/snipe-it/config</p>",
 			"description": "[Snipe-it](https://github.com/snipe/snipe-it) makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster.",
 			"platform": "linux",
-			"logo": "https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/snipe-it-logo500x500.png",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snipe-it-logo.png",
 			"image": "linuxserver/snipe-it:latest",
 			"env": [
 				{
@@ -7965,6 +7965,12 @@
 					"label": "TZ",
 					"default": "Europe/Amsterdam",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "APP_KEY",
+					"label": "APP_KEY",
+					"default": "",
+					"description": "App key used for encrypting stored data. Generate with `docker exec snipe-it php /app/www/artisan key:generate --show`."
 				},
 				{
 					"name": "APP_URL",
@@ -8003,16 +8009,22 @@
 					"description": "Mysql password to use"
 				},
 				{
+					"name": "APP_DEBUG",
+					"label": "APP_DEBUG",
+					"default": "false",
+					"description": "Set to `true` to see debugging output in the web UI."
+				},
+				{
 					"name": "APP_ENV",
 					"label": "APP_ENV",
 					"default": "production",
 					"description": "Default is `production` but can use `testing` or `develop`."
 				},
 				{
-					"name": "APP_DEBUG",
-					"label": "APP_DEBUG",
+					"name": "APP_FORCE_TLS",
+					"label": "APP_FORCE_TLS",
 					"default": "false",
-					"description": "Set to `true` to see debugging output in the web UI."
+					"description": "Set to `true` if running behind a reverse proxy"
 				},
 				{
 					"name": "APP_LOCALE",
@@ -8023,43 +8035,43 @@
 				{
 					"name": "MAIL_PORT_587_TCP_ADDR",
 					"label": "MAIL_PORT_587_TCP_ADDR",
-					"default": "US/Pacific",
+					"default": "",
 					"description": "SMTP mail server ip or hostname."
 				},
 				{
 					"name": "MAIL_PORT_587_TCP_PORT",
 					"label": "MAIL_PORT_587_TCP_PORT",
-					"default": "US/Pacific",
+					"default": "",
 					"description": "SMTP mail server port."
 				},
 				{
 					"name": "MAIL_ENV_FROM_ADDR",
 					"label": "MAIL_ENV_FROM_ADDR",
-					"default": "US/Pacific",
+					"default": "",
 					"description": "The email address mail should be replied to and listed when sent."
 				},
 				{
 					"name": "MAIL_ENV_FROM_NAME",
 					"label": "MAIL_ENV_FROM_NAME",
-					"default": "US/Pacific",
+					"default": "",
 					"description": "The name listed on email sent from the default account on the system."
 				},
 				{
 					"name": "MAIL_ENV_ENCRYPTION",
 					"label": "MAIL_ENV_ENCRYPTION",
-					"default": "US/Pacific",
+					"default": "",
 					"description": "Mail encryption to use e.g. `tls`."
 				},
 				{
 					"name": "MAIL_ENV_USERNAME",
 					"label": "MAIL_ENV_USERNAME",
-					"default": "US/Pacific",
+					"default": "",
 					"description": "SMTP server login username."
 				},
 				{
 					"name": "MAIL_ENV_PASSWORD",
 					"label": "MAIL_ENV_PASSWORD",
-					"default": "US/Pacific",
+					"default": "",
 					"description": "SMTP server login password."
 				}
 			],
