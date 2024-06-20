@@ -8028,7 +8028,7 @@
                 "name": "APP_LOCALE",
                 "label": "APP_LOCALE",
                 "default": "",
-                "description": "Default is `en`. Set to a language from [this list](https://snipe-it.readme.io/docs/configuration#section-setting-a-language)."
+                "description": "Default is `en-US`. Set to a language from [this list](https://snipe-it.readme.io/docs/configuration#section-setting-a-language)."
             },
             {
                 "name": "MAIL_PORT_587_TCP_ADDR",
