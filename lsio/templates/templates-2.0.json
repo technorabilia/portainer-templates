@@ -1801,6 +1801,9 @@
 					"description": "For passing additional java options."
 				}
 			],
+			"ports": [
+				"80:80/tcp"
+			],
 			"volumes": [
 			{
 				"container": "/config",
@@ -1861,7 +1864,7 @@
 			"type": 1,
 			"title": "Duckdns",
 			"name": "Duckdns",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/duckdns/config</p>",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/duckdns/config<br>mkdir -p /volume1/docker/duckdns/config</p>",
 			"description": "[Duckdns](https://duckdns.org/) is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns.png",
@@ -1911,7 +1914,14 @@
 					"description": "Set to `true` to log to file (also need to map /config)."
 				}
 			],
+			"ports": [
+				"80:80/tcp"
+			],
 			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/duckdns/config"
+			},
 			{
 				"container": "/config",
 				"bind": "/volume1/docker/duckdns/config"
@@ -4037,6 +4047,9 @@
 					"default": "False",
 					"description": "Set to `True` to run without any of the missing movie/show functions."
 				}
+			],
+			"ports": [
+				"80:80/tcp"
 			],
 			"volumes": [
 			{
