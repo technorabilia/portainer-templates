@@ -2685,15 +2685,27 @@
                 "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
             },
             {
+                "name": "ACCOUNT_TOKEN",
+                "label": "ACCOUNT_TOKEN",
+                "default": "",
+                "description": "Register for an account on `https://app.foldingathome.org` and retrieve account token in settings. Required on first start."
+            },
+            {
+                "name": "MACHINE_NAME",
+                "label": "MACHINE_NAME",
+                "default": "",
+                "description": "Assign a friendly name to this instance (no spaces). Required on first start."
+            },
+            {
                 "name": "CLI_ARGS",
                 "label": "CLI_ARGS",
                 "default": "",
-                "description": "Optionally pass additional cli arguments to `FAHClient` on container start."
+                "description": "Optionally pass additional cli arguments to `fah-client` on container start."
             }
         ],
         "ports": [
-            "7396:7396/tcp",
-            "36330:36330/tcp"
+            "80:80/tcp",
+            "7396:7396/tcp"
         ],
         "volumes": [
             {
