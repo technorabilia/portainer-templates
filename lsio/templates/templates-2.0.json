@@ -3015,7 +3015,7 @@
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/grocy/config</p>",
 			"description": "[Grocy](https://github.com/grocy/grocy) is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy.info",
 			"platform": "linux",
-			"logo": "https://grocy.info/img/grocy_logo.svg",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grocy-logo.png",
 			"image": "linuxserver/grocy:latest",
 			"env": [
 				{
@@ -4173,12 +4173,30 @@
 			"type": 1,
 			"title": "Ldap-auth",
 			"name": "Ldap-auth",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ldap-auth/config</p>",
 			"description": "[Ldap-auth](https://github.com/nginxinc/nginx-ldap-auth) software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).",
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ldap-auth-logo.png",
 			"image": "linuxserver/ldap-auth:latest",
 			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
 				{
 					"name": "FERNETKEY",
 					"label": "FERNETKEY",
@@ -4201,6 +4219,12 @@
 			"ports": [
 				"8888:8888/tcp",
 				"9000:9000/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/ldap-auth/config"
+			}
 			],
 			"restart_policy": "unless-stopped"
 		},
@@ -5483,7 +5507,7 @@
 					"name": "SUBFOLDER",
 					"label": "SUBFOLDER",
 					"default": "/",
-					"description": "Specify a sobfolder if running this behind a reverse proxy (IE /proxy/)"
+					"description": "Specify a subfolder if running this behind a reverse proxy (IE /proxy/)"
 				},
 				{
 					"name": "NGINX_PORT",
