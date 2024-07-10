@@ -3293,13 +3293,13 @@
                 "name": "DB_HOST",
                 "label": "DB_HOST",
                 "default": "<hostname or ip>",
-                "description": "Host address of mysql database"
+                "description": "Host address of mariadb database"
             },
             {
                 "name": "DB_PORT",
                 "label": "DB_PORT",
                 "default": "3306",
-                "description": "Port to access mysql database default is 3306"
+                "description": "Port to access mariadb database default is 3306"
             },
             {
                 "name": "DB_USER",
@@ -3348,6 +3348,12 @@
                 "label": "CMD_ALLOW_ORIGIN",
                 "default": "['localhost']",
                 "description": "Comma-separated list of allowed hostnames"
+            },
+            {
+                "name": "CMD_DB_DIALECT",
+                "label": "CMD_DB_DIALECT",
+                "default": "",
+                "description": "This variable allows selecting a database engine (if DB_HOST not set up). Available options are: `mariadb`, `mysql`, `postgres`, `sqlite`."
             }
         ],
         "ports": [
