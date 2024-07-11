@@ -9772,7 +9772,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/znc/config</p>",
         "description": "[Znc](http://wiki.znc.in/ZNC) is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
         "platform": "linux",
-        "logo": "http://wiki.znc.in/resources/assets/wiki.png",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/znc-logo.png",
         "image": "linuxserver/znc:latest",
         "env": [
             {
