@@ -4715,6 +4715,68 @@
 		},
 		{
 			"type": 1,
+			"title": "Manyfold",
+			"name": "Manyfold",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/manyfold/config<br>mkdir -p /volume1/docker/manyfold/libraries</p>",
+			"description": "[Manyfold](https://github.com/manyfold3d/manyfold/) is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png",
+			"image": "linuxserver/manyfold:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "DATABASE_URL",
+					"label": "DATABASE_URL",
+					"default": "",
+					"description": "Database connection URL. For sqlite use `sqlite3:/config/manyfold.sqlite3`. For postgres or mariadb use `<scheme>://<username>:<password>@<hostname>:<port>/<db name>` where `<scheme>` is `postgresql` or `mysql2`. Special characters in username/password must be [URL encoded](https://en.wikipedia.org/wiki/Percent-encoding)."
+				},
+				{
+					"name": "REDIS_URL",
+					"label": "REDIS_URL",
+					"default": "",
+					"description": "Redis/Valkey database URL in `redis://<hostname>:<port>/<db number>` format."
+				},
+				{
+					"name": "SECRET_KEY_BASE",
+					"label": "SECRET_KEY_BASE",
+					"default": "",
+					"description": "Browser session secret. Changing it will terminate all active browser sessions."
+				}
+			],
+			"ports": [
+				"3214:3214/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/manyfold/config"
+			},
+			{
+				"container": "/libraries",
+				"bind": "/volume1/docker/manyfold/libraries"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Mariadb",
 			"name": "Mariadb",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/mariadb/config</p>",
