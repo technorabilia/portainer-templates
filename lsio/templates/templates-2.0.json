@@ -7798,6 +7798,47 @@
 		},
 		{
 			"type": 1,
+			"title": "Rustdesk",
+			"name": "Rustdesk",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/rustdesk/config</p>",
+			"description": "[RustDesk](https://rustdesk.com/) is a full-featured open source remote control alternative for self-hosting and security with minimal configuration.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rustdesk-logo.png",
+			"image": "linuxserver/rustdesk:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/rustdesk/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Sabnzbd",
 			"name": "Sabnzbd",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/sabnzbd/config<br>mkdir -p /volume1/docker/sabnzbd/downloads<br>mkdir -p /volume1/docker/sabnzbd/incomplete-downloads</p>",
@@ -9147,6 +9188,53 @@
 			{
 				"container": "/files",
 				"bind": "/volume1/docker/ubooquity/files"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
+			"title": "Ungoogled-chromium",
+			"name": "Ungoogled-chromium",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ungoogled-chromium/config</p>",
+			"description": "[Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) is Google Chromium, sans dependency on Google web services.",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ungoogled-chromium-logo.png",
+			"image": "linuxserver/ungoogled-chromium:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "CHROME_CLI",
+					"label": "CHROME_CLI",
+					"default": "https://www.linuxserver.io/",
+					"description": "Specify one or multiple Chromium CLI flags, this string will be passed to the application in full."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/ungoogled-chromium/config"
 			}
 			],
 			"restart_policy": "unless-stopped"
