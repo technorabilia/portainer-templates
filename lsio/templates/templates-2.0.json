@@ -370,6 +370,12 @@
 					"label": "TZ",
 					"default": "Europe/Amsterdam",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "DARK_MODE",
+					"label": "DARK_MODE",
+					"default": "true",
+					"description": "Set this to true to enable dark mode for Bambu Studio."
 				}
 			],
 			"ports": [
