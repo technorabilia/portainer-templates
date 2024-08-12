@@ -6026,7 +6026,7 @@
 			"title": "Nzbhydra2",
 			"name": "Nzbhydra2",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nzbhydra2/config<br>mkdir -p /volume1/docker/nzbhydra2/downloads</p>",
-			"description": "[Nzbhydra2](https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the 'spiritual successor' to NZBmegasearcH, and an evolution of the original application [NZBHydra](https://github.com/theotherp/nzbhydra). It provides easy access to a number of raw and newznab based indexers. The application NZBHydra 2 is replacing NZBHydra 1 and supports migrating from V1. Be wary that there may be some compatibility issues for those migrating from V1 to V2, so ensure you back up your old configuration before moving over to the new version. **NOTE:** The last version that supports migration is `linuxserver/nzbhydra2:v2.10.2-ls49`",
+			"description": "[Nzbhydra2](https://github.com/theotherp/nzbhydra2) is a meta search application for NZB indexers, the 'spiritual successor' to NZBmegasearcH, and an evolution of the original application [NZBHydra](https://github.com/theotherp/nzbhydra). It provides easy access to a number of raw and newznab based indexers.",
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hydra-icon.png",
 			"image": "linuxserver/nzbhydra2:latest",
@@ -6808,6 +6808,9 @@
 					"default": "",
 					"description": "Optionally you can obtain a claim token from https://plex.tv/claim and input here. Keep in mind that the claim tokens expire within 4 minutes."
 				}
+			],
+			"ports": [
+				"80:80/tcp"
 			],
 			"volumes": [
 			{
@@ -9304,6 +9307,12 @@
 					"description": "Mongodb Database Name (stats DB is automatically suffixed with `_stat`). Only evaluated on first run."
 				},
 				{
+					"name": "MONGO_AUTHSOURCE",
+					"label": "MONGO_AUTHSOURCE",
+					"default": "admin",
+					"description": "Mongodb [authSource](https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.authSource). For Atlas set to `admin`. Only evaluated on first run."
+				},
+				{
 					"name": "MEM_LIMIT",
 					"label": "MEM_LIMIT",
 					"default": "1024",
@@ -9320,12 +9329,6 @@
 					"label": "MONGO_TLS",
 					"default": "",
 					"description": "Mongodb enable [TLS](https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.tls). Only evaluated on first run."
-				},
-				{
-					"name": "MONGO_AUTHSOURCE",
-					"label": "MONGO_AUTHSOURCE",
-					"default": "",
-					"description": "Mongodb [authSource](https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.authSource). For Atlas set to `admin`.Defaults to `MONGO_DBNAME`.Only evaluated on first run."
 				}
 			],
 			"ports": [
