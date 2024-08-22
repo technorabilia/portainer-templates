@@ -7713,7 +7713,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/resilio-sync/config<br>mkdir -p /volume1/docker/resilio-sync/downloads<br>mkdir -p /volume1/docker/resilio-sync/sync</p>",
         "description": "[Resilio-sync](https://www.resilio.com/individuals/) (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both. There is an official sync image but we created this one as it supports user mapping to simplify permissions for volumes.",
         "platform": "linux",
-        "logo": "https://www.resilio.com/img/individual/freeproduct.jpg",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/resilio-sync-logo.png",
         "image": "linuxserver/resilio-sync:latest",
         "env": [
             {
