@@ -1288,7 +1288,7 @@
             "Media"
         ],
         "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-git.png",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/daapd-icon.png",
         "image": "linuxserver/daapd:latest",
         "network": "host",
         "env": [
