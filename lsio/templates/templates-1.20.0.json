@@ -1608,18 +1608,6 @@
                 "label": "ES_PORT",
                 "default": "9200",
                 "description": "ElasticSearch port (optional)"
-            },
-            {
-                "name": "ES_USER",
-                "label": "ES_USER",
-                "default": "elastic",
-                "description": "ElasticSearch username (optional)"
-            },
-            {
-                "name": "ES_PASS",
-                "label": "ES_PASS",
-                "default": "changeme",
-                "description": "ElasticSearch password (optional)"
             }
         ],
         "ports": [
