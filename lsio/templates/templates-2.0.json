@@ -6756,6 +6756,30 @@
 					"description": "Postgres database URL. Special characters must be [url encoded](https://en.wikipedia.org/wiki/Percent-encoding)."
 				},
 				{
+					"name": "DEFAULT_ADMIN_EMAIL",
+					"label": "DEFAULT_ADMIN_EMAIL",
+					"default": "demo@demo.demo",
+					"description": "Email address for default user."
+				},
+				{
+					"name": "DEFAULT_ADMIN_USERNAME",
+					"label": "DEFAULT_ADMIN_USERNAME",
+					"default": "demo",
+					"description": "Username for default user."
+				},
+				{
+					"name": "DEFAULT_ADMIN_PASSWORD",
+					"label": "DEFAULT_ADMIN_PASSWORD",
+					"default": "demo",
+					"description": "Password for default user."
+				},
+				{
+					"name": "DEFAULT_ADMIN_NAME",
+					"label": "DEFAULT_ADMIN_NAME",
+					"default": "Demo User",
+					"description": "Display name for default user."
+				},
+				{
 					"name": "SECRET_KEY",
 					"label": "SECRET_KEY",
 					"default": "notasecretkey",
