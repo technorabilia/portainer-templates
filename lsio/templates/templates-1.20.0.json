@@ -8805,6 +8805,12 @@
                 "label": "TZ",
                 "default": "Europe/Amsterdam",
                 "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+            },
+            {
+                "name": "LOG_TO_STDOUT",
+                "label": "LOG_TO_STDOUT",
+                "default": "",
+                "description": "If set to `true` container will log to stdout, otherwise will log to `/config/log/`."
             }
         ],
         "ports": [
