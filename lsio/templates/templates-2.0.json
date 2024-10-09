@@ -4876,13 +4876,31 @@
 					"name": "DB_PORT",
 					"label": "DB_PORT",
 					"default": "5432",
-					"description": "Portgres port"
+					"description": "Postgres port"
 				},
 				{
 					"name": "ES_ENABLED",
 					"label": "ES_ENABLED",
 					"default": "false",
 					"description": "Enable or disable Elasticsearch (requires a separate ES instance)"
+				},
+				{
+					"name": "ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY",
+					"label": "ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY",
+					"default": "",
+					"description": "Primary key for [Active Record Encryption](https://github.com/mastodon/mastodon/pull/29831/files)."
+				},
+				{
+					"name": "ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY",
+					"label": "ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY",
+					"default": "",
+					"description": "Deterministic key for [Active Record Encryption](https://github.com/mastodon/mastodon/pull/29831/files)."
+				},
+				{
+					"name": "ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT",
+					"label": "ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT",
+					"default": "",
+					"description": "Derivation salt for [Active Record Encryption](https://github.com/mastodon/mastodon/pull/29831/files)."
 				},
 				{
 					"name": "SECRET_KEY_BASE",
