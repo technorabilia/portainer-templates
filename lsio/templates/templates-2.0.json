@@ -684,38 +684,44 @@
 				{
 					"name": "APP_URL",
 					"label": "APP_URL",
-					"default": "yourbaseurl",
-					"description": "for specifying the IP:port or URL your application will be accessed on (ie. `http://192.168.1.1:6875` or `https://bookstack.mydomain.com`"
+					"default": "",
+					"description": "The IP:port or URL your application will be accessed on (ie. `http://192.168.1.1:6875` or `https://bookstack.mydomain.com`"
+				},
+				{
+					"name": "APP_KEY",
+					"label": "APP_KEY",
+					"default": "",
+					"description": "Session encryption key. Can be generated with `docker run -it --rm --entrypoint /bin/bash lscr.io/linuxserver/bookstack:latest appkey`"
 				},
 				{
 					"name": "DB_HOST",
 					"label": "DB_HOST",
-					"default": "yourdbhost",
-					"description": "for specifying the database host"
+					"default": "",
+					"description": "The database instance hostname"
 				},
 				{
 					"name": "DB_PORT",
 					"label": "DB_PORT",
-					"default": "yourdbport",
-					"description": "for specifying the database port if not default 3306"
+					"default": "3306",
+					"description": "Database port (default `3306`)"
 				},
 				{
-					"name": "DB_USER",
-					"label": "DB_USER",
-					"default": "yourdbuser",
-					"description": "for specifying the database user"
+					"name": "DB_USERNAME",
+					"label": "DB_USERNAME",
+					"default": "",
+					"description": "Database user"
 				},
 				{
-					"name": "DB_PASS",
-					"label": "DB_PASS",
-					"default": "yourdbpass",
-					"description": "for specifying the database password (minimum 4 characters & non-alphanumeric passwords must be properly escaped.)"
+					"name": "DB_PASSWORD",
+					"label": "DB_PASSWORD",
+					"default": "",
+					"description": "Database password (minimum 4 characters & non-alphanumeric passwords must be properly escaped.)"
 				},
 				{
 					"name": "DB_DATABASE",
 					"label": "DB_DATABASE",
-					"default": "bookstackapp",
-					"description": "for specifying the database to be used"
+					"default": "",
+					"description": "Database name"
 				},
 				{
 					"name": "QUEUE_CONNECTION",
