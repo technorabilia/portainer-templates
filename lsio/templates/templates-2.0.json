@@ -3634,8 +3634,8 @@
 				{
 					"name": "JELLYFIN_PublishedServerUrl",
 					"label": "JELLYFIN_PublishedServerUrl",
-					"default": "192.168.0.5",
-					"description": "Set the autodiscovery response domain or IP address."
+					"default": "http://192.168.0.5",
+					"description": "Set the autodiscovery response domain or IP address, include http(s)://."
 				}
 			],
 			"ports": [
@@ -4767,25 +4767,25 @@
 					"name": "MYSQL_ROOT_PASSWORD",
 					"label": "MYSQL_ROOT_PASSWORD",
 					"default": "ROOT_ACCESS_PASSWORD",
-					"description": "Set this to root password for installation (minimum 4 characters & non-alphanumeric passwords must be properly escaped)."
+					"description": "Set this to root password for installation (minimum 4 characters & non-alphanumeric passwords must be properly escaped). (valid only for first run)"
 				},
 				{
 					"name": "MYSQL_DATABASE",
 					"label": "MYSQL_DATABASE",
 					"default": "USER_DB_NAME",
-					"description": "Specify the name of a database to be created on image startup."
+					"description": "Specify the name of a database to be created. (valid only for first run)"
 				},
 				{
 					"name": "MYSQL_USER",
 					"label": "MYSQL_USER",
 					"default": "MYSQL_USER",
-					"description": "This user will have superuser access to the database specified by MYSQL_DATABASE (do not use root here)."
+					"description": "This user will have superuser access to the database specified by MYSQL_DATABASE (do not use root here). (valid only for first run)"
 				},
 				{
 					"name": "MYSQL_PASSWORD",
 					"label": "MYSQL_PASSWORD",
 					"default": "DATABASE_PASSWORD",
-					"description": "Set this to the password you want to use for you MYSQL_USER (minimum 4 characters & non-alphanumeric passwords must be properly escaped)."
+					"description": "Set this to the password you want to use for you MYSQL_USER (minimum 4 characters & non-alphanumeric passwords must be properly escaped). (valid only for first run)"
 				},
 				{
 					"name": "REMOTE_SQL",
@@ -8452,7 +8452,7 @@
 					"name": "SPEEDTEST_SERVERS",
 					"label": "SPEEDTEST_SERVERS",
 					"default": "",
-					"description": "A comma-separated list of server IDs to test against. Run `docker exec speedtest-tracker php /app/www/artisan app:ookla-list-servers` to get a list of nearby servers."
+					"description": "A comma-separated list of server IDs to test against. Run `docker run -it --rm --entrypoint /bin/bash lscr.io/linuxserver/speedtest-tracker:latest list-servers` to get a list of nearby servers."
 				},
 				{
 					"name": "DB_HOST",
