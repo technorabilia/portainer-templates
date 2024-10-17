@@ -1175,7 +1175,7 @@
                 "name": "PROXY_DOMAIN",
                 "label": "PROXY_DOMAIN",
                 "default": "code-server.my.domain",
-                "description": "If this optional variable is set, this domain will be proxied for subdomain proxying. See [Documentation](https://github.com/cdr/code-server/blob/master/docs/FAQ.md#sub-domains)"
+                "description": "If this optional variable is set, this domain will be proxied for subdomain proxying. See [Documentation](https://github.com/coder/code-server/blob/main/docs/guide.md#using-a-subdomain)"
             },
             {
                 "name": "DEFAULT_WORKSPACE",
