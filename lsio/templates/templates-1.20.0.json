@@ -1985,7 +1985,7 @@
         "title": "Duplicati",
         "name": "Duplicati",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/duplicati/config<br>mkdir -p /volume1/docker/duplicati/backups<br>mkdir -p /volume1/docker/duplicati/source</p>",
-        "description": "[Duplicati](https://www.duplicati.com/) works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive & S3, Google Drive, box.com, Mega, hubiC and many others.",
+        "description": "[Duplicati](https://www.duplicati.com/) is a backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box.com, Mega, B2, and many others.",
         "platform": "linux",
         "logo": "https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/duplicati-icon.png",
         "image": "linuxserver/duplicati:latest",
@@ -2009,10 +2009,22 @@
                 "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
             },
             {
+                "name": "SETTINGS_ENCRYPTION_KEY",
+                "label": "SETTINGS_ENCRYPTION_KEY",
+                "default": "",
+                "description": "Encryption key for settings database. Minimum 8 characters, alphanumeric."
+            },
+            {
                 "name": "CLI_ARGS",
                 "label": "CLI_ARGS",
                 "default": "",
                 "description": "Optionally specify any [CLI variables](https://duplicati.readthedocs.io/en/latest/07-other-command-line-utilities/) you want to launch the app with"
+            },
+            {
+                "name": "DUPLICATI__WEBSERVICE_PASSWORD",
+                "label": "DUPLICATI__WEBSERVICE_PASSWORD",
+                "default": "",
+                "description": "Password for the webui. If left unset will default to `changeme` and can be changed from the webui settings."
             }
         ],
         "ports": [
