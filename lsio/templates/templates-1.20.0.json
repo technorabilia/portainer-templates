@@ -159,7 +159,7 @@
         "title": "Apprise-api",
         "name": "Apprise-api",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/apprise-api/config<br>mkdir -p /volume1/docker/apprise-api/attachments</p>",
-        "description": "[Apprise-api](https://github.com/caronc/apprise-api) Takes advantage of [Apprise](https://github.com/caronc/apprise) through your network with a user-friendly API. * Send notifications to more then 65+ services. * An incredibly lightweight gateway to Apprise. * A production ready micro-service at your disposal. Apprise API was designed to easily fit into existing (and new) eco-systems that are looking for a simple notification solution.",
+        "description": "[Apprise-api](https://github.com/caronc/apprise-api) Takes advantage of [Apprise](https://github.com/caronc/apprise) through your network with a user-friendly API. * Send notifications to more than 100 services. * An incredibly lightweight gateway to Apprise. * A production ready micro-service at your disposal. * A Simple Website to verify and test your configuration with. Apprise API was designed to easily fit into existing (and new) eco-systems that are looking for a simple notification solution.",
         "categories": [
             "Notifications"
         ],
