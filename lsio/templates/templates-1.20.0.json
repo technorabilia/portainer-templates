@@ -589,67 +589,6 @@
     },
     {
         "type": 1,
-        "title": "Booksonic-air",
-        "name": "Booksonic-air",
-        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/booksonic-air/config<br>mkdir -p /volume1/docker/booksonic-air/audiobooks<br>mkdir -p /volume1/docker/booksonic-air/podcasts<br>mkdir -p /volume1/docker/booksonic-air/othermedia</p>",
-        "description": "[Booksonic-air](http://booksonic.org) is a platform for accessing the audiobooks you own wherever you are. At the moment the platform consists of: * Booksonic Air - A server for streaming your audiobooks, successor to the original Booksonic server and based on Airsonic. * Booksonic App - An DSub based Android app for connection to Booksonic-Air servers.",
-        "categories": [
-            "Audio"
-        ],
-        "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air.png",
-        "image": "linuxserver/booksonic-air:latest",
-        "env": [
-            {
-                "name": "PUID",
-                "label": "PUID",
-                "default": "1024",
-                "description": "for UserID"
-            },
-            {
-                "name": "PGID",
-                "label": "PGID",
-                "default": "100",
-                "description": "for GroupID"
-            },
-            {
-                "name": "TZ",
-                "label": "TZ",
-                "default": "Europe/Amsterdam",
-                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-            },
-            {
-                "name": "CONTEXT_PATH",
-                "label": "CONTEXT_PATH",
-                "default": "url-base",
-                "description": "Base url for use with reverse proxies etc."
-            }
-        ],
-        "ports": [
-            "4040:4040/tcp"
-        ],
-        "volumes": [
-            {
-                "container": "/config",
-                "bind": "/volume1/docker/booksonic-air/config"
-            },
-            {
-                "container": "/audiobooks",
-                "bind": "/volume1/docker/booksonic-air/audiobooks"
-            },
-            {
-                "container": "/podcasts",
-                "bind": "/volume1/docker/booksonic-air/podcasts"
-            },
-            {
-                "container": "/othermedia",
-                "bind": "/volume1/docker/booksonic-air/othermedia"
-            }
-        ],
-        "restart_policy": "unless-stopped"
-    },
-    {
-        "type": 1,
         "title": "Bookstack",
         "name": "Bookstack",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/bookstack/config</p>",
@@ -3171,7 +3110,7 @@
                 "name": "ALLOWED_HOSTS",
                 "label": "ALLOWED_HOSTS",
                 "default": "",
-                "description": "A comma-separated list of valid hostnames for the server. Default is: `*`."
+                "description": "A comma-separated list of valid hostnames for the server. Default is the domain portion of `SITE_ROOT`."
             },
             {
                 "name": "APPRISE_ENABLED",
@@ -6170,6 +6109,47 @@
             {
                 "container": "/config",
                 "bind": "/volume1/docker/ombi/config"
+            }
+        ],
+        "restart_policy": "unless-stopped"
+    },
+    {
+        "type": 1,
+        "title": "Openshot",
+        "name": "Openshot",
+        "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/openshot/config</p>",
+        "description": "[OpenShot](https://openshot.org/) Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
+        "platform": "linux",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openshot-logo.png",
+        "image": "linuxserver/openshot:latest",
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "1024",
+                "description": "for UserID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100",
+                "description": "for GroupID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "Europe/Amsterdam",
+                "description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+            }
+        ],
+        "ports": [
+            "3000:3000/tcp",
+            "3001:3001/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "/volume1/docker/openshot/config"
             }
         ],
         "restart_policy": "unless-stopped"
