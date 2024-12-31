@@ -2246,7 +2246,7 @@
 					"name": "WHISPER_MODEL",
 					"label": "WHISPER_MODEL",
 					"default": "tiny-int8",
-					"description": "Whisper model that will be used for transcription. From `tiny`, `base`, `small` and `medium`, all with `-int8` compressed variants"
+					"description": "Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants"
 				},
 				{
 					"name": "WHISPER_BEAM",
@@ -6947,12 +6947,6 @@
 					"label": "TZ",
 					"default": "Europe/Amsterdam",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "MAX_UPLOAD",
-					"label": "MAX_UPLOAD",
-					"default": "5000",
-					"description": "To set maximum upload size (in MB), default if unset is 5000."
 				}
 			],
 			"ports": [
