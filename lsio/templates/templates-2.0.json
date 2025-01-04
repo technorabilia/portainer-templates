@@ -7394,118 +7394,6 @@
 		},
 		{
 			"type": 1,
-			"title": "Quassel-core",
-			"name": "Quassel-core",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/quassel-core/config</p>",
-			"description": "[Quassel-core](http://quassel-irc.org/) is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core. This container handles the IRC connection (quasselcore) and requires a desktop client (quasselclient) to be used and configured. It is designed to be always on and will keep your identity present in IRC even when your clients cannot be online. Backlog (history) is downloaded by your client upon reconnection allowing infinite scrollback through time.",
-			"platform": "linux",
-			"logo": "http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Apps-quassel-icon.png",
-			"image": "linuxserver/quassel-core:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "RUN_OPTS",
-					"label": "RUN_OPTS",
-					"default": "--config-from-environment",
-					"description": "Custom CLI options for Quassel"
-				}
-			],
-			"ports": [
-				"4242:4242/tcp",
-				"113:10113/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/quassel-core/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
-			"title": "Quassel-web",
-			"name": "Quassel-web",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/quassel-web/config</p>",
-			"description": "[Quassel-web](https://github.com/magne4000/quassel-webserver) is a web client for Quassel. Note that a Quassel-Core instance is required, we have a container available [here.](https://hub.docker.com/r/linuxserver/quassel-core/)",
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-banner.png",
-			"image": "linuxserver/quassel-web:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1024",
-					"description": "for UserID"
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "100",
-					"description": "for GroupID"
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Europe/Amsterdam",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "QUASSEL_CORE",
-					"label": "QUASSEL_CORE",
-					"default": "192.168.1.10",
-					"description": "specify the URL or IP address of your Quassel Core instance"
-				},
-				{
-					"name": "QUASSEL_PORT",
-					"label": "QUASSEL_PORT",
-					"default": "4242",
-					"description": "specify the port of your Quassel Core instance"
-				},
-				{
-					"name": "QUASSEL_HTTPS",
-					"label": "QUASSEL_HTTPS",
-					"default": "",
-					"description": "Set to `true` to have Quassel web serve over https on port 64443 instead of http on port 64080."
-				},
-				{
-					"name": "URL_BASE",
-					"label": "URL_BASE",
-					"default": "/quassel",
-					"description": "Specify a url-base in reverse proxy setups ie. `/quassel`"
-				}
-			],
-			"ports": [
-				"64080:64080/tcp",
-				"64443:64443/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/quassel-web/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"type": 1,
 			"title": "Radarr",
 			"name": "Radarr",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/radarr/config<br>mkdir -p /volume1/docker/radarr/movies<br>mkdir -p /volume1/docker/radarr/downloads</p>",
@@ -8827,6 +8715,12 @@
 					"label": "STAGING",
 					"default": "false",
 					"description": "Set to `true` to retrieve certs in staging mode. Rate limits will be much higher, but the resulting cert will not pass the browser's security test. Only to be used for testing purposes."
+				},
+				{
+					"name": "DISABLE_F2B",
+					"label": "DISABLE_F2B",
+					"default": "",
+					"description": "Set to `true` to disable the Fail2ban service in the container, if you're already running it elsewhere or using a different IPS."
 				}
 			],
 			"ports": [
