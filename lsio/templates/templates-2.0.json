@@ -8713,6 +8713,18 @@
 					"label": "DISABLE_F2B",
 					"default": "",
 					"description": "Set to `true` to disable the Fail2ban service in the container, if you're already running it elsewhere or using a different IPS."
+				},
+				{
+					"name": "SWAG_AUTORELOAD",
+					"label": "SWAG_AUTORELOAD",
+					"default": "",
+					"description": "Set to `true` to enable automatic reloading of confs on change without stopping/restarting nginx. Your filesystem must support inotify. This functionality was previously offered [via mod](https://github.com/linuxserver/docker-mods/tree/swag-auto-reload)."
+				},
+				{
+					"name": "SWAG_AUTORELOAD_WATCHLIST",
+					"label": "SWAG_AUTORELOAD_WATCHLIST",
+					"default": "",
+					"description": "A [pipe](https://en.wikipedia.org/wiki/Vertical_bar)-separated list of additional folders for auto reload to watch in addition to `/config/nginx`"
 				}
 			],
 			"ports": [
