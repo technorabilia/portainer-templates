@@ -9445,9 +9445,9 @@
         "title": "Webgrabplus",
         "name": "Webgrabplus",
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/webgrabplus/config<br>mkdir -p /volume1/docker/webgrabplus/data</p>",
-        "description": "[Webgrabplus](http://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
+        "description": "[Webgrabplus](https://www.webgrabplus.com) is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
         "platform": "linux",
-        "logo": "http://www.webgrabplus.com/sites/default/themes/WgTheme/images/slideshows/EPG_fading.jpg",
+        "logo": "https://www.webgrabplus.com/sites/default/themes/WgTheme/images/slideshows/EPG_fading.jpg",
         "image": "linuxserver/webgrabplus:latest",
         "env": [
             {
