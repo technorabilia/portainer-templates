@@ -4520,6 +4520,52 @@
 		},
 		{
 			"type": 1,
+			"title": "Luanti",
+			"name": "Luanti",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/luanti/config/.minetest</p>",
+			"description": "[Luanti](https://www.luanti.org/) (formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minetest-icon.png",
+			"image": "linuxserver/luanti:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for UserID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for GroupID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "CLI_ARGS",
+					"label": "CLI_ARGS",
+					"default": "--gameid devtest",
+					"description": "Optionally specify any [CLI variables](https://wiki.luanti.net/Command_line) you want to launch the app with"
+				}
+			],
+			"ports": [
+				"30000:30000/udp"
+			],
+			"volumes": [
+			{
+				"container": "/config/.minetest",
+				"bind": "/volume1/docker/luanti/config/.minetest"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"type": 1,
 			"title": "Lychee",
 			"name": "Lychee",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/lychee/config<br>mkdir -p /volume1/docker/lychee/pictures</p>",
