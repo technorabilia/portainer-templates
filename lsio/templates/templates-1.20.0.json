@@ -4442,7 +4442,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/limnoria/config</p>",
         "description": "[Limnoria](https://github.com/ProgVal/limnoria) A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.",
         "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-limnoria/master/logo.png",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/limnoria-icon.png",
         "image": "linuxserver/limnoria:latest",
         "env": [
             {
@@ -7483,7 +7483,7 @@
         "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/raneto/config</p>",
         "description": "[Raneto](http://raneto.com/) - is an open source Knowledgebase platform that uses static Markdown files to power your Knowledgebase.",
         "platform": "linux",
-        "logo": "https://raw.githubusercontent.com/gilbitron/Raneto/master/logo/logo_readme.png",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/raneto-logo.png",
         "image": "linuxserver/raneto:latest",
         "env": [
             {
