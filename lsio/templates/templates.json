@@ -17,13 +17,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -65,13 +65,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -135,13 +135,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -178,13 +178,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -230,13 +230,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -279,13 +279,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -322,13 +322,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -370,13 +370,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -419,13 +419,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -469,13 +469,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -519,13 +519,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -568,13 +568,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -617,13 +617,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -707,13 +707,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -750,13 +750,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -806,13 +806,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -864,13 +864,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -907,13 +907,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -961,13 +961,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1010,13 +1010,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1088,13 +1088,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1135,13 +1135,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1178,13 +1178,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1221,13 +1221,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1267,13 +1267,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1309,13 +1309,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1364,13 +1364,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1413,13 +1413,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1471,13 +1471,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1514,13 +1514,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1664,13 +1664,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1712,13 +1712,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here. (optional)"
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here. (optional)"
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here. (optional)"
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here. (optional)"
 				},
 				{
 					"name": "TZ",
@@ -1782,13 +1782,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1850,13 +1850,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1905,13 +1905,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -1960,13 +1960,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2080,13 +2080,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2140,13 +2140,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2185,13 +2185,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2228,13 +2228,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2270,13 +2270,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2313,13 +2313,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2362,13 +2362,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2434,13 +2434,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2504,13 +2504,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2565,13 +2565,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2608,13 +2608,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2651,13 +2651,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2693,13 +2693,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2736,13 +2736,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2779,13 +2779,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2822,13 +2822,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2864,13 +2864,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2906,13 +2906,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -2955,13 +2955,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3112,13 +3112,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3220,13 +3220,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3263,13 +3263,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3318,13 +3318,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3360,13 +3360,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3402,13 +3402,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3445,13 +3445,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3503,13 +3503,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3562,13 +3562,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3683,13 +3683,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3729,13 +3729,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3778,13 +3778,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3821,13 +3821,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3864,13 +3864,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3913,13 +3913,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -3985,13 +3985,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4028,13 +4028,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4084,13 +4084,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4145,13 +4145,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4188,13 +4188,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4284,13 +4284,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4333,13 +4333,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4383,13 +4383,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4425,13 +4425,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4468,13 +4468,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4516,13 +4516,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4616,13 +4616,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4680,13 +4680,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -4752,13 +4752,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5017,13 +5017,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5060,13 +5060,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5110,13 +5110,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5160,13 +5160,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5202,13 +5202,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5299,13 +5299,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5348,13 +5348,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5394,13 +5394,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5443,13 +5443,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5493,13 +5493,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5536,13 +5536,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5614,13 +5614,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5776,13 +5776,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5822,13 +5822,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5865,13 +5865,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5907,13 +5907,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -5965,13 +5965,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6011,13 +6011,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6054,13 +6054,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6102,13 +6102,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6145,13 +6145,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6247,13 +6247,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6313,13 +6313,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6362,13 +6362,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6405,13 +6405,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6447,13 +6447,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6489,13 +6489,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6555,13 +6555,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6609,13 +6609,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6652,13 +6652,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6730,13 +6730,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6776,13 +6776,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6867,13 +6867,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6929,13 +6929,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -6975,13 +6975,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7017,13 +7017,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7065,13 +7065,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7119,13 +7119,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7166,13 +7166,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7230,13 +7230,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7290,13 +7290,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7337,13 +7337,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7379,13 +7379,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7429,13 +7429,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7471,13 +7471,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7514,13 +7514,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7564,13 +7564,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7607,13 +7607,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7658,13 +7658,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7708,13 +7708,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7751,13 +7751,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7801,13 +7801,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7844,13 +7844,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7887,13 +7887,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7937,13 +7937,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -7987,13 +7987,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8051,13 +8051,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8093,13 +8093,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8143,13 +8143,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8257,13 +8257,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8300,13 +8300,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8343,13 +8343,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8423,13 +8423,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8574,13 +8574,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8627,13 +8627,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8681,13 +8681,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8723,13 +8723,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8765,13 +8765,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8853,13 +8853,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8906,13 +8906,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -8967,13 +8967,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9016,13 +9016,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9120,13 +9120,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9163,13 +9163,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9206,13 +9206,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9252,13 +9252,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9311,13 +9311,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9393,13 +9393,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9488,13 +9488,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9532,13 +9532,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9575,13 +9575,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9618,13 +9618,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9661,13 +9661,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9734,13 +9734,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
@@ -9776,13 +9776,13 @@
 					"name": "PUID",
 					"label": "PUID",
 					"default": "1024",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the UID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
 				},
 				{
 					"name": "PGID",
 					"label": "PGID",
 					"default": "100",
-					"description": "Run 'id [USER]]' for the owner of the host volume directories to get the GID to use here."
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
 				},
 				{
 					"name": "TZ",
