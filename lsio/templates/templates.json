@@ -1059,6 +1059,12 @@
 					"label": "DEFAULT_WORKSPACE",
 					"default": "/config/workspace",
 					"description": "If this optional variable is set, code-server will open this directory by default [OPTIONAL]"
+				},
+				{
+					"name": "PWA_APPNAME",
+					"label": "PWA_APPNAME",
+					"default": "code-server",
+					"description": "If this optional variable is set, the PWA app will the specified name. [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -2349,78 +2355,6 @@
 		{
 			"id": 43,
 			"type": 1,
-			"title": "Fleet",
-			"name": "Fleet",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /volume1/docker/fleet/config</p>",
-			"description": "[Fleet](https://github.com/linuxserver/fleet) provides an online web interface which displays a set of maintained images from one or more owned repositories.",
-            "categories": ["Docker"],
-			"platform": "linux",
-			"logo": "",
-			"image": "linuxserver/fleet:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Etc/UTC",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "fleet_admin_authentication_type",
-					"label": "fleet_admin_authentication_type",
-					"default": "DATABASE",
-					"description": "A switch to define how Fleet manages user logins. If set to DATABASE, see the related optional params. Can be set to either DATABASE or PROPERTIES."
-				},
-				{
-					"name": "fleet_database_url",
-					"label": "fleet_database_url",
-					"default": "jdbc:mariadb://<url>:3306/fleet",
-					"description": "The full JDBC connection string to the Fleet database"
-				},
-				{
-					"name": "fleet_database_username",
-					"label": "fleet_database_username",
-					"default": "fleet_user",
-					"description": "The username with the relevant GRANT permissions for the database"
-				},
-				{
-					"name": "fleet_database_password",
-					"label": "fleet_database_password",
-					"default": "dbuserpassword",
-					"description": "The database user's password."
-				},
-				{
-					"name": "fleet_admin_secret",
-					"label": "fleet_admin_secret",
-					"default": "randomstring",
-					"description": "A string used as part of the password key derivation process. [OPTIONAL]"
-				}
-			],
-			"ports": [
-				"8080:8080/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/volume1/docker/fleet/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"id": 44,
-			"type": 1,
 			"title": "Flexget",
 			"name": "Flexget",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /volume1/docker/flexget/config<br>mkdir -p /volume1/docker/flexget/data</p>",
@@ -2489,7 +2423,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 45,
+			"id": 44,
 			"type": 1,
 			"title": "Foldingathome",
 			"name": "Foldingathome",
@@ -2550,7 +2484,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 46,
+			"id": 45,
 			"type": 1,
 			"title": "Freecad",
 			"name": "Freecad",
@@ -2593,7 +2527,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 47,
+			"id": 46,
 			"type": 1,
 			"title": "Freshrss",
 			"name": "Freshrss",
@@ -2635,7 +2569,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 48,
+			"id": 47,
 			"type": 1,
 			"title": "Gimp",
 			"name": "Gimp",
@@ -2678,7 +2612,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 49,
+			"id": 48,
 			"type": 1,
 			"title": "Github-desktop",
 			"name": "Github-desktop",
@@ -2721,7 +2655,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 50,
+			"id": 49,
 			"type": 1,
 			"title": "Gitqlient",
 			"name": "Gitqlient",
@@ -2764,7 +2698,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 51,
+			"id": 50,
 			"type": 1,
 			"title": "Grav",
 			"name": "Grav",
@@ -2806,7 +2740,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 52,
+			"id": 51,
 			"type": 1,
 			"title": "Grocy",
 			"name": "Grocy",
@@ -2848,7 +2782,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 53,
+			"id": 52,
 			"type": 1,
 			"title": "Habridge",
 			"name": "Habridge",
@@ -2897,7 +2831,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 54,
+			"id": 53,
 			"type": 1,
 			"title": "Healthchecks",
 			"name": "Healthchecks",
@@ -3054,7 +2988,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 55,
+			"id": 54,
 			"type": 1,
 			"title": "Hedgedoc",
 			"name": "Hedgedoc",
@@ -3162,7 +3096,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 56,
+			"id": 55,
 			"type": 1,
 			"title": "Heimdall",
 			"name": "Heimdall",
@@ -3205,7 +3139,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 57,
+			"id": 56,
 			"type": 1,
 			"title": "Hishtory-server",
 			"name": "Hishtory-server",
@@ -3259,7 +3193,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 58,
+			"id": 57,
 			"type": 1,
 			"title": "Homeassistant",
 			"name": "Homeassistant",
@@ -3302,7 +3236,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 59,
+			"id": 58,
 			"type": 1,
 			"title": "Htpcmanager",
 			"name": "Htpcmanager",
@@ -3344,7 +3278,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 60,
+			"id": 59,
 			"type": 1,
 			"title": "Inkscape",
 			"name": "Inkscape",
@@ -3387,7 +3321,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 61,
+			"id": 60,
 			"type": 1,
 			"title": "Jackett",
 			"name": "Jackett",
@@ -3445,7 +3379,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 62,
+			"id": 61,
 			"type": 1,
 			"title": "Jellyfin",
 			"name": "Jellyfin",
@@ -3504,7 +3438,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 63,
+			"id": 62,
 			"type": 1,
 			"title": "Kali-linux",
 			"name": "Kali-linux",
@@ -3563,7 +3497,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 64,
+			"id": 63,
 			"type": 1,
 			"title": "Kasm",
 			"name": "Kasm",
@@ -3625,7 +3559,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 65,
+			"id": 64,
 			"type": 1,
 			"title": "Kavita",
 			"name": "Kavita",
@@ -3671,7 +3605,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 66,
+			"id": 65,
 			"type": 1,
 			"title": "Kdenlive",
 			"name": "Kdenlive",
@@ -3720,7 +3654,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 67,
+			"id": 66,
 			"type": 1,
 			"title": "Keepassxc",
 			"name": "Keepassxc",
@@ -3763,7 +3697,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 68,
+			"id": 67,
 			"type": 1,
 			"title": "Kicad",
 			"name": "Kicad",
@@ -3806,7 +3740,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 69,
+			"id": 68,
 			"type": 1,
 			"title": "Kimai",
 			"name": "Kimai",
@@ -3855,7 +3789,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 70,
+			"id": 69,
 			"type": 1,
 			"title": "Kometa",
 			"name": "Kometa",
@@ -3927,7 +3861,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 71,
+			"id": 70,
 			"type": 1,
 			"title": "Krita",
 			"name": "Krita",
@@ -3970,7 +3904,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 72,
+			"id": 71,
 			"type": 1,
 			"title": "Lazylibrarian",
 			"name": "Lazylibrarian",
@@ -4026,7 +3960,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 73,
+			"id": 72,
 			"type": 1,
 			"title": "Ldap-auth",
 			"name": "Ldap-auth",
@@ -4087,7 +4021,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 74,
+			"id": 73,
 			"type": 1,
 			"title": "Libreoffice",
 			"name": "Libreoffice",
@@ -4130,7 +4064,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 75,
+			"id": 74,
 			"type": 1,
 			"title": "Librespeed",
 			"name": "Librespeed",
@@ -4226,7 +4160,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 76,
+			"id": 75,
 			"type": 1,
 			"title": "Librewolf",
 			"name": "Librewolf",
@@ -4275,7 +4209,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 77,
+			"id": 76,
 			"type": 1,
 			"title": "Lidarr",
 			"name": "Lidarr",
@@ -4325,7 +4259,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 78,
+			"id": 77,
 			"type": 1,
 			"title": "Limnoria",
 			"name": "Limnoria",
@@ -4367,7 +4301,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 79,
+			"id": 78,
 			"type": 1,
 			"title": "Lollypop",
 			"name": "Lollypop",
@@ -4410,7 +4344,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 80,
+			"id": 79,
 			"type": 1,
 			"title": "Luanti",
 			"name": "Luanti",
@@ -4458,7 +4392,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 81,
+			"id": 80,
 			"type": 1,
 			"title": "Lychee",
 			"name": "Lychee",
@@ -4558,7 +4492,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 82,
+			"id": 81,
 			"type": 1,
 			"title": "Manyfold",
 			"name": "Manyfold",
@@ -4622,7 +4556,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 83,
+			"id": 82,
 			"type": 1,
 			"title": "Mariadb",
 			"name": "Mariadb",
@@ -4694,7 +4628,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 84,
+			"id": 83,
 			"type": 1,
 			"title": "Mastodon",
 			"name": "Mastodon",
@@ -4959,7 +4893,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 85,
+			"id": 84,
 			"type": 1,
 			"title": "Mediaelch",
 			"name": "Mediaelch",
@@ -5002,7 +4936,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 86,
+			"id": 85,
 			"type": 1,
 			"title": "Medusa",
 			"name": "Medusa",
@@ -5052,7 +4986,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 87,
+			"id": 86,
 			"type": 1,
 			"title": "Minisatip",
 			"name": "Minisatip",
@@ -5102,7 +5036,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 88,
+			"id": 87,
 			"type": 1,
 			"title": "Modmanager",
 			"name": "Modmanager",
@@ -5144,7 +5078,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 89,
+			"id": 88,
 			"type": 1,
 			"title": "Monica",
 			"name": "Monica",
@@ -5241,7 +5175,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 90,
+			"id": 89,
 			"type": 1,
 			"title": "Msedge",
 			"name": "Msedge",
@@ -5290,7 +5224,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 91,
+			"id": 90,
 			"type": 1,
 			"title": "Mstream",
 			"name": "Mstream",
@@ -5336,7 +5270,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 92,
+			"id": 91,
 			"type": 1,
 			"title": "Mullvad-browser",
 			"name": "Mullvad-browser",
@@ -5385,7 +5319,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 93,
+			"id": 92,
 			"type": 1,
 			"title": "Mylar3",
 			"name": "Mylar3",
@@ -5435,7 +5369,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 94,
+			"id": 93,
 			"type": 1,
 			"title": "Mysql-workbench",
 			"name": "Mysql-workbench",
@@ -5478,7 +5412,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 95,
+			"id": 94,
 			"type": 1,
 			"title": "Netbootxyz",
 			"name": "Netbootxyz",
@@ -5556,7 +5490,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 96,
+			"id": 95,
 			"type": 1,
 			"title": "Netbox",
 			"name": "Netbox",
@@ -5718,7 +5652,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 97,
+			"id": 96,
 			"type": 1,
 			"title": "Nextcloud",
 			"name": "Nextcloud",
@@ -5764,7 +5698,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 98,
+			"id": 97,
 			"type": 1,
 			"title": "Nginx",
 			"name": "Nginx",
@@ -5807,7 +5741,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 99,
+			"id": 98,
 			"type": 1,
 			"title": "Ngircd",
 			"name": "Ngircd",
@@ -5849,7 +5783,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 100,
+			"id": 99,
 			"type": 1,
 			"title": "Nzbget",
 			"name": "Nzbget",
@@ -5907,7 +5841,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 101,
+			"id": 100,
 			"type": 1,
 			"title": "Nzbhydra2",
 			"name": "Nzbhydra2",
@@ -5953,7 +5887,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 102,
+			"id": 101,
 			"type": 1,
 			"title": "Obsidian",
 			"name": "Obsidian",
@@ -5996,7 +5930,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 103,
+			"id": 102,
 			"type": 1,
 			"title": "Ombi",
 			"name": "Ombi",
@@ -6044,7 +5978,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 104,
+			"id": 103,
 			"type": 1,
 			"title": "Openshot",
 			"name": "Openshot",
@@ -6087,7 +6021,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 105,
+			"id": 104,
 			"type": 1,
 			"title": "Openssh-server",
 			"name": "Openssh-server",
@@ -6189,7 +6123,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 106,
+			"id": 105,
 			"type": 1,
 			"title": "Openvscode-server",
 			"name": "Openvscode-server",
@@ -6255,7 +6189,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 107,
+			"id": 106,
 			"type": 1,
 			"title": "Opera",
 			"name": "Opera",
@@ -6304,7 +6238,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 108,
+			"id": 107,
 			"type": 1,
 			"title": "Orcaslicer",
 			"name": "Orcaslicer",
@@ -6347,7 +6281,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 109,
+			"id": 108,
 			"type": 1,
 			"title": "Oscam",
 			"name": "Oscam",
@@ -6389,7 +6323,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 110,
+			"id": 109,
 			"type": 1,
 			"title": "Overseerr",
 			"name": "Overseerr",
@@ -6431,7 +6365,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 111,
+			"id": 110,
 			"type": 1,
 			"title": "Pairdrop",
 			"name": "Pairdrop",
@@ -6497,7 +6431,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 112,
+			"id": 111,
 			"type": 1,
 			"title": "Phpmyadmin",
 			"name": "Phpmyadmin",
@@ -6551,7 +6485,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 113,
+			"id": 112,
 			"type": 1,
 			"title": "Pidgin",
 			"name": "Pidgin",
@@ -6594,7 +6528,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 114,
+			"id": 113,
 			"type": 1,
 			"title": "Piper",
 			"name": "Piper",
@@ -6672,7 +6606,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 115,
+			"id": 114,
 			"type": 1,
 			"title": "Piwigo",
 			"name": "Piwigo",
@@ -6718,7 +6652,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 116,
+			"id": 115,
 			"type": 1,
 			"title": "Planka",
 			"name": "Planka",
@@ -6808,7 +6742,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 117,
+			"id": 116,
 			"type": 1,
 			"title": "Plex",
 			"name": "Plex",
@@ -6871,7 +6805,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 118,
+			"id": 117,
 			"type": 1,
 			"title": "Projectsend",
 			"name": "Projectsend",
@@ -6917,7 +6851,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 119,
+			"id": 118,
 			"type": 1,
 			"title": "Prowlarr",
 			"name": "Prowlarr",
@@ -6959,7 +6893,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 120,
+			"id": 119,
 			"type": 1,
 			"title": "Pwndrop",
 			"name": "Pwndrop",
@@ -7007,7 +6941,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 121,
+			"id": 120,
 			"type": 1,
 			"title": "Pydio-cells",
 			"name": "Pydio-cells",
@@ -7061,7 +6995,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 122,
+			"id": 121,
 			"type": 1,
 			"title": "Pyload-ng",
 			"name": "Pyload-ng",
@@ -7108,7 +7042,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 123,
+			"id": 122,
 			"type": 1,
 			"title": "Pylon",
 			"name": "Pylon",
@@ -7172,7 +7106,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 124,
+			"id": 123,
 			"type": 1,
 			"title": "Qbittorrent",
 			"name": "Qbittorrent",
@@ -7232,7 +7166,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 125,
+			"id": 124,
 			"type": 1,
 			"title": "Qdirstat",
 			"name": "Qdirstat",
@@ -7279,7 +7213,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 126,
+			"id": 125,
 			"type": 1,
 			"title": "Qemu-static",
 			"name": "Qemu-static",
@@ -7321,7 +7255,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 127,
+			"id": 126,
 			"type": 1,
 			"title": "Radarr",
 			"name": "Radarr",
@@ -7371,7 +7305,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 128,
+			"id": 127,
 			"type": 1,
 			"title": "Raneto",
 			"name": "Raneto",
@@ -7413,7 +7347,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 129,
+			"id": 128,
 			"type": 1,
 			"title": "Rawtherapee",
 			"name": "Rawtherapee",
@@ -7456,7 +7390,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 130,
+			"id": 129,
 			"type": 1,
 			"title": "Rdesktop",
 			"name": "Rdesktop",
@@ -7506,7 +7440,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 132,
+			"id": 131,
 			"type": 1,
 			"title": "Remmina",
 			"name": "Remmina",
@@ -7549,7 +7483,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 133,
+			"id": 132,
 			"type": 1,
 			"title": "Resilio-sync",
 			"name": "Resilio-sync",
@@ -7600,7 +7534,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 134,
+			"id": 133,
 			"type": 1,
 			"title": "Rsnapshot",
 			"name": "Rsnapshot",
@@ -7650,7 +7584,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 135,
+			"id": 134,
 			"type": 1,
 			"title": "Rustdesk",
 			"name": "Rustdesk",
@@ -7693,7 +7627,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 136,
+			"id": 135,
 			"type": 1,
 			"title": "Sabnzbd",
 			"name": "Sabnzbd",
@@ -7743,7 +7677,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 137,
+			"id": 136,
 			"type": 1,
 			"title": "Series-troxide",
 			"name": "Series-troxide",
@@ -7786,7 +7720,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 138,
+			"id": 137,
 			"type": 1,
 			"title": "Shotcut",
 			"name": "Shotcut",
@@ -7829,7 +7763,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 139,
+			"id": 138,
 			"type": 1,
 			"title": "Sickchill",
 			"name": "Sickchill",
@@ -7879,7 +7813,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 140,
+			"id": 139,
 			"type": 1,
 			"title": "Sickgear",
 			"name": "Sickgear",
@@ -7929,7 +7863,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 141,
+			"id": 140,
 			"type": 1,
 			"title": "Smokeping",
 			"name": "Smokeping",
@@ -7993,7 +7927,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 142,
+			"id": 141,
 			"type": 1,
 			"title": "Socket-proxy",
 			"name": "Socket-proxy",
@@ -8035,7 +7969,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 143,
+			"id": 142,
 			"type": 1,
 			"title": "Sonarr",
 			"name": "Sonarr",
@@ -8085,7 +8019,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 144,
+			"id": 143,
 			"type": 1,
 			"title": "Speedtest-tracker",
 			"name": "Speedtest-tracker",
@@ -8199,7 +8133,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 145,
+			"id": 144,
 			"type": 1,
 			"title": "Spotube",
 			"name": "Spotube",
@@ -8242,7 +8176,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 146,
+			"id": 145,
 			"type": 1,
 			"title": "Sqlitebrowser",
 			"name": "Sqlitebrowser",
@@ -8285,7 +8219,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 147,
+			"id": 146,
 			"type": 1,
 			"title": "Steamos",
 			"name": "Steamos",
@@ -8365,7 +8299,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 148,
+			"id": 147,
 			"type": 1,
 			"title": "Swag",
 			"name": "Swag",
@@ -8486,7 +8420,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 149,
+			"id": 148,
 			"type": 1,
 			"title": "Synclounge",
 			"name": "Synclounge",
@@ -8516,7 +8450,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 150,
+			"id": 149,
 			"type": 1,
 			"title": "Syncthing",
 			"name": "Syncthing",
@@ -8569,7 +8503,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 151,
+			"id": 150,
 			"type": 1,
 			"title": "Syslog-ng",
 			"name": "Syslog-ng",
@@ -8623,7 +8557,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 152,
+			"id": 151,
 			"type": 1,
 			"title": "Tautulli",
 			"name": "Tautulli",
@@ -8665,7 +8599,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 153,
+			"id": 152,
 			"type": 1,
 			"title": "Thelounge",
 			"name": "Thelounge",
@@ -8707,7 +8641,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 154,
+			"id": 153,
 			"type": 1,
 			"title": "Transmission",
 			"name": "Transmission",
@@ -8795,7 +8729,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 155,
+			"id": 154,
 			"type": 1,
 			"title": "Tvheadend",
 			"name": "Tvheadend",
@@ -8848,7 +8782,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 156,
+			"id": 155,
 			"type": 1,
 			"title": "Ubooquity",
 			"name": "Ubooquity",
@@ -8909,7 +8843,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 157,
+			"id": 156,
 			"type": 1,
 			"title": "Ungoogled-chromium",
 			"name": "Ungoogled-chromium",
@@ -8958,7 +8892,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 158,
+			"id": 157,
 			"type": 1,
 			"title": "Unifi-network-application",
 			"name": "Unifi-network-application",
@@ -9062,7 +8996,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 159,
+			"id": 158,
 			"type": 1,
 			"title": "Vscodium",
 			"name": "Vscodium",
@@ -9105,7 +9039,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 160,
+			"id": 159,
 			"type": 1,
 			"title": "Webcord",
 			"name": "Webcord",
@@ -9148,7 +9082,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 161,
+			"id": 160,
 			"type": 1,
 			"title": "Webgrabplus",
 			"name": "Webgrabplus",
@@ -9194,7 +9128,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 162,
+			"id": 161,
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
@@ -9253,7 +9187,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 163,
+			"id": 162,
 			"type": 1,
 			"title": "Wikijs",
 			"name": "Wikijs",
@@ -9335,7 +9269,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 164,
+			"id": 163,
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
@@ -9429,7 +9363,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 165,
+			"id": 164,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -9474,7 +9408,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 166,
+			"id": 165,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -9517,7 +9451,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 167,
+			"id": 166,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -9560,7 +9494,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 168,
+			"id": 167,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -9603,7 +9537,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 169,
+			"id": 168,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -9676,7 +9610,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 170,
+			"id": 169,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -9718,7 +9652,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 171,
+			"id": 170,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
