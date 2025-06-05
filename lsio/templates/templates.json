@@ -3774,6 +3774,12 @@
 					"label": "DATABASE_URL",
 					"default": "mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name?charset=your_db_charset&serverVersion=your_db_version",
 					"description": "Configure your database connection, see Application Setup instructions."
+				},
+				{
+					"name": "TRUSTED_PROXIES",
+					"label": "TRUSTED_PROXIES",
+					"default": "127.0.0.1/32",
+					"description": "If behind a reverse proxy set this to its IP or network CIDR so that Kimai trusts its headers. [OPTIONAL]"
 				}
 			],
 			"ports": [
