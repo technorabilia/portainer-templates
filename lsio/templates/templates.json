@@ -5733,6 +5733,18 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "NGINX_AUTORELOAD",
+					"label": "NGINX_AUTORELOAD",
+					"default": "",
+					"description": "Set to `true` to enable automatic reloading of confs on change without stopping/restarting nginx. Your filesystem must support inotify. This functionality was previously offered [via mod](https://github.com/linuxserver/docker-mods/tree/swag-auto-reload). [OPTIONAL]"
+				},
+				{
+					"name": "NGINX_AUTORELOAD_WATCHLIST",
+					"label": "NGINX_AUTORELOAD_WATCHLIST",
+					"default": "",
+					"description": "A [pipe](https://en.wikipedia.org/wiki/Vertical_bar)-separated list of additional folders for auto reload to watch in addition to `/config/nginx` [OPTIONAL]"
 				}
 			],
 			"ports": [
