@@ -9767,6 +9767,47 @@
 		{
 			"id": 173,
 			"type": 1,
+			"title": "Xvfb",
+			"name": "Xvfb",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/xvfb/config</p>",
+			"description": "# This container needs special attention. Please check https://hub.docker.com/r/linuxserver/xvfb for details.",
+			"platform": "linux",
+			"logo": "",
+			"image": "linuxserver/xvfb:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"80:80/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/xvfb/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 174,
+			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/yaak/config</p>",
@@ -9808,7 +9849,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 174,
+			"id": 175,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -9881,7 +9922,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 175,
+			"id": 176,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -9923,7 +9964,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 176,
+			"id": 177,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
