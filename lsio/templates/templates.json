@@ -8082,56 +8082,6 @@
 		{
 			"id": 145,
 			"type": 1,
-			"title": "Sickchill",
-			"name": "Sickchill",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/sickchill/config<br>mkdir -p /srv/lsio/sickchill/downloads<br>mkdir -p /srv/lsio/sickchill/tv</p>",
-			"description": "[Sickchill](https://github.com/SickChill/SickChill) is an Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-            "categories": ["Media Management"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickchill-banner.png",
-			"image": "linuxserver/sickchill:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Etc/UTC",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				}
-			],
-			"ports": [
-				"8081:8081/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/srv/lsio/sickchill/config"
-			},
-			{
-				"container": "/downloads",
-				"bind": "/srv/lsio/sickchill/downloads"
-			},
-			{
-				"container": "/tv",
-				"bind": "/srv/lsio/sickchill/tv"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"id": 146,
-			"type": 1,
 			"title": "Sickgear",
 			"name": "Sickgear",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/sickgear/config<br>mkdir -p /srv/lsio/sickgear/tv<br>mkdir -p /srv/lsio/sickgear/downloads</p>",
@@ -8180,7 +8130,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 147,
+			"id": 146,
 			"type": 1,
 			"title": "Smokeping",
 			"name": "Smokeping",
@@ -8244,7 +8194,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 148,
+			"id": 147,
 			"type": 1,
 			"title": "Socket-proxy",
 			"name": "Socket-proxy",
@@ -8286,7 +8236,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 149,
+			"id": 148,
 			"type": 1,
 			"title": "Sonarr",
 			"name": "Sonarr",
@@ -8336,7 +8286,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 150,
+			"id": 149,
 			"type": 1,
 			"title": "Speedtest-tracker",
 			"name": "Speedtest-tracker",
@@ -8450,7 +8400,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 151,
+			"id": 150,
 			"type": 1,
 			"title": "Spotube",
 			"name": "Spotube",
@@ -8493,7 +8443,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 152,
+			"id": 151,
 			"type": 1,
 			"title": "Sqlitebrowser",
 			"name": "Sqlitebrowser",
@@ -8536,7 +8486,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 153,
+			"id": 152,
 			"type": 1,
 			"title": "Steamos",
 			"name": "Steamos",
@@ -8616,7 +8566,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 154,
+			"id": 153,
 			"type": 1,
 			"title": "Swag",
 			"name": "Swag",
@@ -8737,7 +8687,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 155,
+			"id": 154,
 			"type": 1,
 			"title": "Synclounge",
 			"name": "Synclounge",
@@ -8767,7 +8717,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 156,
+			"id": 155,
 			"type": 1,
 			"title": "Syncthing",
 			"name": "Syncthing",
@@ -8820,7 +8770,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 157,
+			"id": 156,
 			"type": 1,
 			"title": "Syslog-ng",
 			"name": "Syslog-ng",
@@ -8874,7 +8824,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 158,
+			"id": 157,
 			"type": 1,
 			"title": "Tautulli",
 			"name": "Tautulli",
@@ -8916,7 +8866,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 159,
+			"id": 158,
 			"type": 1,
 			"title": "Thelounge",
 			"name": "Thelounge",
@@ -8958,7 +8908,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 160,
+			"id": 159,
 			"type": 1,
 			"title": "Transmission",
 			"name": "Transmission",
@@ -9046,7 +8996,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 161,
+			"id": 160,
 			"type": 1,
 			"title": "Tvheadend",
 			"name": "Tvheadend",
@@ -9099,7 +9049,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 162,
+			"id": 161,
 			"type": 1,
 			"title": "Ubooquity",
 			"name": "Ubooquity",
@@ -9160,7 +9110,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 163,
+			"id": 162,
 			"type": 1,
 			"title": "Ungoogled-chromium",
 			"name": "Ungoogled-chromium",
@@ -9209,7 +9159,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 164,
+			"id": 163,
 			"type": 1,
 			"title": "Unifi-network-application",
 			"name": "Unifi-network-application",
@@ -9313,7 +9263,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 165,
+			"id": 164,
 			"type": 1,
 			"title": "Vscodium",
 			"name": "Vscodium",
@@ -9356,7 +9306,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 166,
+			"id": 165,
 			"type": 1,
 			"title": "Webcord",
 			"name": "Webcord",
@@ -9399,7 +9349,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 167,
+			"id": 166,
 			"type": 1,
 			"title": "Webgrabplus",
 			"name": "Webgrabplus",
@@ -9445,7 +9395,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 168,
+			"id": 167,
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
@@ -9504,7 +9454,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 169,
+			"id": 168,
 			"type": 1,
 			"title": "Wikijs",
 			"name": "Wikijs",
@@ -9586,7 +9536,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 170,
+			"id": 169,
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
@@ -9680,7 +9630,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 171,
+			"id": 170,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -9725,7 +9675,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 172,
+			"id": 171,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -9768,7 +9718,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 173,
+			"id": 172,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -9811,7 +9761,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 174,
+			"id": 173,
 			"type": 1,
 			"title": "Xemu",
 			"name": "Xemu",
@@ -9853,7 +9803,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 175,
+			"id": 174,
 			"type": 1,
 			"title": "Xvfb",
 			"name": "Xvfb",
@@ -9894,7 +9844,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 176,
+			"id": 175,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -9937,7 +9887,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 177,
+			"id": 176,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -10010,7 +9960,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 178,
+			"id": 177,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -10052,7 +10002,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 179,
+			"id": 178,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
