@@ -7327,70 +7327,6 @@
 		{
 			"id": 129,
 			"type": 1,
-			"title": "Pylon",
-			"name": "Pylon",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/pylon/config<br>mkdir -p /srv/lsio/pylon/code</p>",
-			"description": "[Pylon](https://github.com/pylonide/pylon) is a web based integrated development environment built with Node.js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project.",
-            "categories": ["Programming"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/pylonide/pylon/master/doc/screenshot02.png",
-			"image": "linuxserver/pylon:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Etc/UTC",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "GITURL",
-					"label": "GITURL",
-					"default": "https://github.com/linuxserver/docker-pylon.git",
-					"description": "Specify a git repo to checkout on first startup [OPTIONAL]"
-				},
-				{
-					"name": "PYUSER",
-					"label": "PYUSER",
-					"default": "myuser",
-					"description": "Specify a basic auth user. [OPTIONAL]"
-				},
-				{
-					"name": "PYPASS",
-					"label": "PYPASS",
-					"default": "mypass",
-					"description": "Specify a basic auth password. [OPTIONAL]"
-				}
-			],
-			"ports": [
-				"3131:3131/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/srv/lsio/pylon/config"
-			},
-			{
-				"container": "/code",
-				"bind": "/srv/lsio/pylon/code"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"id": 130,
-			"type": 1,
 			"title": "Qbittorrent",
 			"name": "Qbittorrent",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/qbittorrent/config<br>mkdir -p /srv/lsio/qbittorrent/downloads</p>",
@@ -7449,7 +7385,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 131,
+			"id": 130,
 			"type": 1,
 			"title": "Qdirstat",
 			"name": "Qdirstat",
@@ -7496,7 +7432,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 132,
+			"id": 131,
 			"type": 1,
 			"title": "Qemu-static",
 			"name": "Qemu-static",
@@ -7538,7 +7474,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 133,
+			"id": 132,
 			"type": 1,
 			"title": "Radarr",
 			"name": "Radarr",
@@ -7588,7 +7524,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 134,
+			"id": 133,
 			"type": 1,
 			"title": "Raneto",
 			"name": "Raneto",
@@ -7630,7 +7566,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 135,
+			"id": 134,
 			"type": 1,
 			"title": "Rawtherapee",
 			"name": "Rawtherapee",
@@ -7673,7 +7609,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 136,
+			"id": 135,
 			"type": 1,
 			"title": "Rdesktop",
 			"name": "Rdesktop",
@@ -7723,7 +7659,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 137,
+			"id": 136,
 			"type": 1,
 			"title": "Remmina",
 			"name": "Remmina",
@@ -7766,7 +7702,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 138,
+			"id": 137,
 			"type": 1,
 			"title": "Resilio-sync",
 			"name": "Resilio-sync",
@@ -7817,7 +7753,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 139,
+			"id": 138,
 			"type": 1,
 			"title": "Retroarch",
 			"name": "Retroarch",
@@ -7860,7 +7796,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 140,
+			"id": 139,
 			"type": 1,
 			"title": "Rpcs3",
 			"name": "Rpcs3",
@@ -7903,7 +7839,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 141,
+			"id": 140,
 			"type": 1,
 			"title": "Rsnapshot",
 			"name": "Rsnapshot",
@@ -7953,7 +7889,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 142,
+			"id": 141,
 			"type": 1,
 			"title": "Rustdesk",
 			"name": "Rustdesk",
@@ -7996,7 +7932,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 143,
+			"id": 142,
 			"type": 1,
 			"title": "Sabnzbd",
 			"name": "Sabnzbd",
@@ -8046,7 +7982,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 144,
+			"id": 143,
 			"type": 1,
 			"title": "Series-troxide",
 			"name": "Series-troxide",
@@ -8089,7 +8025,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 145,
+			"id": 144,
 			"type": 1,
 			"title": "Shotcut",
 			"name": "Shotcut",
@@ -8132,7 +8068,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 146,
+			"id": 145,
 			"type": 1,
 			"title": "Sickgear",
 			"name": "Sickgear",
@@ -8182,7 +8118,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 147,
+			"id": 146,
 			"type": 1,
 			"title": "Smokeping",
 			"name": "Smokeping",
@@ -8246,7 +8182,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 148,
+			"id": 147,
 			"type": 1,
 			"title": "Socket-proxy",
 			"name": "Socket-proxy",
@@ -8288,7 +8224,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 149,
+			"id": 148,
 			"type": 1,
 			"title": "Sonarr",
 			"name": "Sonarr",
@@ -8338,7 +8274,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 150,
+			"id": 149,
 			"type": 1,
 			"title": "Speedtest-tracker",
 			"name": "Speedtest-tracker",
@@ -8452,7 +8388,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 151,
+			"id": 150,
 			"type": 1,
 			"title": "Spotube",
 			"name": "Spotube",
@@ -8495,7 +8431,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 152,
+			"id": 151,
 			"type": 1,
 			"title": "Sqlitebrowser",
 			"name": "Sqlitebrowser",
@@ -8538,7 +8474,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 153,
+			"id": 152,
 			"type": 1,
 			"title": "Steamos",
 			"name": "Steamos",
@@ -8618,7 +8554,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 154,
+			"id": 153,
 			"type": 1,
 			"title": "Swag",
 			"name": "Swag",
@@ -8740,7 +8676,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 155,
+			"id": 154,
 			"type": 1,
 			"title": "Synclounge",
 			"name": "Synclounge",
@@ -8770,7 +8706,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 156,
+			"id": 155,
 			"type": 1,
 			"title": "Syncthing",
 			"name": "Syncthing",
@@ -8823,7 +8759,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 157,
+			"id": 156,
 			"type": 1,
 			"title": "Syslog-ng",
 			"name": "Syslog-ng",
@@ -8877,7 +8813,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 158,
+			"id": 157,
 			"type": 1,
 			"title": "Tautulli",
 			"name": "Tautulli",
@@ -8919,7 +8855,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 159,
+			"id": 158,
 			"type": 1,
 			"title": "Thelounge",
 			"name": "Thelounge",
@@ -8961,7 +8897,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 160,
+			"id": 159,
 			"type": 1,
 			"title": "Transmission",
 			"name": "Transmission",
@@ -9049,7 +8985,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 161,
+			"id": 160,
 			"type": 1,
 			"title": "Tvheadend",
 			"name": "Tvheadend",
@@ -9102,7 +9038,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 162,
+			"id": 161,
 			"type": 1,
 			"title": "Ubooquity",
 			"name": "Ubooquity",
@@ -9163,7 +9099,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 163,
+			"id": 162,
 			"type": 1,
 			"title": "Ungoogled-chromium",
 			"name": "Ungoogled-chromium",
@@ -9212,7 +9148,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 164,
+			"id": 163,
 			"type": 1,
 			"title": "Unifi-network-application",
 			"name": "Unifi-network-application",
@@ -9316,7 +9252,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 165,
+			"id": 164,
 			"type": 1,
 			"title": "Vscodium",
 			"name": "Vscodium",
@@ -9359,7 +9295,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 166,
+			"id": 165,
 			"type": 1,
 			"title": "Webcord",
 			"name": "Webcord",
@@ -9402,7 +9338,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 167,
+			"id": 166,
 			"type": 1,
 			"title": "Webgrabplus",
 			"name": "Webgrabplus",
@@ -9448,7 +9384,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 168,
+			"id": 167,
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
@@ -9507,7 +9443,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 169,
+			"id": 168,
 			"type": 1,
 			"title": "Wikijs",
 			"name": "Wikijs",
@@ -9589,7 +9525,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 170,
+			"id": 169,
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
@@ -9683,7 +9619,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 171,
+			"id": 170,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -9728,7 +9664,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 172,
+			"id": 171,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -9771,7 +9707,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 173,
+			"id": 172,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -9814,7 +9750,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 174,
+			"id": 173,
 			"type": 1,
 			"title": "Xemu",
 			"name": "Xemu",
@@ -9857,7 +9793,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 175,
+			"id": 174,
 			"type": 1,
 			"title": "Xvfb",
 			"name": "Xvfb",
@@ -9898,7 +9834,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 176,
+			"id": 175,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -9941,7 +9877,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 177,
+			"id": 176,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -10014,7 +9950,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 178,
+			"id": 177,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -10056,7 +9992,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 179,
+			"id": 178,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
