@@ -3377,6 +3377,12 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "ALLOW_INTERNAL_REQUESTS",
+					"label": "ALLOW_INTERNAL_REQUESTS",
+					"default": "false",
+					"description": "By default, Heimdall blocks lookup requests to private or reserved IP addresses, if your instance is not exposed to the internet, or is behind some level of authentication, you can set this to `true` to allow requests to private IP addresses. [OPTIONAL]"
 				}
 			],
 			"ports": [
