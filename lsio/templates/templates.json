@@ -3892,12 +3892,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "SUBFOLDER",
-					"label": "SUBFOLDER",
-					"default": "/",
-					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/` [OPTIONAL]"
 				}
 			],
 			"ports": [
