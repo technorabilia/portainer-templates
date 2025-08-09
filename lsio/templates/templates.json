@@ -4476,7 +4476,7 @@
 			"description": "[Lidarr](https://github.com/lidarr/Lidarr) is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
             "categories": ["Media Management", "Music"],
 			"platform": "linux",
-			"logo": "https://github.com/lidarr/Lidarr/blob/develop/Logo/400.png",
+			"logo": "https://github.com/lidarr/Lidarr/raw/develop/Logo/400.png",
 			"image": "linuxserver/lidarr:latest",
 			"env": [
 				{
@@ -6175,7 +6175,7 @@
 			"title": "Ombi",
 			"name": "Ombi",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/ombi/config</p>",
-			"description": "[Ombi](https://ombi.io) allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface! Manage all your requests for Movies and TV with ease, leave notes for the user and get notification when a user requests something. Allow your users to post issues against their requests so you know there is a problem with the audio etc. Even automatically sent them weekly newsletters of new content that has been added to your Plex server!",
+			"description": "[Ombi](https://ombi.io) allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface! Manage all your requests for Movies and TV with ease, leave notes for the user and get notification when a user requests something. Allow your users to post issues against their requests so you know there is a problem with the audio etc. Even automatically send them weekly newsletters of new content that has been added to your Plex server!",
             "categories": ["Media Requesters"],
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi.png",
@@ -6975,6 +6975,30 @@
 					"label": "DATABASE_URL",
 					"default": "postgresql://user:password@planka-db:5432/planka",
 					"description": "Postgres database URL. Special characters must be [url encoded](https://en.wikipedia.org/wiki/Percent-encoding)."
+				},
+				{
+					"name": "DEFAULT_ADMIN_EMAIL",
+					"label": "DEFAULT_ADMIN_EMAIL",
+					"default": "demo@demo.demo",
+					"description": "Email address for default user."
+				},
+				{
+					"name": "DEFAULT_ADMIN_USERNAME",
+					"label": "DEFAULT_ADMIN_USERNAME",
+					"default": "demo",
+					"description": "Username for default user."
+				},
+				{
+					"name": "DEFAULT_ADMIN_PASSWORD",
+					"label": "DEFAULT_ADMIN_PASSWORD",
+					"default": "demo",
+					"description": "Password for default user."
+				},
+				{
+					"name": "DEFAULT_ADMIN_NAME",
+					"label": "DEFAULT_ADMIN_NAME",
+					"default": "Demo User",
+					"description": "Display name for default user."
 				},
 				{
 					"name": "SECRET_KEY",
