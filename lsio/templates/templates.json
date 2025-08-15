@@ -6918,6 +6918,12 @@
 					"label": "PIPER_PROCS",
 					"default": "1",
 					"description": "Number of Piper processes to run simultaneously. [OPTIONAL]"
+				},
+				{
+					"name": "STREAMING",
+					"label": "STREAMING",
+					"default": "",
+					"description": "Setting to `true`, or any other value, will enable support for streaming audio on sentence boundaries. [OPTIONAL]"
 				}
 			],
 			"ports": [
