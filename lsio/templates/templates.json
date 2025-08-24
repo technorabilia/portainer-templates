@@ -2274,6 +2274,12 @@
 					"description": "Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants"
 				},
 				{
+					"name": "LOCAL_ONLY",
+					"label": "LOCAL_ONLY",
+					"default": "",
+					"description": "If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models. [OPTIONAL]"
+				},
+				{
 					"name": "WHISPER_BEAM",
 					"label": "WHISPER_BEAM",
 					"default": "1",
