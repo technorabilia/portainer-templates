@@ -6939,6 +6939,12 @@
 					"description": "The [Piper voice](https://huggingface.co/rhasspy/piper-voices/tree/main) to use, in the format `<language>-<name>-<quality>`"
 				},
 				{
+					"name": "LOCAL_ONLY",
+					"label": "LOCAL_ONLY",
+					"default": "",
+					"description": "If set to `true`, or any other value, the container will not attempt to download models from HuggingFace and will only use locally-provided models. [OPTIONAL]"
+				},
+				{
 					"name": "PIPER_LENGTH",
 					"label": "PIPER_LENGTH",
 					"default": "1.0",
