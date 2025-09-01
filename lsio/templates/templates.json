@@ -8411,7 +8411,7 @@
 					"name": "APP_KEY",
 					"label": "APP_KEY",
 					"default": "",
-					"description": "App key used for encrypting stored data. You can generate a key at [https://speedtest-tracker.dev](https://speedtest-tracker.dev)"
+					"description": "App key used for encrypting stored data. You can generate a key as per [https://speedtest-tracker.dev](https://docs.speedtest-tracker.dev/getting-started/installation/using-docker-compose#install-with-docker-compose)"
 				},
 				{
 					"name": "APP_URL",
