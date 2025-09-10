@@ -9358,6 +9358,55 @@
 		{
 			"id": 166,
 			"type": 1,
+			"title": "Vivaldi",
+			"name": "Vivaldi",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/vivaldi/config</p>",
+			"description": "[Vivaldi](https://vivaldi.com/) is a Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.",
+            "categories": ["Web Browser"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vivaldi-logo.png",
+			"image": "linuxserver/vivaldi:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "VIVALDI_CLI",
+					"label": "VIVALDI_CLI",
+					"default": "https://www.linuxserver.io/",
+					"description": "Specify one or multiple Vivaldi CLI flags, this string will be passed to the application in full. [OPTIONAL]"
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/vivaldi/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 167,
+			"type": 1,
 			"title": "Vscodium",
 			"name": "Vscodium",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/vscodium/config</p>",
@@ -9399,7 +9448,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 167,
+			"id": 168,
 			"type": 1,
 			"title": "Webcord",
 			"name": "Webcord",
@@ -9442,7 +9491,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 168,
+			"id": 169,
 			"type": 1,
 			"title": "Webgrabplus",
 			"name": "Webgrabplus",
@@ -9488,7 +9537,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 169,
+			"id": 170,
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
@@ -9547,7 +9596,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 170,
+			"id": 171,
 			"type": 1,
 			"title": "Wikijs",
 			"name": "Wikijs",
@@ -9629,7 +9678,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 171,
+			"id": 172,
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
@@ -9723,7 +9772,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 172,
+			"id": 173,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -9768,7 +9817,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 173,
+			"id": 174,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -9811,7 +9860,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 174,
+			"id": 175,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -9854,7 +9903,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 175,
+			"id": 176,
 			"type": 1,
 			"title": "Xemu",
 			"name": "Xemu",
@@ -9897,7 +9946,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 176,
+			"id": 177,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -9940,7 +9989,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 177,
+			"id": 178,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -10013,7 +10062,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 178,
+			"id": 179,
 			"type": 1,
 			"title": "Zen",
 			"name": "Zen",
@@ -10056,7 +10105,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 179,
+			"id": 180,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -10098,7 +10147,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 180,
+			"id": 181,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
