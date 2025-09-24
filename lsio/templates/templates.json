@@ -243,12 +243,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "SUBFOLDER",
-					"label": "SUBFOLDER",
-					"default": "/",
-					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/` [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -576,12 +570,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "SUBFOLDER",
-					"label": "SUBFOLDER",
-					"default": "/",
-					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/` [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -1519,12 +1507,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "SUBFOLDER",
-					"label": "SUBFOLDER",
-					"default": "/",
-					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/` [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -3794,7 +3776,7 @@
 			"type": 1,
 			"title": "Kali-linux",
 			"name": "Kali-linux",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/kali-linux/config<br></p>",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/kali-linux/config</p>",
 			"description": "[Kali-linux](https://github.com/linuxserver/docker-kali-linux) - is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments. KALI LINUX ™ is a trademark of OffSec.",
             "categories": ["Remote Desktop", "Security"],
 			"platform": "linux",
@@ -3818,18 +3800,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "SUBFOLDER",
-					"label": "SUBFOLDER",
-					"default": "/",
-					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/` [OPTIONAL]"
-				},
-				{
-					"name": "TITLE",
-					"label": "TITLE",
-					"default": "Kali Linux",
-					"description": "String which will be used as page/tab title in the web browser. [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -3840,10 +3810,6 @@
 			{
 				"container": "/config",
 				"bind": "/srv/lsio/kali-linux/config"
-			},
-			{
-				"container": "/var/run/docker.sock",
-				"bind": "/var/run/docker.sock"
 			}
 			],
 			"restart_policy": "unless-stopped"
@@ -9585,7 +9551,7 @@
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/webtop/config<br></p>",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/webtop/config</p>",
 			"description": "[Webtop](https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
             "categories": ["Remote Desktop"],
 			"platform": "linux",
@@ -9609,18 +9575,6 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "SUBFOLDER",
-					"label": "SUBFOLDER",
-					"default": "/",
-					"description": "Specify a subfolder to use with reverse proxies, IE `/subfolder/` [OPTIONAL]"
-				},
-				{
-					"name": "TITLE",
-					"label": "TITLE",
-					"default": "Webtop",
-					"description": "String which will be used as page/tab title in the web browser. [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -9631,10 +9585,6 @@
 			{
 				"container": "/config",
 				"bind": "/srv/lsio/webtop/config"
-			},
-			{
-				"container": "/var/run/docker.sock",
-				"bind": "/var/run/docker.sock"
 			}
 			],
 			"restart_policy": "unless-stopped"
