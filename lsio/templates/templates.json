@@ -4902,7 +4902,7 @@
 					"name": "SECRET_KEY_BASE",
 					"label": "SECRET_KEY_BASE",
 					"default": "",
-					"description": "Browser session secret. Changing it will terminate all active browser sessions."
+					"description": "Browser session and database encryption key. If unset a random one will be generated on init, the database is locked to this key."
 				}
 			],
 			"ports": [
