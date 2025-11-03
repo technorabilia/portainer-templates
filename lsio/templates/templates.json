@@ -5243,11 +5243,18 @@
 					"label": "NO_CHOWN",
 					"default": "",
 					"description": "Set to `true` to skip chown of /config on init. *READ THE APPLICATION NOTES BEFORE SETTING THIS*. [OPTIONAL]"
+				},
+				{
+					"name": "MASTODON_PROMETHEUS_EXPORTER_ENABLED",
+					"label": "MASTODON_PROMETHEUS_EXPORTER_ENABLED",
+					"default": "",
+					"description": "If set to `true`, Mastodon’s Ruby processes (web & Sidekiq) will enable the Prometheus instrumentation. [OPTIONAL]"
 				}
 			],
 			"ports": [
 				"80:80/tcp",
-				"443:443/tcp"
+				"443:443/tcp",
+				"9394:9394/tcp"
 			],
 			"volumes": [
 			{
