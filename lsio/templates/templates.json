@@ -6986,12 +6986,6 @@
 					"description": "Speaker number to use if the voice supports multiple speakers. [OPTIONAL]"
 				},
 				{
-					"name": "PIPER_PROCS",
-					"label": "PIPER_PROCS",
-					"default": "1",
-					"description": "Number of Piper processes to run simultaneously. [OPTIONAL]"
-				},
-				{
 					"name": "STREAMING",
 					"label": "STREAMING",
 					"default": "",
