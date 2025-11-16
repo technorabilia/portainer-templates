@@ -6925,7 +6925,7 @@
 			"title": "Piper",
 			"name": "Piper",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/piper/config</p>",
-			"description": "[Piper](https://github.com/rhasspy/piper/) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
+			"description": "[Piper](https://github.com/rhasspy/wyoming-piper) is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
             "categories": ["Machine Learning"],
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png",
@@ -6986,10 +6986,10 @@
 					"description": "Speaker number to use if the voice supports multiple speakers. [OPTIONAL]"
 				},
 				{
-					"name": "STREAMING",
-					"label": "STREAMING",
+					"name": "NO_STREAMING",
+					"label": "NO_STREAMING",
 					"default": "",
-					"description": "Setting to `true`, or any other value, will enable support for streaming audio on sentence boundaries. [OPTIONAL]"
+					"description": "Setting to `true`, or any other value, will disable support for streaming audio on sentence boundaries. [OPTIONAL]"
 				}
 			],
 			"ports": [
