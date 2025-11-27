@@ -1,5 +1,5 @@
 # Portainer App Templates for LinuxServer.io Containers
-These [Portainer App Templates](https://documentation.portainer.io/v2.0/settings/apps/) allow you to easily deploy [LinuxServer.io Docker containers](https://hub.docker.com/u/linuxserver/) using predefined settings.
+These [Portainer App Templates](https://docs.portainer.io/advanced/app-templates) allow you to easily deploy [LinuxServer.io Docker containers](https://hub.docker.com/u/linuxserver/) using predefined settings.
 
 The templates are automatically generated based on data from the [LinuxServer.io GitHub repositories](https://github.com/linuxserver).
 
@@ -17,7 +17,7 @@ Please keep the following in mind:
 3. Enter the App Templates URL:
 
 ```
-[https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates.json](https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates.json)
+https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates.json
 ````
 
 4. Click **Save settings**.
@@ -69,7 +69,7 @@ Some applications include a custom README. If special instructions are required,
 Follow the link to learn more about the container's usage requirements.
 
 ## Report issues
-If you encounter a problem, please report it on the project’s [GitHub Issues page](https://github.com/technorabilia/portainer-templates/issues). Issues will be reviewed as soon as possible.
+If you encounter a problem, please report it on the project's [GitHub Issues page](https://github.com/technorabilia/portainer-templates/issues). Issues will be reviewed as soon as possible.
 
 ## Considerations
 * With the default volume structure recommended by LinuxServer.io, you cannot use hard links. More information is available [here](https://docs.linuxserver.io/images/docker-sonarr#application-setup).
