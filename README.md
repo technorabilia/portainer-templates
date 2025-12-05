@@ -1,4 +1,4 @@
-# Portainer App Templates for LinuxServer.io Containers
+# Portainer App Templates for LinuxServer.io Docker containers
 These [Portainer App Templates](https://docs.portainer.io/advanced/app-templates) allow you to easily deploy [LinuxServer.io Docker containers](https://hub.docker.com/u/linuxserver/) using predefined settings.
 
 The templates are automatically generated based on data from the [LinuxServer.io GitHub repositories](https://github.com/linuxserver).
@@ -38,8 +38,8 @@ You can create the directories via command line:
 
 ```bash
 mkdir -p /volume1/docker/sonarr/config
-mkdir -p /volume1/docker/sonarr/downloads
 mkdir -p /volume1/docker/sonarr/tv
+mkdir -p /volume1/docker/sonarr/downloads
 ````
 
 Alternatively, you can create these directories using your preferred file manager.
