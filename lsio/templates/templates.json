@@ -4313,8 +4313,8 @@
 					"description": "Specify a custom config file to use. [OPTIONAL]"
 				},
 				{
-					"name": "KOMETA_TIME",
-					"label": "KOMETA_TIME",
+					"name": "KOMETA_TIMES",
+					"label": "KOMETA_TIMES",
 					"default": "03:00",
 					"description": "Comma-separated list of times to update each day. Format: `HH:MM`. [OPTIONAL]"
 				},
@@ -4325,8 +4325,8 @@
 					"description": "Set to `True` to run without the scheduler. [OPTIONAL]"
 				},
 				{
-					"name": "KOMETA_TEST",
-					"label": "KOMETA_TEST",
+					"name": "KOMETA_TESTS",
+					"label": "KOMETA_TESTS",
 					"default": "False",
 					"description": "Set to `True` to run in debug mode with only collections that have `test: true`. [OPTIONAL]"
 				},
