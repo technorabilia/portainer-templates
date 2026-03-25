@@ -2219,6 +2219,49 @@
 		{
 			"id": 43,
 			"type": 1,
+			"title": "Eden",
+			"name": "Eden",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/eden/config</p>",
+			"description": "[Eden](https://eden-emu.dev/) is an experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.",
+            "categories": ["Games"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/eden-logo.png",
+			"image": "linuxserver/eden:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/eden/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 44,
+			"type": 1,
 			"title": "Emby",
 			"name": "Emby",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/emby/config<br>mkdir -p /srv/lsio/emby/data/tvshows<br>mkdir -p /srv/lsio/emby/data/movies<br></p>",
@@ -2272,7 +2315,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 44,
+			"id": 45,
 			"type": 1,
 			"title": "Fail2ban",
 			"name": "Fail2ban",
@@ -2393,7 +2436,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 45,
+			"id": 46,
 			"type": 1,
 			"title": "Faster-whisper",
 			"name": "Faster-whisper",
@@ -2423,10 +2466,10 @@
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
 				},
 				{
-					"name": "WHISPER_MODEL",
-					"label": "WHISPER_MODEL",
-					"default": "tiny-int8",
-					"description": "Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L12-L31), all with `-int8` compressed variants"
+					"name": "DEBUG",
+					"label": "DEBUG",
+					"default": "",
+					"description": "If set to `true`, or any other value, the container will output debug logs. [OPTIONAL]"
 				},
 				{
 					"name": "LOCAL_ONLY",
@@ -2443,8 +2486,14 @@
 				{
 					"name": "WHISPER_LANG",
 					"label": "WHISPER_LANG",
-					"default": "en",
-					"description": "Language that you will speak to the add-on. [OPTIONAL]"
+					"default": "auto",
+					"description": "Two character code for the language that you will speak to the add-on. [OPTIONAL]"
+				},
+				{
+					"name": "WHISPER_MODEL",
+					"label": "WHISPER_MODEL",
+					"default": "auto",
+					"description": "Whisper model that will be used for transcription. From [here](https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/utils.py#L11-L31). [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -2459,7 +2508,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 46,
+			"id": 47,
 			"type": 1,
 			"title": "Ferdium",
 			"name": "Ferdium",
@@ -2502,7 +2551,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 47,
+			"id": 48,
 			"type": 1,
 			"title": "Ffmpeg",
 			"name": "Ffmpeg",
@@ -2544,7 +2593,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 48,
+			"id": 49,
 			"type": 1,
 			"title": "Filezilla",
 			"name": "Filezilla",
@@ -2587,7 +2636,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 49,
+			"id": 50,
 			"type": 1,
 			"title": "Firefox",
 			"name": "Firefox",
@@ -2636,7 +2685,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 50,
+			"id": 51,
 			"type": 1,
 			"title": "Flexget",
 			"name": "Flexget",
@@ -2706,7 +2755,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 51,
+			"id": 52,
 			"type": 1,
 			"title": "Flycast",
 			"name": "Flycast",
@@ -2749,7 +2798,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 52,
+			"id": 53,
 			"type": 1,
 			"title": "Foldingathome",
 			"name": "Foldingathome",
@@ -2810,7 +2859,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 53,
+			"id": 54,
 			"type": 1,
 			"title": "Freecad",
 			"name": "Freecad",
@@ -2853,7 +2902,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 54,
+			"id": 55,
 			"type": 1,
 			"title": "Freshrss",
 			"name": "Freshrss",
@@ -2895,7 +2944,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 55,
+			"id": 56,
 			"type": 1,
 			"title": "Gimp",
 			"name": "Gimp",
@@ -2938,7 +2987,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 56,
+			"id": 57,
 			"type": 1,
 			"title": "Github-desktop",
 			"name": "Github-desktop",
@@ -2981,7 +3030,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 57,
+			"id": 58,
 			"type": 1,
 			"title": "Gitqlient",
 			"name": "Gitqlient",
@@ -3024,7 +3073,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 58,
+			"id": 59,
 			"type": 1,
 			"title": "Grav",
 			"name": "Grav",
@@ -3066,7 +3115,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 59,
+			"id": 60,
 			"type": 1,
 			"title": "Grocy",
 			"name": "Grocy",
@@ -3108,7 +3157,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 60,
+			"id": 61,
 			"type": 1,
 			"title": "Gzdoom",
 			"name": "Gzdoom",
@@ -3151,7 +3200,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 61,
+			"id": 62,
 			"type": 1,
 			"title": "Habridge",
 			"name": "Habridge",
@@ -3200,7 +3249,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 62,
+			"id": 63,
 			"type": 1,
 			"title": "Handbrake",
 			"name": "Handbrake",
@@ -3243,7 +3292,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 63,
+			"id": 64,
 			"type": 1,
 			"title": "Healthchecks",
 			"name": "Healthchecks",
@@ -3271,6 +3320,12 @@
 					"label": "TZ",
 					"default": "Etc/UTC",
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "SECRET_KEY",
+					"label": "SECRET_KEY",
+					"default": "",
+					"description": "A secret key used for cryptographic signing. Will generate a random value if one is not supplied and save it to `/config/local_settings.py`."
 				},
 				{
 					"name": "SITE_ROOT",
@@ -3375,12 +3430,6 @@
 					"description": "If using webauthn for 2FA set this to match your Healthchecks domain. Webauthn will only work over https. [OPTIONAL]"
 				},
 				{
-					"name": "SECRET_KEY",
-					"label": "SECRET_KEY",
-					"default": "",
-					"description": "A secret key used for cryptographic signing. Will generate a random value if one is not supplied and save it to `/config/local_settings.py`. [OPTIONAL]"
-				},
-				{
 					"name": "SITE_LOGO_URL",
 					"label": "SITE_LOGO_URL",
 					"default": "",
@@ -3400,7 +3449,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 64,
+			"id": 65,
 			"type": 1,
 			"title": "Hedgedoc",
 			"name": "Hedgedoc",
@@ -3508,7 +3557,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 65,
+			"id": 66,
 			"type": 1,
 			"title": "Heimdall",
 			"name": "Heimdall",
@@ -3557,7 +3606,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 66,
+			"id": 67,
 			"type": 1,
 			"title": "Hishtory-server",
 			"name": "Hishtory-server",
@@ -3611,7 +3660,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 67,
+			"id": 68,
 			"type": 1,
 			"title": "Homeassistant",
 			"name": "Homeassistant",
@@ -3654,7 +3703,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 68,
+			"id": 69,
 			"type": 1,
 			"title": "Htpcmanager",
 			"name": "Htpcmanager",
@@ -3696,7 +3745,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 69,
+			"id": 70,
 			"type": 1,
 			"title": "Inkscape",
 			"name": "Inkscape",
@@ -3739,7 +3788,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 70,
+			"id": 71,
 			"type": 1,
 			"title": "Intellij-idea",
 			"name": "Intellij-idea",
@@ -3782,7 +3831,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 71,
+			"id": 72,
 			"type": 1,
 			"title": "Jackett",
 			"name": "Jackett",
@@ -3840,7 +3889,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 72,
+			"id": 73,
 			"type": 1,
 			"title": "Jellyfin",
 			"name": "Jellyfin",
@@ -3899,7 +3948,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 73,
+			"id": 74,
 			"type": 1,
 			"title": "Joplin",
 			"name": "Joplin",
@@ -3942,7 +3991,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 74,
+			"id": 75,
 			"type": 1,
 			"title": "Kali-linux",
 			"name": "Kali-linux",
@@ -3985,7 +4034,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 75,
+			"id": 76,
 			"type": 1,
 			"title": "Kasm",
 			"name": "Kasm",
@@ -4047,7 +4096,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 76,
+			"id": 77,
 			"type": 1,
 			"title": "Kavita",
 			"name": "Kavita",
@@ -4093,7 +4142,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 77,
+			"id": 78,
 			"type": 1,
 			"title": "Kdenlive",
 			"name": "Kdenlive",
@@ -4136,7 +4185,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 78,
+			"id": 79,
 			"type": 1,
 			"title": "Keepassxc",
 			"name": "Keepassxc",
@@ -4179,7 +4228,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 79,
+			"id": 80,
 			"type": 1,
 			"title": "Kicad",
 			"name": "Kicad",
@@ -4222,7 +4271,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 80,
+			"id": 81,
 			"type": 1,
 			"title": "Kimai",
 			"name": "Kimai",
@@ -4277,7 +4326,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 81,
+			"id": 82,
 			"type": 1,
 			"title": "Kometa",
 			"name": "Kometa",
@@ -4349,7 +4398,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 82,
+			"id": 83,
 			"type": 1,
 			"title": "Krita",
 			"name": "Krita",
@@ -4392,7 +4441,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 83,
+			"id": 84,
 			"type": 1,
 			"title": "Lazylibrarian",
 			"name": "Lazylibrarian",
@@ -4448,7 +4497,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 84,
+			"id": 85,
 			"type": 1,
 			"title": "Ldap-auth",
 			"name": "Ldap-auth",
@@ -4509,7 +4558,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 85,
+			"id": 86,
 			"type": 1,
 			"title": "Libreoffice",
 			"name": "Libreoffice",
@@ -4552,7 +4601,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 86,
+			"id": 87,
 			"type": 1,
 			"title": "Librespeed",
 			"name": "Librespeed",
@@ -4648,7 +4697,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 87,
+			"id": 88,
 			"type": 1,
 			"title": "Librewolf",
 			"name": "Librewolf",
@@ -4697,7 +4746,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 88,
+			"id": 89,
 			"type": 1,
 			"title": "Lidarr",
 			"name": "Lidarr",
@@ -4747,7 +4796,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 89,
+			"id": 90,
 			"type": 1,
 			"title": "Limnoria",
 			"name": "Limnoria",
@@ -4789,7 +4838,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 90,
+			"id": 91,
 			"type": 1,
 			"title": "Lollypop",
 			"name": "Lollypop",
@@ -4832,7 +4881,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 91,
+			"id": 92,
 			"type": 1,
 			"title": "Luanti",
 			"name": "Luanti",
@@ -4880,7 +4929,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 92,
+			"id": 93,
 			"type": 1,
 			"title": "Lychee",
 			"name": "Lychee",
@@ -4980,7 +5029,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 93,
+			"id": 94,
 			"type": 1,
 			"title": "Mame",
 			"name": "Mame",
@@ -5027,7 +5076,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 94,
+			"id": 95,
 			"type": 1,
 			"title": "Manyfold",
 			"name": "Manyfold",
@@ -5091,7 +5140,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 95,
+			"id": 96,
 			"type": 1,
 			"title": "Mariadb",
 			"name": "Mariadb",
@@ -5149,6 +5198,12 @@
 					"label": "REMOTE_SQL",
 					"default": "http://URL1/your.sql,https://URL2/your.sql",
 					"description": "Set this to ingest sql files from an http/https endpoint (comma seperated array). [OPTIONAL]"
+				},
+				{
+					"name": "CLI_OPTS",
+					"label": "CLI_OPTS",
+					"default": "",
+					"description": "Pass CLI options to mariadbd via mariadbd-safe. Use with caution as mariadbd option precedence is complex. [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -5163,7 +5218,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 96,
+			"id": 97,
 			"type": 1,
 			"title": "Mastodon",
 			"name": "Mastodon",
@@ -5435,7 +5490,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 97,
+			"id": 98,
 			"type": 1,
 			"title": "Mediaelch",
 			"name": "Mediaelch",
@@ -5478,7 +5533,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 98,
+			"id": 99,
 			"type": 1,
 			"title": "Medusa",
 			"name": "Medusa",
@@ -5528,7 +5583,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 99,
+			"id": 100,
 			"type": 1,
 			"title": "Melonds",
 			"name": "Melonds",
@@ -5571,7 +5626,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 100,
+			"id": 101,
 			"type": 1,
 			"title": "Minisatip",
 			"name": "Minisatip",
@@ -5621,7 +5676,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 101,
+			"id": 102,
 			"type": 1,
 			"title": "Modmanager",
 			"name": "Modmanager",
@@ -5663,7 +5718,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 102,
+			"id": 103,
 			"type": 1,
 			"title": "Modrinth",
 			"name": "Modrinth",
@@ -5706,7 +5761,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 103,
+			"id": 104,
 			"type": 1,
 			"title": "Monica",
 			"name": "Monica",
@@ -5803,7 +5858,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 104,
+			"id": 105,
 			"type": 1,
 			"title": "Msedge",
 			"name": "Msedge",
@@ -5852,7 +5907,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 105,
+			"id": 106,
 			"type": 1,
 			"title": "Mstream",
 			"name": "Mstream",
@@ -5898,7 +5953,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 106,
+			"id": 107,
 			"type": 1,
 			"title": "Mullvad-browser",
 			"name": "Mullvad-browser",
@@ -5947,7 +6002,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 107,
+			"id": 108,
 			"type": 1,
 			"title": "Mylar3",
 			"name": "Mylar3",
@@ -5997,7 +6052,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 108,
+			"id": 109,
 			"type": 1,
 			"title": "Mysql-workbench",
 			"name": "Mysql-workbench",
@@ -6040,7 +6095,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 109,
+			"id": 110,
 			"type": 1,
 			"title": "Netbox",
 			"name": "Netbox",
@@ -6085,7 +6140,7 @@
 					"name": "ALLOWED_HOST",
 					"label": "ALLOWED_HOST",
 					"default": "",
-					"description": "The hostname you will use to access the app (i.e., netbox.example.com)"
+					"description": "The hostname you will use to access the app (e.g., netbox.example.com)"
 				},
 				{
 					"name": "DB_NAME",
@@ -6130,6 +6185,12 @@
 					"description": "Redis port number (default: 6379)"
 				},
 				{
+					"name": "REDIS_USERNAME",
+					"label": "REDIS_USERNAME",
+					"default": "",
+					"description": "Redis username (default: none)"
+				},
+				{
 					"name": "REDIS_PASSWORD",
 					"label": "REDIS_PASSWORD",
 					"default": "",
@@ -6151,43 +6212,49 @@
 					"name": "BASE_PATH",
 					"label": "BASE_PATH",
 					"default": "",
-					"description": "The path you will use to access the app (i.e., /netbox, optional, default: none) [OPTIONAL]"
+					"description": "The path you will use to access the app (i.e., /netbox, default: none) [OPTIONAL]"
+				},
+				{
+					"name": "CSRF_TRUSTED_ORIGINS",
+					"label": "CSRF_TRUSTED_ORIGINS",
+					"default": "",
+					"description": "List of comma-separated, single quoted, trusted origins. Must include protocol, and port if applicable (default: []) [OPTIONAL]"
 				},
 				{
 					"name": "REMOTE_AUTH_ENABLED",
 					"label": "REMOTE_AUTH_ENABLED",
 					"default": "",
-					"description": "Enable remote authentication (optional, default: False) [OPTIONAL]"
+					"description": "Enable remote authentication (default: False) [OPTIONAL]"
 				},
 				{
 					"name": "REMOTE_AUTH_BACKEND",
 					"label": "REMOTE_AUTH_BACKEND",
 					"default": "",
-					"description": "Python path to the custom Django authentication backend to use for external user authentication (optional, default: netbox.authentication.RemoteUserBackend) [OPTIONAL]"
+					"description": "Python path to the custom Django authentication backend to use for external user authentication (default: netbox.authentication.RemoteUserBackend) [OPTIONAL]"
 				},
 				{
 					"name": "REMOTE_AUTH_HEADER",
 					"label": "REMOTE_AUTH_HEADER",
 					"default": "",
-					"description": "Name of the HTTP header which informs NetBox of the currently authenticated user. (optional, default: HTTP_REMOTE_USER) [OPTIONAL]"
+					"description": "Name of the HTTP header which informs NetBox of the currently authenticated user. (default: HTTP_REMOTE_USER) [OPTIONAL]"
 				},
 				{
 					"name": "REMOTE_AUTH_AUTO_CREATE_USER",
 					"label": "REMOTE_AUTH_AUTO_CREATE_USER",
 					"default": "",
-					"description": "If true, NetBox will automatically create local accounts for users authenticated via a remote service (optional, default: False) [OPTIONAL]"
+					"description": "If true, NetBox will automatically create local accounts for users authenticated via a remote service (default: False) [OPTIONAL]"
 				},
 				{
 					"name": "REMOTE_AUTH_DEFAULT_GROUPS",
 					"label": "REMOTE_AUTH_DEFAULT_GROUPS",
 					"default": "",
-					"description": "The list of groups to assign a new user account when created using remote authentication (optional, default: []) [OPTIONAL]"
+					"description": "The list of groups to assign a new user account when created using remote authentication (default: []) [OPTIONAL]"
 				},
 				{
 					"name": "REMOTE_AUTH_DEFAULT_PERMISSIONS",
 					"label": "REMOTE_AUTH_DEFAULT_PERMISSIONS",
 					"default": "",
-					"description": "A mapping of permissions to assign a new user account when created using remote authentication (optional, default: {}) [OPTIONAL]"
+					"description": "A mapping of permissions to assign a new user account when created using remote authentication (default: {}) [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -6202,7 +6269,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 110,
+			"id": 111,
 			"type": 1,
 			"title": "Nextcloud",
 			"name": "Nextcloud",
@@ -6248,7 +6315,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 111,
+			"id": 112,
 			"type": 1,
 			"title": "Nginx",
 			"name": "Nginx",
@@ -6303,7 +6370,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 112,
+			"id": 113,
 			"type": 1,
 			"title": "Ngircd",
 			"name": "Ngircd",
@@ -6345,7 +6412,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 113,
+			"id": 114,
 			"type": 1,
 			"title": "Nzbget",
 			"name": "Nzbget",
@@ -6403,7 +6470,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 114,
+			"id": 115,
 			"type": 1,
 			"title": "Nzbhydra2",
 			"name": "Nzbhydra2",
@@ -6449,7 +6516,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 115,
+			"id": 116,
 			"type": 1,
 			"title": "Obsidian",
 			"name": "Obsidian",
@@ -6492,7 +6559,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 116,
+			"id": 117,
 			"type": 1,
 			"title": "Ombi",
 			"name": "Ombi",
@@ -6540,7 +6607,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 117,
+			"id": 118,
 			"type": 1,
 			"title": "Onlyoffice",
 			"name": "Onlyoffice",
@@ -6583,7 +6650,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 118,
+			"id": 119,
 			"type": 1,
 			"title": "Openshot",
 			"name": "Openshot",
@@ -6626,7 +6693,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 119,
+			"id": 120,
 			"type": 1,
 			"title": "Openssh-server",
 			"name": "Openssh-server",
@@ -6728,7 +6795,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 120,
+			"id": 121,
 			"type": 1,
 			"title": "Openvscode-server",
 			"name": "Openvscode-server",
@@ -6794,7 +6861,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 121,
+			"id": 122,
 			"type": 1,
 			"title": "Opera",
 			"name": "Opera",
@@ -6843,7 +6910,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 122,
+			"id": 123,
 			"type": 1,
 			"title": "Orcaslicer",
 			"name": "Orcaslicer",
@@ -6886,7 +6953,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 123,
+			"id": 124,
 			"type": 1,
 			"title": "Oscam",
 			"name": "Oscam",
@@ -6923,48 +6990,6 @@
 			{
 				"container": "/config",
 				"bind": "/srv/lsio/oscam/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"id": 124,
-			"type": 1,
-			"title": "Overseerr",
-			"name": "Overseerr",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/overseerr/config</p>",
-			"description": "[Overseerr](https://overseerr.dev/) is a request management and media discovery tool built to work with your existing Plex ecosystem.",
-            "categories": ["Media Requesters"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr.png",
-			"image": "linuxserver/overseerr:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Etc/UTC",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				}
-			],
-			"ports": [
-				"5055:5055/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/srv/lsio/overseerr/config"
 			}
 			],
 			"restart_policy": "unless-stopped"
@@ -7380,8 +7405,14 @@
 				{
 					"name": "TRUST_PROXY",
 					"label": "TRUST_PROXY",
-					"default": "0",
-					"description": "Set to `1` to trust upstream proxies if reverse proxying."
+					"default": "false",
+					"description": "Set to `true` to trust upstream proxies if reverse proxying."
+				},
+				{
+					"name": "DEFAULT_LANGUAGE",
+					"label": "DEFAULT_LANGUAGE",
+					"default": "en-US",
+					"description": "This sets the default language for sending notifications per user (if a user hasn't selected a language) and per board. [OPTIONAL]"
 				}
 			],
 			"ports": [
@@ -7461,6 +7492,49 @@
 		{
 			"id": 133,
 			"type": 1,
+			"title": "Ppsspp",
+			"name": "Ppsspp",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/ppsspp/config</p>",
+			"description": "[PPSSPP](https://www.ppsspp.org/) is a free and open-source PSP emulator for Windows, macOS, Linux, iOS, Android, Nintendo Wii U, Nintendo Switch, BlackBerry 10, MeeGo, Pandora, Xbox Series and Symbian with a focus on speed and portability.",
+            "categories": ["Games"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ppsspp-logo.png",
+			"image": "linuxserver/ppsspp:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/ppsspp/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 134,
+			"type": 1,
 			"title": "Projectsend",
 			"name": "Projectsend",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/projectsend/config<br>mkdir -p /srv/lsio/projectsend/data</p>",
@@ -7505,7 +7579,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 134,
+			"id": 135,
 			"type": 1,
 			"title": "Prowlarr",
 			"name": "Prowlarr",
@@ -7547,7 +7621,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 135,
+			"id": 136,
 			"type": 1,
 			"title": "Pwndrop",
 			"name": "Pwndrop",
@@ -7595,7 +7669,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 136,
+			"id": 137,
 			"type": 1,
 			"title": "Pycharm",
 			"name": "Pycharm",
@@ -7638,7 +7712,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 137,
+			"id": 138,
 			"type": 1,
 			"title": "Pydio-cells",
 			"name": "Pydio-cells",
@@ -7692,7 +7766,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 138,
+			"id": 139,
 			"type": 1,
 			"title": "Pyload-ng",
 			"name": "Pyload-ng",
@@ -7739,7 +7813,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 139,
+			"id": 140,
 			"type": 1,
 			"title": "Qbittorrent",
 			"name": "Qbittorrent",
@@ -7799,7 +7873,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 140,
+			"id": 141,
 			"type": 1,
 			"title": "Qdirstat",
 			"name": "Qdirstat",
@@ -7846,7 +7920,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 141,
+			"id": 142,
 			"type": 1,
 			"title": "Qemu-static",
 			"name": "Qemu-static",
@@ -7888,7 +7962,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 142,
+			"id": 143,
 			"type": 1,
 			"title": "Radarr",
 			"name": "Radarr",
@@ -7938,7 +8012,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 143,
+			"id": 144,
 			"type": 1,
 			"title": "Raneto",
 			"name": "Raneto",
@@ -7980,7 +8054,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 144,
+			"id": 145,
 			"type": 1,
 			"title": "Rawtherapee",
 			"name": "Rawtherapee",
@@ -8023,7 +8097,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 145,
+			"id": 146,
 			"type": 1,
 			"title": "Remmina",
 			"name": "Remmina",
@@ -8066,7 +8140,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 146,
+			"id": 147,
 			"type": 1,
 			"title": "Resilio-sync",
 			"name": "Resilio-sync",
@@ -8117,7 +8191,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 147,
+			"id": 148,
 			"type": 1,
 			"title": "Retroarch",
 			"name": "Retroarch",
@@ -8160,7 +8234,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 148,
+			"id": 149,
 			"type": 1,
 			"title": "Rpcs3",
 			"name": "Rpcs3",
@@ -8203,7 +8277,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 149,
+			"id": 150,
 			"type": 1,
 			"title": "Rsnapshot",
 			"name": "Rsnapshot",
@@ -8253,7 +8327,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 150,
+			"id": 151,
 			"type": 1,
 			"title": "Rustdesk",
 			"name": "Rustdesk",
@@ -8296,7 +8370,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 151,
+			"id": 152,
 			"type": 1,
 			"title": "Sabnzbd",
 			"name": "Sabnzbd",
@@ -8346,7 +8420,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 152,
+			"id": 153,
 			"type": 1,
 			"title": "Scummvm",
 			"name": "Scummvm",
@@ -8389,7 +8463,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 153,
+			"id": 154,
 			"type": 1,
 			"title": "Sealskin",
 			"name": "Sealskin",
@@ -8399,7 +8473,63 @@
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/selkies-logo.png",
 			"image": "linuxserver/sealskin:latest",
-			"network": "bridge",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "HOST_URL",
+					"label": "HOST_URL",
+					"default": "IP or subdomain.doman.com",
+					"description": "On initial setup this will be used to fill in the default admin configuration file in the `/config` directory, if unset the string HOST_URL will need to be replaced. [OPTIONAL]"
+				}
+			],
+			"ports": [
+				"8443:8443/tcp",
+				"8000:8000/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/sealskin/config"
+			},
+			{
+				"container": "/storage",
+				"bind": "/srv/lsio/sealskin/storage"
+			},
+			{
+				"container": "/var/run/docker.sock",
+				"bind": "/var/run/docker.sock"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 155,
+			"type": 1,
+			"title": "Shadps4",
+			"name": "Shadps4",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/shadps4/config</p>",
+			"description": "[shadPS4](https://shadps4.net/) is an early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
+            "categories": ["Games"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/shadps4-logo.png",
+			"image": "linuxserver/shadps4:latest",
 			"env": [
 				{
 					"name": "PUID",
@@ -8421,27 +8551,19 @@
 				}
 			],
 			"ports": [
-				"8000:8000/tcp",
-				"8443:8443/tcp"
+				"3000:3000/tcp",
+				"3001:3001/tcp"
 			],
 			"volumes": [
 			{
 				"container": "/config",
-				"bind": "/srv/lsio/sealskin/config"
-			},
-			{
-				"container": "/storage",
-				"bind": "/srv/lsio/sealskin/storage"
-			},
-			{
-				"container": "/var/run/docker.sock",
-				"bind": "/var/run/docker.sock"
+				"bind": "/srv/lsio/shadps4/config"
 			}
 			],
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 154,
+			"id": 156,
 			"type": 1,
 			"title": "Shotcut",
 			"name": "Shotcut",
@@ -8484,7 +8606,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 155,
+			"id": 157,
 			"type": 1,
 			"title": "Sickgear",
 			"name": "Sickgear",
@@ -8534,7 +8656,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 156,
+			"id": 158,
 			"type": 1,
 			"title": "Signal",
 			"name": "Signal",
@@ -8577,7 +8699,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 157,
+			"id": 159,
 			"type": 1,
 			"title": "Smokeping",
 			"name": "Smokeping",
@@ -8641,7 +8763,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 158,
+			"id": 160,
 			"type": 1,
 			"title": "Socket-proxy",
 			"name": "Socket-proxy",
@@ -8683,7 +8805,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 159,
+			"id": 161,
 			"type": 1,
 			"title": "Sonarr",
 			"name": "Sonarr",
@@ -8733,7 +8855,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 160,
+			"id": 162,
 			"type": 1,
 			"title": "Speedtest-tracker",
 			"name": "Speedtest-tracker",
@@ -8847,7 +8969,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 161,
+			"id": 163,
 			"type": 1,
 			"title": "Spotube",
 			"name": "Spotube",
@@ -8890,7 +9012,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 162,
+			"id": 164,
 			"type": 1,
 			"title": "Sqlitebrowser",
 			"name": "Sqlitebrowser",
@@ -8933,7 +9055,50 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 163,
+			"id": 165,
+			"type": 1,
+			"title": "Steam",
+			"name": "Steam",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/steam/config</p>",
+			"description": "[Steam](https://store.steampowered.com/) is the ultimate destination for playing, discussing, and creating games.",
+            "categories": ["Games"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/steam-logo.png",
+			"image": "linuxserver/steam:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/steam/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 166,
 			"type": 1,
 			"title": "Swag",
 			"name": "Swag",
@@ -8990,7 +9155,7 @@
 					"name": "DNSPLUGIN",
 					"label": "DNSPLUGIN",
 					"default": "cloudflare",
-					"description": "Required if `VALIDATION` is set to `dns`. Options are `acmedns`, `aliyun`, `azure`, `bunny`, `cloudflare`, `cpanel`, `desec`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `dnspod`, `do`, `domeneshop`, `dreamhost`, `duckdns`, `dynu`, `freedns`, `gandi`, `gehirn`, `glesys`, `godaddy`, `google`, `he`, `hetzner`, `infomaniak`, `inwx`, `ionos`, `linode`, `loopia`, `luadns`, `namecheap`, `netcup`, `njalla`, `nsone`, `ovh`, `porkbun`, `rfc2136`, `route53`, `sakuracloud`, `standalone`, `transip`, and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`. [OPTIONAL]"
+					"description": "Required if `VALIDATION` is set to `dns`. Options are `acmedns`, `aliyun`, `azure`, `bunny`, `cloudflare`, `cpanel`, `desec`, `digitalocean`, `directadmin`, `dnsimple`, `dnsmadeeasy`, `dnspod`, `do`, `domeneshop`, `dreamhost`, `duckdns`, `dynu`, `freedns`, `gandi`, `gehirn`, `glesys`, `godaddy`, `google`, `he`, `hetzner`, `hetzner-cloud`, `infomaniak`, `inwx`, `ionos`, `linode`, `loopia`, `luadns`, `namecheap`, `netcup`, `njalla`, `nsone`, `ovh`, `porkbun`, `rfc2136`, `route53`, `sakuracloud`, `standalone`, `transip`, and `vultr`. Also need to enter the credentials into the corresponding ini (or json for some plugins) file under `/config/dns-conf`. [OPTIONAL]"
 				},
 				{
 					"name": "PROPAGATION",
@@ -9055,7 +9220,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 164,
+			"id": 167,
 			"type": 1,
 			"title": "Synclounge",
 			"name": "Synclounge",
@@ -9085,7 +9250,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 165,
+			"id": 168,
 			"type": 1,
 			"title": "Syncthing",
 			"name": "Syncthing",
@@ -9138,7 +9303,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 166,
+			"id": 169,
 			"type": 1,
 			"title": "Syslog-ng",
 			"name": "Syslog-ng",
@@ -9192,7 +9357,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 167,
+			"id": 170,
 			"type": 1,
 			"title": "Tautulli",
 			"name": "Tautulli",
@@ -9234,7 +9399,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 168,
+			"id": 171,
 			"type": 1,
 			"title": "Telegram",
 			"name": "Telegram",
@@ -9277,7 +9442,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 169,
+			"id": 172,
 			"type": 1,
 			"title": "Thelounge",
 			"name": "Thelounge",
@@ -9319,7 +9484,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 170,
+			"id": 173,
 			"type": 1,
 			"title": "Thunderbird",
 			"name": "Thunderbird",
@@ -9362,7 +9527,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 171,
+			"id": 174,
 			"type": 1,
 			"title": "Transmission",
 			"name": "Transmission",
@@ -9450,7 +9615,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 172,
+			"id": 175,
 			"type": 1,
 			"title": "Tvheadend",
 			"name": "Tvheadend",
@@ -9503,7 +9668,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 173,
+			"id": 176,
 			"type": 1,
 			"title": "Ubooquity",
 			"name": "Ubooquity",
@@ -9564,7 +9729,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 174,
+			"id": 177,
 			"type": 1,
 			"title": "Ungoogled-chromium",
 			"name": "Ungoogled-chromium",
@@ -9613,7 +9778,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 175,
+			"id": 178,
 			"type": 1,
 			"title": "Unifi-network-application",
 			"name": "Unifi-network-application",
@@ -9717,7 +9882,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 176,
+			"id": 179,
 			"type": 1,
 			"title": "Vivaldi",
 			"name": "Vivaldi",
@@ -9766,7 +9931,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 177,
+			"id": 180,
 			"type": 1,
 			"title": "Vlc",
 			"name": "Vlc",
@@ -9815,7 +9980,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 178,
+			"id": 181,
 			"type": 1,
 			"title": "Vscodium",
 			"name": "Vscodium",
@@ -9858,7 +10023,79 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 179,
+			"id": 182,
+			"type": 1,
+			"title": "Vscodium-web",
+			"name": "Vscodium-web",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/vscodium-web/config</p>",
+			"description": "[Vscodium-web](https://vscodium.com/) is a community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
+            "categories": ["Programming"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscodium-icon.png",
+			"image": "linuxserver/vscodium-web:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				},
+				{
+					"name": "CONNECTION_TOKEN",
+					"label": "CONNECTION_TOKEN",
+					"default": "",
+					"description": "Optional security token for accessing the Web UI (ie. `supersecrettoken`). [OPTIONAL]"
+				},
+				{
+					"name": "CONNECTION_TOKEN_FILE",
+					"label": "CONNECTION_TOKEN_FILE",
+					"default": "",
+					"description": "Optional path to a file inside the container that contains the security token for accessing the Web UI (ie. `/path/to/file`). Overrides `CONNECTION_TOKEN`. [OPTIONAL]"
+				},
+				{
+					"name": "SUDO_PASSWORD",
+					"label": "SUDO_PASSWORD",
+					"default": "password",
+					"description": "If this optional variable is set, user will have sudo access in the vscodium-web terminal with the specified password. [OPTIONAL]"
+				},
+				{
+					"name": "SUDO_PASSWORD_HASH",
+					"label": "SUDO_PASSWORD_HASH",
+					"default": "",
+					"description": "Optionally set sudo password via hash (takes priority over `SUDO_PASSWORD` var). Format is `$type$salt$hashed`. [OPTIONAL]"
+				},
+				{
+					"name": "CODE_ARGS",
+					"label": "CODE_ARGS",
+					"default": "",
+					"description": "Optionally add cli parameters to vscodium binary. [OPTIONAL]"
+				}
+			],
+			"ports": [
+				"8000:8000/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/vscodium-web/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 183,
 			"type": 1,
 			"title": "Webcord",
 			"name": "Webcord",
@@ -9901,7 +10138,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 180,
+			"id": 184,
 			"type": 1,
 			"title": "Webgrabplus",
 			"name": "Webgrabplus",
@@ -9947,7 +10184,50 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 181,
+			"id": 185,
+			"type": 1,
+			"title": "Webstation",
+			"name": "Webstation",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/webstation/config</p>",
+			"description": "[Webstation](https://github.com/linuxserver/docker-webstation) is a web native emulation focused LXQt desktop based on Ubuntu.",
+            "categories": ["Games"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webstation-logo.png",
+			"image": "linuxserver/webstation:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/webstation/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 186,
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
@@ -9990,7 +10270,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 182,
+			"id": 187,
 			"type": 1,
 			"title": "Weixin",
 			"name": "Weixin",
@@ -10033,7 +10313,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 183,
+			"id": 188,
 			"type": 1,
 			"title": "Wikijs",
 			"name": "Wikijs",
@@ -10115,7 +10395,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 184,
+			"id": 189,
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
@@ -10209,7 +10489,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 185,
+			"id": 190,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -10254,7 +10534,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 186,
+			"id": 191,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -10297,7 +10577,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 187,
+			"id": 192,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -10340,7 +10620,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 188,
+			"id": 193,
 			"type": 1,
 			"title": "Xemu",
 			"name": "Xemu",
@@ -10383,7 +10663,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 189,
+			"id": 194,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -10426,7 +10706,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 190,
+			"id": 195,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -10499,7 +10779,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 191,
+			"id": 196,
 			"type": 1,
 			"title": "Zen",
 			"name": "Zen",
@@ -10542,7 +10822,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 192,
+			"id": 197,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -10584,7 +10864,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 193,
+			"id": 198,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
