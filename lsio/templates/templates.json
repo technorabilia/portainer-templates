@@ -9982,6 +9982,49 @@
 		{
 			"id": 181,
 			"type": 1,
+			"title": "Vscode",
+			"name": "Vscode",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/vscode/config</p>",
+			"description": "[VS Code](https://code.visualstudio.com/) is an integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see [Code Server](https://github.com/linuxserver/docker-code-server).",
+            "categories": ["Programming"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscode-logo.png",
+			"image": "linuxserver/vscode:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/vscode/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 182,
+			"type": 1,
 			"title": "Vscodium",
 			"name": "Vscodium",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/vscodium/config</p>",
@@ -10023,7 +10066,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 182,
+			"id": 183,
 			"type": 1,
 			"title": "Vscodium-web",
 			"name": "Vscodium-web",
@@ -10095,7 +10138,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 183,
+			"id": 184,
 			"type": 1,
 			"title": "Webcord",
 			"name": "Webcord",
@@ -10138,7 +10181,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 184,
+			"id": 185,
 			"type": 1,
 			"title": "Webgrabplus",
 			"name": "Webgrabplus",
@@ -10184,7 +10227,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 185,
+			"id": 186,
 			"type": 1,
 			"title": "Webstation",
 			"name": "Webstation",
@@ -10227,7 +10270,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 186,
+			"id": 187,
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
@@ -10270,7 +10313,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 187,
+			"id": 188,
 			"type": 1,
 			"title": "Weixin",
 			"name": "Weixin",
@@ -10313,7 +10356,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 188,
+			"id": 189,
 			"type": 1,
 			"title": "Wikijs",
 			"name": "Wikijs",
@@ -10395,7 +10438,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 189,
+			"id": 190,
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
@@ -10489,7 +10532,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 190,
+			"id": 191,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -10534,7 +10577,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 191,
+			"id": 192,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -10577,7 +10620,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 192,
+			"id": 193,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -10620,7 +10663,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 193,
+			"id": 194,
 			"type": 1,
 			"title": "Xemu",
 			"name": "Xemu",
@@ -10663,7 +10706,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 194,
+			"id": 195,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -10706,7 +10749,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 195,
+			"id": 196,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -10779,7 +10822,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 196,
+			"id": 197,
 			"type": 1,
 			"title": "Zen",
 			"name": "Zen",
@@ -10822,7 +10865,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 197,
+			"id": 198,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -10864,7 +10907,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 198,
+			"id": 199,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
