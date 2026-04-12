@@ -5964,7 +5964,7 @@
 			"title": "Mylar3",
 			"name": "Mylar3",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/mylar3/config<br>mkdir -p /srv/lsio/mylar3/comics<br>mkdir -p /srv/lsio/mylar3/downloads</p>",
-			"description": "[Mylar3](https://github.com/mylar3/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.",
+			"description": "[Mylar3](https://github.com/MylarComics/mylar3) is an automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.",
             "categories": ["Books", "Media Management"],
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar-icon.png",
