@@ -10489,6 +10489,49 @@
 		{
 			"id": 191,
 			"type": 1,
+			"title": "Winegui",
+			"name": "Winegui",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/winegui/config</p>",
+			"description": "[WineGUI](https://gitlab.melroy.org/melroy/winegui) is a user-interface friendly Wine manager that provides a graphical frontend for creating and managing Wine bottles.",
+            "categories": ["Games", "Business"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/winegui-logo.png",
+			"image": "linuxserver/winegui:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/winegui/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
+			"id": 192,
+			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/wireguard/config<br></p>",
@@ -10581,7 +10624,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 192,
+			"id": 193,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -10626,7 +10669,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 193,
+			"id": 194,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -10669,7 +10712,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 194,
+			"id": 195,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -10712,7 +10755,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 195,
+			"id": 196,
 			"type": 1,
 			"title": "Xemu",
 			"name": "Xemu",
@@ -10755,7 +10798,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 196,
+			"id": 197,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -10798,7 +10841,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 197,
+			"id": 198,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -10871,7 +10914,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 198,
+			"id": 199,
 			"type": 1,
 			"title": "Zen",
 			"name": "Zen",
@@ -10914,7 +10957,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 199,
+			"id": 200,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -10956,7 +10999,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 200,
+			"id": 201,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
