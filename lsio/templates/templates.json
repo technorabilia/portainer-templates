@@ -10889,6 +10889,12 @@
 					"description": "Your Spotify application secret."
 				},
 				{
+					"name": "SPOTIFY_API_DELAY_MS",
+					"label": "SPOTIFY_API_DELAY_MS",
+					"default": "2000",
+					"description": "Minimum delay in milliseconds between each spotify request. Can help with hitting 429 when importing data."
+				},
+				{
 					"name": "CORS",
 					"label": "CORS",
 					"default": "http://localhost:80,https://localhost:443",
