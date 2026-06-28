@@ -1666,6 +1666,49 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
+			"id": 34,
+			"type": 1,
+			"title": "Dogwalk",
+			"name": "Dogwalk",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/dogwalk/config</p>",
+			"description": "[DOGWALK](https://studio.blender.org/projects/dogwalk/) is Blender Studio's long awaited second game project, focused on creating a bite-sized interactive storytelling playground. Play as a big adorable dog and explore the winter woods with a little kid.",
+            "categories": ["Games"],
+			"platform": "linux",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dogwalk-logo.png",
+			"image": "linuxserver/dogwalk:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "1000",
+					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Etc/UTC",
+					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
+				}
+			],
+			"ports": [
+				"3000:3000/tcp",
+				"3001:3001/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/srv/lsio/dogwalk/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
+		{
 			"id": 35,
 			"type": 1,
 			"title": "Dokuwiki",
