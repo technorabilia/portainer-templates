@@ -5855,103 +5855,6 @@
 		{
 			"id": 106,
 			"type": 1,
-			"title": "Monica",
-			"name": "Monica",
-			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/monica/config</p>",
-			"description": "[Monica](https://github.com/monicahq/monica) is an open source personal relationship management system, that lets you document your life.",
-            "categories": ["Content Management"],
-			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/monica-logo.png",
-			"image": "linuxserver/monica:latest",
-			"env": [
-				{
-					"name": "PUID",
-					"label": "PUID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the UID to use here."
-				},
-				{
-					"name": "PGID",
-					"label": "PGID",
-					"default": "1000",
-					"description": "Run 'id [USER]' for the owner of the host volume directories to get the GID to use here."
-				},
-				{
-					"name": "TZ",
-					"label": "TZ",
-					"default": "Etc/UTC",
-					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
-				},
-				{
-					"name": "DB_HOST",
-					"label": "DB_HOST",
-					"default": "",
-					"description": "Mariadb DB server hostname."
-				},
-				{
-					"name": "DB_PORT",
-					"label": "DB_PORT",
-					"default": "",
-					"description": "Mariadb DB server port."
-				},
-				{
-					"name": "DB_USERNAME",
-					"label": "DB_USERNAME",
-					"default": "",
-					"description": "Mariadb DB user."
-				},
-				{
-					"name": "DB_PASSWORD",
-					"label": "DB_PASSWORD",
-					"default": "",
-					"description": "Mariadb DB password."
-				},
-				{
-					"name": "DB_DATABASE",
-					"label": "DB_DATABASE",
-					"default": "",
-					"description": "Mariadb DB name."
-				},
-				{
-					"name": "APP_URL",
-					"label": "APP_URL",
-					"default": "http://localhost:80",
-					"description": "The URL you will use to access Monica including protocol, and port where appropriate. [OPTIONAL]"
-				},
-				{
-					"name": "TRUSTED_PROXIES",
-					"label": "TRUSTED_PROXIES",
-					"default": "",
-					"description": "Set to the IP or netmask covering your reverse proxy, if running behind one. Set to `*` to trust all IPs (**do not** use `*` if exposed to the internet`). [OPTIONAL]"
-				},
-				{
-					"name": "APP_ENV",
-					"label": "APP_ENV",
-					"default": "local",
-					"description": "Set to `production` when exposing the container to anyone else; this also makes https mandatory. [OPTIONAL]"
-				},
-				{
-					"name": "APP_DISABLE_SIGNUP",
-					"label": "APP_DISABLE_SIGNUP",
-					"default": "true",
-					"description": "Set to `false` to enable new account sign-ups. [OPTIONAL]"
-				}
-			],
-			"ports": [
-				"80:80/tcp",
-				"443:443/tcp"
-			],
-			"volumes": [
-			{
-				"container": "/config",
-				"bind": "/srv/lsio/monica/config"
-			}
-			],
-			"restart_policy": "unless-stopped"
-		},
-		{
-			"id": 107,
-			"type": 1,
 			"title": "Msedge",
 			"name": "Msedge",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/msedge/config</p>",
@@ -5999,7 +5902,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 108,
+			"id": 107,
 			"type": 1,
 			"title": "Mstream",
 			"name": "Mstream",
@@ -6045,7 +5948,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 109,
+			"id": 108,
 			"type": 1,
 			"title": "Mullvad-browser",
 			"name": "Mullvad-browser",
@@ -6094,7 +5997,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 110,
+			"id": 109,
 			"type": 1,
 			"title": "Mylar3",
 			"name": "Mylar3",
@@ -6144,7 +6047,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 111,
+			"id": 110,
 			"type": 1,
 			"title": "Mysql-workbench",
 			"name": "Mysql-workbench",
@@ -6187,7 +6090,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 112,
+			"id": 111,
 			"type": 1,
 			"title": "Netbox",
 			"name": "Netbox",
@@ -6361,7 +6264,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 113,
+			"id": 112,
 			"type": 1,
 			"title": "Nextcloud",
 			"name": "Nextcloud",
@@ -6407,7 +6310,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 114,
+			"id": 113,
 			"type": 1,
 			"title": "Nginx",
 			"name": "Nginx",
@@ -6462,7 +6365,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 115,
+			"id": 114,
 			"type": 1,
 			"title": "Ngircd",
 			"name": "Ngircd",
@@ -6504,7 +6407,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 116,
+			"id": 115,
 			"type": 1,
 			"title": "Nzbget",
 			"name": "Nzbget",
@@ -6562,7 +6465,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 117,
+			"id": 116,
 			"type": 1,
 			"title": "Nzbhydra2",
 			"name": "Nzbhydra2",
@@ -6608,7 +6511,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 118,
+			"id": 117,
 			"type": 1,
 			"title": "Obsidian",
 			"name": "Obsidian",
@@ -6651,7 +6554,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 119,
+			"id": 118,
 			"type": 1,
 			"title": "Ombi",
 			"name": "Ombi",
@@ -6699,7 +6602,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 120,
+			"id": 119,
 			"type": 1,
 			"title": "Onlyoffice",
 			"name": "Onlyoffice",
@@ -6742,7 +6645,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 121,
+			"id": 120,
 			"type": 1,
 			"title": "Openshot",
 			"name": "Openshot",
@@ -6785,7 +6688,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 122,
+			"id": 121,
 			"type": 1,
 			"title": "Openssh-server",
 			"name": "Openssh-server",
@@ -6887,7 +6790,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 123,
+			"id": 122,
 			"type": 1,
 			"title": "Openvscode-server",
 			"name": "Openvscode-server",
@@ -6953,7 +6856,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 124,
+			"id": 123,
 			"type": 1,
 			"title": "Opera",
 			"name": "Opera",
@@ -7002,7 +6905,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 125,
+			"id": 124,
 			"type": 1,
 			"title": "Orcaslicer",
 			"name": "Orcaslicer",
@@ -7045,7 +6948,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 126,
+			"id": 125,
 			"type": 1,
 			"title": "Oscam",
 			"name": "Oscam",
@@ -7087,7 +6990,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 127,
+			"id": 126,
 			"type": 1,
 			"title": "Pairdrop",
 			"name": "Pairdrop",
@@ -7153,7 +7056,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 128,
+			"id": 127,
 			"type": 1,
 			"title": "Pcsx2",
 			"name": "Pcsx2",
@@ -7196,7 +7099,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 129,
+			"id": 128,
 			"type": 1,
 			"title": "Phpmyadmin",
 			"name": "Phpmyadmin",
@@ -7250,7 +7153,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 130,
+			"id": 129,
 			"type": 1,
 			"title": "Pidgin",
 			"name": "Pidgin",
@@ -7293,7 +7196,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 131,
+			"id": 130,
 			"type": 1,
 			"title": "Piper",
 			"name": "Piper",
@@ -7377,7 +7280,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 132,
+			"id": 131,
 			"type": 1,
 			"title": "Piwigo",
 			"name": "Piwigo",
@@ -7423,7 +7326,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 133,
+			"id": 132,
 			"type": 1,
 			"title": "Planka",
 			"name": "Planka",
@@ -7519,7 +7422,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 134,
+			"id": 133,
 			"type": 1,
 			"title": "Plex",
 			"name": "Plex",
@@ -7582,7 +7485,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 135,
+			"id": 134,
 			"type": 1,
 			"title": "Ppsspp",
 			"name": "Ppsspp",
@@ -7625,7 +7528,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 136,
+			"id": 135,
 			"type": 1,
 			"title": "Projectsend",
 			"name": "Projectsend",
@@ -7671,7 +7574,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 137,
+			"id": 136,
 			"type": 1,
 			"title": "Prowlarr",
 			"name": "Prowlarr",
@@ -7713,7 +7616,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 138,
+			"id": 137,
 			"type": 1,
 			"title": "Pwndrop",
 			"name": "Pwndrop",
@@ -7761,7 +7664,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 139,
+			"id": 138,
 			"type": 1,
 			"title": "Pycharm",
 			"name": "Pycharm",
@@ -7804,7 +7707,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 140,
+			"id": 139,
 			"type": 1,
 			"title": "Pydio-cells",
 			"name": "Pydio-cells",
@@ -7858,7 +7761,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 141,
+			"id": 140,
 			"type": 1,
 			"title": "Pyload-ng",
 			"name": "Pyload-ng",
@@ -7905,7 +7808,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 142,
+			"id": 141,
 			"type": 1,
 			"title": "Qbittorrent",
 			"name": "Qbittorrent",
@@ -7965,7 +7868,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 143,
+			"id": 142,
 			"type": 1,
 			"title": "Qdirstat",
 			"name": "Qdirstat",
@@ -8012,7 +7915,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 144,
+			"id": 143,
 			"type": 1,
 			"title": "Qemu-static",
 			"name": "Qemu-static",
@@ -8054,7 +7957,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 145,
+			"id": 144,
 			"type": 1,
 			"title": "Radarr",
 			"name": "Radarr",
@@ -8104,7 +8007,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 146,
+			"id": 145,
 			"type": 1,
 			"title": "Raneto",
 			"name": "Raneto",
@@ -8146,7 +8049,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 147,
+			"id": 146,
 			"type": 1,
 			"title": "Rawtherapee",
 			"name": "Rawtherapee",
@@ -8189,7 +8092,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 148,
+			"id": 147,
 			"type": 1,
 			"title": "Remmina",
 			"name": "Remmina",
@@ -8232,7 +8135,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 149,
+			"id": 148,
 			"type": 1,
 			"title": "Resilio-sync",
 			"name": "Resilio-sync",
@@ -8283,7 +8186,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 150,
+			"id": 149,
 			"type": 1,
 			"title": "Retroarch",
 			"name": "Retroarch",
@@ -8326,7 +8229,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 151,
+			"id": 150,
 			"type": 1,
 			"title": "Rpcs3",
 			"name": "Rpcs3",
@@ -8369,7 +8272,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 152,
+			"id": 151,
 			"type": 1,
 			"title": "Rsnapshot",
 			"name": "Rsnapshot",
@@ -8419,7 +8322,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 153,
+			"id": 152,
 			"type": 1,
 			"title": "Rustdesk",
 			"name": "Rustdesk",
@@ -8462,7 +8365,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 154,
+			"id": 153,
 			"type": 1,
 			"title": "Sabnzbd",
 			"name": "Sabnzbd",
@@ -8512,7 +8415,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 155,
+			"id": 154,
 			"type": 1,
 			"title": "Scummvm",
 			"name": "Scummvm",
@@ -8555,7 +8458,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 156,
+			"id": 155,
 			"type": 1,
 			"title": "Sealskin",
 			"name": "Sealskin",
@@ -8612,7 +8515,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 157,
+			"id": 156,
 			"type": 1,
 			"title": "Shadps4",
 			"name": "Shadps4",
@@ -8655,7 +8558,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 158,
+			"id": 157,
 			"type": 1,
 			"title": "Shotcut",
 			"name": "Shotcut",
@@ -8698,7 +8601,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 159,
+			"id": 158,
 			"type": 1,
 			"title": "Sickgear",
 			"name": "Sickgear",
@@ -8748,7 +8651,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 160,
+			"id": 159,
 			"type": 1,
 			"title": "Signal",
 			"name": "Signal",
@@ -8791,7 +8694,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 161,
+			"id": 160,
 			"type": 1,
 			"title": "Smokeping",
 			"name": "Smokeping",
@@ -8855,7 +8758,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 162,
+			"id": 161,
 			"type": 1,
 			"title": "Socket-proxy",
 			"name": "Socket-proxy",
@@ -8897,7 +8800,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 163,
+			"id": 162,
 			"type": 1,
 			"title": "Sonarr",
 			"name": "Sonarr",
@@ -8947,7 +8850,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 164,
+			"id": 163,
 			"type": 1,
 			"title": "Speedtest-tracker",
 			"name": "Speedtest-tracker",
@@ -9061,7 +8964,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 165,
+			"id": 164,
 			"type": 1,
 			"title": "Spotube",
 			"name": "Spotube",
@@ -9104,7 +9007,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 166,
+			"id": 165,
 			"type": 1,
 			"title": "Sqlitebrowser",
 			"name": "Sqlitebrowser",
@@ -9147,7 +9050,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 167,
+			"id": 166,
 			"type": 1,
 			"title": "Steam",
 			"name": "Steam",
@@ -9190,7 +9093,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 168,
+			"id": 167,
 			"type": 1,
 			"title": "Swag",
 			"name": "Swag",
@@ -9312,7 +9215,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 169,
+			"id": 168,
 			"type": 1,
 			"title": "Synclounge",
 			"name": "Synclounge",
@@ -9342,7 +9245,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 170,
+			"id": 169,
 			"type": 1,
 			"title": "Syncthing",
 			"name": "Syncthing",
@@ -9395,7 +9298,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 171,
+			"id": 170,
 			"type": 1,
 			"title": "Syslog-ng",
 			"name": "Syslog-ng",
@@ -9449,7 +9352,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 172,
+			"id": 171,
 			"type": 1,
 			"title": "Tautulli",
 			"name": "Tautulli",
@@ -9491,7 +9394,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 173,
+			"id": 172,
 			"type": 1,
 			"title": "Telegram",
 			"name": "Telegram",
@@ -9534,7 +9437,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 174,
+			"id": 173,
 			"type": 1,
 			"title": "Thelounge",
 			"name": "Thelounge",
@@ -9576,7 +9479,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 175,
+			"id": 174,
 			"type": 1,
 			"title": "Thunderbird",
 			"name": "Thunderbird",
@@ -9619,7 +9522,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 176,
+			"id": 175,
 			"type": 1,
 			"title": "Transmission",
 			"name": "Transmission",
@@ -9707,7 +9610,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 177,
+			"id": 176,
 			"type": 1,
 			"title": "Tvheadend",
 			"name": "Tvheadend",
@@ -9760,7 +9663,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 178,
+			"id": 177,
 			"type": 1,
 			"title": "Ubooquity",
 			"name": "Ubooquity",
@@ -9821,7 +9724,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 179,
+			"id": 178,
 			"type": 1,
 			"title": "Ungoogled-chromium",
 			"name": "Ungoogled-chromium",
@@ -9870,7 +9773,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 180,
+			"id": 179,
 			"type": 1,
 			"title": "Unifi-network-application",
 			"name": "Unifi-network-application",
@@ -9974,7 +9877,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 181,
+			"id": 180,
 			"type": 1,
 			"title": "Vivaldi",
 			"name": "Vivaldi",
@@ -10023,7 +9926,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 182,
+			"id": 181,
 			"type": 1,
 			"title": "Vlc",
 			"name": "Vlc",
@@ -10072,7 +9975,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 183,
+			"id": 182,
 			"type": 1,
 			"title": "Vscode",
 			"name": "Vscode",
@@ -10115,7 +10018,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 184,
+			"id": 183,
 			"type": 1,
 			"title": "Vscodium",
 			"name": "Vscodium",
@@ -10158,7 +10061,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 185,
+			"id": 184,
 			"type": 1,
 			"title": "Vscodium-web",
 			"name": "Vscodium-web",
@@ -10230,7 +10133,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 186,
+			"id": 185,
 			"type": 1,
 			"title": "Webcord",
 			"name": "Webcord",
@@ -10273,7 +10176,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 187,
+			"id": 186,
 			"type": 1,
 			"title": "Webgrabplus",
 			"name": "Webgrabplus",
@@ -10319,7 +10222,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 188,
+			"id": 187,
 			"type": 1,
 			"title": "Webstation",
 			"name": "Webstation",
@@ -10362,7 +10265,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 189,
+			"id": 188,
 			"type": 1,
 			"title": "Webtop",
 			"name": "Webtop",
@@ -10405,7 +10308,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 190,
+			"id": 189,
 			"type": 1,
 			"title": "Weixin",
 			"name": "Weixin",
@@ -10448,7 +10351,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 191,
+			"id": 190,
 			"type": 1,
 			"title": "Wikijs",
 			"name": "Wikijs",
@@ -10530,7 +10433,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 192,
+			"id": 191,
 			"type": 1,
 			"title": "Winegui",
 			"name": "Winegui",
@@ -10573,7 +10476,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 193,
+			"id": 192,
 			"type": 1,
 			"title": "Wireguard",
 			"name": "Wireguard",
@@ -10667,7 +10570,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 194,
+			"id": 193,
 			"type": 1,
 			"title": "Wireshark",
 			"name": "Wireshark",
@@ -10712,7 +10615,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 195,
+			"id": 194,
 			"type": 1,
 			"title": "Wps-office",
 			"name": "Wps-office",
@@ -10755,7 +10658,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 196,
+			"id": 195,
 			"type": 1,
 			"title": "Xbackbone",
 			"name": "Xbackbone",
@@ -10798,7 +10701,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 197,
+			"id": 196,
 			"type": 1,
 			"title": "Xemu",
 			"name": "Xemu",
@@ -10841,7 +10744,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 198,
+			"id": 197,
 			"type": 1,
 			"title": "Yaak",
 			"name": "Yaak",
@@ -10884,7 +10787,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 199,
+			"id": 198,
 			"type": 1,
 			"title": "Your_spotify",
 			"name": "Your_spotify",
@@ -10963,7 +10866,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 200,
+			"id": 199,
 			"type": 1,
 			"title": "Zen",
 			"name": "Zen",
@@ -11006,7 +10909,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 201,
+			"id": 200,
 			"type": 1,
 			"title": "Znc",
 			"name": "Znc",
@@ -11048,7 +10951,7 @@
 			"restart_policy": "unless-stopped"
 		},
 		{
-			"id": 202,
+			"id": 201,
 			"type": 1,
 			"title": "Zotero",
 			"name": "Zotero",
