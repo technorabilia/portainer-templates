@@ -4350,10 +4350,22 @@
 					"description": "specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)."
 				},
 				{
+					"name": "APP_SECRET",
+					"label": "APP_SECRET",
+					"default": "",
+					"description": "Random string used for session encryption. Generate using e.g. `openssl rand -hex 32`."
+				},
+				{
 					"name": "DATABASE_URL",
 					"label": "DATABASE_URL",
 					"default": "mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name?charset=your_db_charset&serverVersion=your_db_version",
 					"description": "Configure your database connection, see Application Setup instructions."
+				},
+				{
+					"name": "TRUSTED_HOSTS",
+					"label": "TRUSTED_HOSTS",
+					"default": "kimai.example.com",
+					"description": "Domain or IP you will be using to access Kimai. Can be a regex like `localhost|127.0.0.1|kimai.example.com`"
 				},
 				{
 					"name": "TRUSTED_PROXIES",
@@ -6315,7 +6327,7 @@
 			"title": "Nginx",
 			"name": "Nginx",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/nginx/config</p>",
-			"description": "[Nginx](https://nginx.org/) is a simple webserver with php support. The config files reside in `/config` for easy user customization.",
+			"description": "[Nginx](https://nginx.org/) is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.",
             "categories": ["Reverse Proxy"],
 			"platform": "linux",
 			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-banner.png",
