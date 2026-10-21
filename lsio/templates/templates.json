@@ -8475,10 +8475,10 @@
 			"title": "Sealskin",
 			"name": "Sealskin",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a>, based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Ensure to create the following volume directories on the host file system, or modify the paths in the volume mapping section under the advanced options below, as needed.</p><p>mkdir -p /srv/lsio/sealskin/config<br>mkdir -p /srv/lsio/sealskin/storage<br></p>",
-			"description": "[Sealskin](https://github.com/selkies-project/sealskin/) is a self-hosted, client-server platform that enables users to run powerful, containerized desktop applications streamed directly to a web browser. It uses a browser extension to intercept user actions—such as clicking a link or downloading a file and redirects them to a secure, isolated application environment running on a remote server.",
+			"description": "[Sealskin](https://github.com/selkies-project/sealskin/) is a self-hosted browser isolation and remote application streaming platform. It runs desktop applications in isolated containers on a server you control and streams them to any browser or phone. Clients include a browser extension, mobile apps, and a web app served by the server itself. Each turns links, files, downloads, and text selections into something you open remotely instead of locally, so nothing from the web runs on the device in front of you.",
             "categories": ["Remote Desktop", "Business"],
 			"platform": "linux",
-			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/selkies-logo.png",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sealskin-logo.png",
 			"image": "linuxserver/sealskin:latest",
 			"env": [
 				{
@@ -8502,13 +8502,14 @@
 				{
 					"name": "HOST_URL",
 					"label": "HOST_URL",
-					"default": "IP or subdomain.doman.com",
+					"default": "IP or subdomain.domain.com",
 					"description": "On initial setup this will be used to fill in the default admin configuration file in the `/config` directory, if unset the string HOST_URL will need to be replaced. [OPTIONAL]"
 				}
 			],
 			"ports": [
 				"8443:8443/tcp",
-				"8000:8000/tcp"
+				"8000:8000/tcp",
+				"8444:8444/tcp"
 			],
 			"volumes": [
 			{
